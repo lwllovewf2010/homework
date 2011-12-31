@@ -21,6 +21,7 @@ typedef struct _adjList {
     
     int                 vertexNo;
     struct _adjList     *next;
+    int                 visited;
     
 } adjList_t;
 
@@ -37,6 +38,9 @@ void display( adjList_t *pAdjList );
 unsigned int numOfVertices( adjList_t *pAdjList );
 unsigned int numOfEdges( adjList_t *pAdjList );
 int packIntoSequentialList( adjList_t *pAdjList );
+void depthFirstSearch( adjList_t *pAdjList, int vertex );
+void breadthFirstSearch( adjList_t *pAdjList, int vertex );
+void clearVisited( adjList_t *pAdjList );
 
 
 #endif

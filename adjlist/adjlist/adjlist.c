@@ -25,8 +25,11 @@ int initAdjList( adjList_t **ppAdjList ) {
     
     // Initializing
     memset( (void *)*ppAdjList, 0, size );
-    for( i = 0 ; i < MAX_VERTICES ; i++ )
+    for( i = 0 ; i < MAX_VERTICES ; i++ ) {
+        
         ((*ppAdjList) + i)->vertexNo = -1;
+        ((*ppAdjList) + i)->visited = FALSE;
+    }
     
     return TRUE;
 }
@@ -215,7 +218,6 @@ int packIntoSequentialList( adjList_t *pAdjList ) {
     // Calculate numbers of vertices & edges
     n_vertices = numOfVertices( pAdjList );
     e_edges = numOfEdges( pAdjList );
-    printf( "numVertices = %d, numEdges = %d\n", n_vertices, e_edges );
     
     // Size of the sequential list
     slots = n_vertices + e_edges + 1;
@@ -256,6 +258,99 @@ int packIntoSequentialList( adjList_t *pAdjList ) {
 }
 
 
+void depthFirstSearch( adjList_t *pAdjList, int vertex ) {
+    
+    adjList_t *ppAdjList;
+    int i;
+    
+    // Sanity check
+    if( !pAdjList || vertex >= MAX_VERTICES )
+        return;
+    
+    // Retrieve Vertex
+    for( i = 0 ; i < MAX_VERTICES ; i++ ) {
+        
+        // Find out the location of this vertex
+        if( (pAdjList + i)->vertexNo != vertex )
+            continue;
+
+        // Check if it's visited, do nothing on it
+        if( (pAdjList + i)->visited == TRUE )
+            return;
+        
+        // Indicated as it's visited, first time
+        (pAdjList + i)->visited = TRUE;
+        
+        // Display the just visited vertex on the screen
+        printf( "Visited VERTEX %d\n", (pAdjList + i)->vertexNo );
+        
+        // Visit its chain
+        ppAdjList = (pAdjList + i)->next;
+        
+        // Recursively calling DFS
+        for( ; ppAdjList ; ppAdjList = ppAdjList->next )
+            depthFirstSearch( pAdjList, ppAdjList->vertexNo );
+        
+        // Finish this vertex
+        return;
+    }
+}
+
+
+void breadthFirstSearch( adjList_t *pAdjList, int vertex ) {
+    
+    adjList_t *ppAdjList;
+    int i;
+    
+    // Sanity check
+    if( !pAdjList || vertex >= MAX_VERTICES )
+        return;
+    
+    // Retrieve Vertex
+    for( i = 0 ; i < MAX_VERTICES ; i++ ) {
+        
+        // Find out the location of this vertex
+        if( (pAdjList + i)->vertexNo != vertex )
+            continue;
+        
+        // Check if it's visited, do nothing on it
+        if( (pAdjList + i)->visited == TRUE )
+            return;
+        
+        // Indicated as it's visited, first time
+        (pAdjList + i)->visited = TRUE;
+        
+        // Display the just visited vertex on the screen
+        printf( "Visited VERTEX %d\n", (pAdjList + i)->vertexNo );
+        
+        // Visit its chain
+        ppAdjList = (pAdjList + i)->next;
+        
+        // Recursively calling DFS
+        for( ; ppAdjList ; ppAdjList = ppAdjList->next )
+            depthFirstSearch( pAdjList, ppAdjList->vertexNo );
+        
+        // Finish this vertex
+        return;
+    }
+}
+
+
+void clearVisited( adjList_t *pAdjList ) {
+
+    int i;
+    
+    // Sanity check
+    if( !pAdjList )
+        return;
+    
+    // Retrieve Vertex
+    for( i = 0 ; i < MAX_VERTICES ; i++ )
+        if( (pAdjList + i)->visited == TRUE )
+            (pAdjList + i)->visited = FALSE;
+}
+
+
 int main( int argc, char **argv ) {
     
     int i, j;
@@ -284,6 +379,22 @@ int main( int argc, char **argv ) {
     
     // Pack into sequential list
     packIntoSequentialList( headAdjList );
+    
+    // Perform DFW
+    printf( "Perform DFS on VERTEX 0\n" );
+    clearVisited( headAdjList );
+    depthFirstSearch( headAdjList, 0 );
+    printf( "=======================\n");
+    
+    printf( "Perform DFS on VERTEX 5\n" );
+    clearVisited( headAdjList );
+    depthFirstSearch( headAdjList, 5 );
+    printf( "=======================\n");
+    
+    printf( "Perform DFS on VERTEX 17\n" );
+    clearVisited( headAdjList );
+    depthFirstSearch( headAdjList, 17 );
+    printf( "=======================\n");
     
     // Free Resources
     deinitAdjList( &headAdjList );
