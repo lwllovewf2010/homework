@@ -299,40 +299,11 @@ void depthFirstSearch( adjList_t *pAdjList, int vertex ) {
 
 void breadthFirstSearch( adjList_t *pAdjList, int vertex ) {
     
-    adjList_t *ppAdjList;
-    int i;
-    
     // Sanity check
     if( !pAdjList || vertex >= MAX_VERTICES )
         return;
     
-    // Retrieve Vertex
-    for( i = 0 ; i < MAX_VERTICES ; i++ ) {
-        
-        // Find out the location of this vertex
-        if( (pAdjList + i)->vertexNo != vertex )
-            continue;
-        
-        // Check if it's visited, do nothing on it
-        if( (pAdjList + i)->visited == TRUE )
-            return;
-        
-        // Indicated as it's visited, first time
-        (pAdjList + i)->visited = TRUE;
-        
-        // Display the just visited vertex on the screen
-        printf( "Visited VERTEX %d\n", (pAdjList + i)->vertexNo );
-        
-        // Visit its chain
-        ppAdjList = (pAdjList + i)->next;
-        
-        // Recursively calling DFS
-        for( ; ppAdjList ; ppAdjList = ppAdjList->next )
-            depthFirstSearch( pAdjList, ppAdjList->vertexNo );
-        
-        // Finish this vertex
-        return;
-    }
+    
 }
 
 
