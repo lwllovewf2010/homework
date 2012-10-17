@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		770530EA1612E8BE0058D847 /* RayInjectorTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 770530E91612E8BE0058D847 /* RayInjectorTest.c */; };
+		770530EC1612ECA70058D847 /* hook_socket.c in Sources */ = {isa = PBXBuildFile; fileRef = D4BA734715A2EAD300B87EA8 /* hook_socket.c */; };
+		770530ED1612ECB90058D847 /* hook_aes.c in Sources */ = {isa = PBXBuildFile; fileRef = D4BA734515A2EA6700B87EA8 /* hook_aes.c */; };
+		770530EE1612ECC90058D847 /* hook_rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = D4BA735015A4279900B87EA8 /* hook_rsa.c */; };
+		770530F01612F4A70058D847 /* hook_vdadecoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 770530EF1612F4A70058D847 /* hook_vdadecoder.c */; };
+		D4BA7340159D977600B87EA8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D4BA732F159D958100B87EA8 /* main.c */; };
+		D4BA734415A177F300B87EA8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BA734315A177F300B87EA8 /* CoreFoundation.framework */; };
+		D4BA734E15A315F700B87EA8 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = D4BA734B15A3100900B87EA8 /* util.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4BA7329159D958100B87EA8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		770530E91612E8BE0058D847 /* RayInjectorTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RayInjectorTest.c; sourceTree = "<group>"; };
+		770530EF1612F4A70058D847 /* hook_vdadecoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hook_vdadecoder.c; sourceTree = "<group>"; };
+		D4BA732B159D958100B87EA8 /* RayInjector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayInjector; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4BA732F159D958100B87EA8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D4BA733C159D95B700B87EA8 /* liblibRayInjector.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = liblibRayInjector.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4BA734315A177F300B87EA8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D4BA734515A2EA6700B87EA8 /* hook_aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hook_aes.c; sourceTree = "<group>"; };
+		D4BA734715A2EAD300B87EA8 /* hook_socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hook_socket.c; sourceTree = "<group>"; };
+		D4BA734B15A3100900B87EA8 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		D4BA734D15A3101300B87EA8 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		D4BA735015A4279900B87EA8 /* hook_rsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hook_rsa.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4BA7328159D958100B87EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BA7339159D95B700B87EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BA734415A177F300B87EA8 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4BA7320159D958100B87EA8 = {
+			isa = PBXGroup;
+			children = (
+				770530E91612E8BE0058D847 /* RayInjectorTest.c */,
+				D4BA734315A177F300B87EA8 /* CoreFoundation.framework */,
+				D4BA732E159D958100B87EA8 /* RayInjector */,
+				D4BA732C159D958100B87EA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4BA732C159D958100B87EA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA732B159D958100B87EA8 /* RayInjector */,
+				D4BA733C159D95B700B87EA8 /* liblibRayInjector.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4BA732E159D958100B87EA8 /* RayInjector */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA732F159D958100B87EA8 /* main.c */,
+				D4BA734515A2EA6700B87EA8 /* hook_aes.c */,
+				D4BA734715A2EAD300B87EA8 /* hook_socket.c */,
+				D4BA734B15A3100900B87EA8 /* util.c */,
+				D4BA734D15A3101300B87EA8 /* util.h */,
+				D4BA735015A4279900B87EA8 /* hook_rsa.c */,
+				770530EF1612F4A70058D847 /* hook_vdadecoder.c */,
+			);
+			path = RayInjector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D4BA733A159D95B700B87EA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D4BA732A159D958100B87EA8 /* RayInjector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4BA7335159D958100B87EA8 /* Build configuration list for PBXNativeTarget "RayInjector" */;
+			buildPhases = (
+				D4BA7327159D958100B87EA8 /* Sources */,
+				D4BA7328159D958100B87EA8 /* Frameworks */,
+				D4BA7329159D958100B87EA8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayInjector;
+			productName = RayInjector;
+			productReference = D4BA732B159D958100B87EA8 /* RayInjector */;
+			productType = "com.apple.product-type.tool";
+		};
+		D4BA733B159D95B700B87EA8 /* libRayInjector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4BA733D159D95B700B87EA8 /* Build configuration list for PBXNativeTarget "libRayInjector" */;
+			buildPhases = (
+				D4BA7338159D95B700B87EA8 /* Sources */,
+				D4BA7339159D95B700B87EA8 /* Frameworks */,
+				D4BA733A159D95B700B87EA8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libRayInjector;
+			productName = libRayInjector;
+			productReference = D4BA733C159D95B700B87EA8 /* liblibRayInjector.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4BA7322159D958100B87EA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D4BA7325159D958100B87EA8 /* Build configuration list for PBXProject "RayInjector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D4BA7320159D958100B87EA8;
+			productRefGroup = D4BA732C159D958100B87EA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4BA732A159D958100B87EA8 /* RayInjector */,
+				D4BA733B159D95B700B87EA8 /* libRayInjector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4BA7327159D958100B87EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770530EA1612E8BE0058D847 /* RayInjectorTest.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BA7338159D95B700B87EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BA7340159D977600B87EA8 /* main.c in Sources */,
+				D4BA734E15A315F700B87EA8 /* util.c in Sources */,
+				770530EC1612ECA70058D847 /* hook_socket.c in Sources */,
+				770530ED1612ECB90058D847 /* hook_aes.c in Sources */,
+				770530EE1612ECC90058D847 /* hook_rsa.c in Sources */,
+				770530F01612F4A70058D847 /* hook_vdadecoder.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D4BA7333159D958100B87EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D4BA7334159D958100B87EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D4BA7336159D958100B87EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D4BA7337159D958100B87EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D4BA733E159D95B700B87EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D4BA733F159D95B700B87EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4BA7325159D958100B87EA8 /* Build configuration list for PBXProject "RayInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BA7333159D958100B87EA8 /* Debug */,
+				D4BA7334159D958100B87EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4BA7335159D958100B87EA8 /* Build configuration list for PBXNativeTarget "RayInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BA7336159D958100B87EA8 /* Debug */,
+				D4BA7337159D958100B87EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4BA733D159D95B700B87EA8 /* Build configuration list for PBXNativeTarget "libRayInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BA733E159D95B700B87EA8 /* Debug */,
+				D4BA733F159D95B700B87EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4BA7322159D958100B87EA8 /* Project object */;
+}

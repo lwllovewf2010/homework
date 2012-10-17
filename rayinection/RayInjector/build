@@ -1,0 +1,12 @@
+#!/bin/bash
+rm -f *.dylib
+unset DYLD_INSERT_LIBRARIES
+SOURCES="main.c"
+SOURCES="$SOURCES hook_aes.c"
+SOURCES="$SOURCES hook_socket.c"
+SOURCES="$SOURCES hook_rsa.c"
+SOURCES="$SOURCES util.c"
+
+gcc -dynamiclib -o inject64.dylib -framework CoreFoundation -lcrypto $SOURCES
+#gcc -m32 -dynamiclib -o inject32.dylib -framework CoreFoundation $SOURCES
+#lipo -create inject32.dylib inject64.dylib -output inject.dylib

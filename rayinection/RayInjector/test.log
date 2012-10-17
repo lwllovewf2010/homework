@@ -1,0 +1,236 @@
+orig_read=866d3ae8
+CCCryptorCreate:op=1,algo=0,keyLen=16,context=e63eb70
+CCCryptorCreate:key=
+8C 84 B7 62 13 BD AF B9 7F 43 D2 20 B6 21 B4 98 
+CCCryptorCreate:op=0,algo=0,keyLen=16,context=e58b050
+CCCryptorCreate:key=
+57 DF 36 2D 78 CF 7A AC 79 F6 EE 6C 49 9D 81 75 
+guessed header:payload_size=30,type=1,unknown=0006,timestamp_sec=155661,fraction=1521673090
+guessed header:payload_size=25149,type=0,unknown=0006,timestamp_sec=155661,fraction=1135126033
+recv payload prefix[0]:93 34 2C 06 4C 59 D1 E5 E6 4D 07 1E 61 E1 70 84
+guessed header:payload_size=2060,type=0,unknown=0006,timestamp_sec=155661,fraction=1421457186
+recv payload prefix[1]:F7 CF 94 2E EF 33 58 17 B1 3B 08 6C A9 61 62 A2
+guessed header:payload_size=3305,type=0,unknown=0006,timestamp_sec=155661,fraction=1564622763
+recv payload prefix[2]:46 1E D2 DE 06 1A A1 EE F3 C8 04 F3 36 BA 27 EE
+guessed header:payload_size=5557,type=0,unknown=0006,timestamp_sec=155661,fraction=1707788339
+recv payload prefix[3]:49 12 8F 14 4F 28 55 51 26 01 2F 17 EA F2 3A 7D
+guessed header:payload_size=8173,type=0,unknown=0006,timestamp_sec=155661,fraction=1850953916
+recv payload prefix[4]:FC FC FC E5 B2 DF 60 75 13 60 D7 03 40 28 0D B5
+guessed header:payload_size=13500,type=0,unknown=0006,timestamp_sec=155661,fraction=1994119492
+recv payload prefix[5]:D1 74 73 FF 30 5E 2C DD B4 9C E6 8E FA 28 14 7F
+guessed header:payload_size=16925,type=0,unknown=0006,timestamp_sec=155661,fraction=2137285069
+recv payload prefix[6]:D4 09 58 1E 67 72 8F DE 8A 15 7D 7E 51 8E 96 7C
+guessed header:payload_size=15964,type=0,unknown=0006,timestamp_sec=155661,fraction=-2014516651
+recv payload prefix[7]:3D 8C 7F B6 F2 BC A6 15 93 F0 A1 3B BB AF 9E 58
+guessed header:payload_size=15904,type=0,unknown=0006,timestamp_sec=155661,fraction=-1871351074
+recv payload prefix[8]:F0 98 06 2D 7C C1 4B BA D3 66 8A 3F 90 BA E5 F5
+guessed header:payload_size=24806,type=0,unknown=0006,timestamp_sec=155661,fraction=-1728185498
+recv payload prefix[9]:31 5C C9 33 91 20 B9 F6 94 58 40 93 D5 9E 0A 1F
+guessed header:payload_size=5703,type=0,unknown=0006,timestamp_sec=155661,fraction=-1585019921
+recv payload prefix[10]:A0 D7 C5 A2 A0 87 B2 EC AB D3 6A 71 EF B3 10 AD
+guessed header:payload_size=16886,type=0,unknown=0006,timestamp_sec=155661,fraction=-1441854345
+recv payload prefix[11]:A4 B9 A1 88 2F 23 23 18 5C 69 82 E3 5C F1 B2 2B
+guessed header:payload_size=10885,type=0,unknown=0006,timestamp_sec=155661,fraction=-1298688768
+recv payload prefix[12]:22 EB 52 3E 3F AB 01 EB AF 7F C2 FE BC 89 E0 6E
+guessed header:payload_size=4757,type=0,unknown=0006,timestamp_sec=155661,fraction=-1155523192
+recv payload prefix[13]:23 46 F6 86 35 80 D2 E3 56 40 2B EC 39 55 45 87
+guessed header:payload_size=3373,type=0,unknown=0006,timestamp_sec=155661,fraction=-1012357615
+recv payload prefix[14]:10 6F D4 35 95 A4 B6 E2 31 04 0E 57 9B E4 BA 65
+/SourceCache/AppleGVA/AppleGVA-2.2.79/Sources/Slices/Driver/AVD_loader.cpp: failed to get a service for display 2 
+guessed header:payload_size=2869,type=0,unknown=0006,timestamp_sec=155661,fraction=-869192039
+recv payload prefix[15]:4C 3A 29 A7 78 20 C7 87 22 DD 7B 3E 27 0D 37 E3
+guessed header:payload_size=2669,type=0,unknown=0006,timestamp_sec=155661,fraction=-726026462
+recv payload prefix[16]:CD B3 97 AD 39 B6 CD 03 B5 7E 52 8D BE 71 42 02
+guessed header:payload_size=2636,type=0,unknown=0006,timestamp_sec=155661,fraction=-582860885
+recv payload prefix[17]:5F D9 54 C8 F8 AF BF C6 DA 18 D6 11 D0 69 B9 10
+guessed header:payload_size=2619,type=0,unknown=0006,timestamp_sec=155661,fraction=-439695309
+recv payload prefix[18]:4E 78 C1 7F D0 C9 FE 76 16 5B F8 77 7D D1 AC 81
+guessed header:payload_size=2619,type=0,unknown=0006,timestamp_sec=155661,fraction=-296529732
+recv payload prefix[19]:65 9F AF F5 91 F6 00 BB FC C4 83 1C 09 B3 F2 D6
+dumpAES[0],total=16
+aes decrypt key:57 DF 36 2D 78 CF 7A AC 79 F6 EE 6C 49 9D 81 75
+aes decrypt input:19 81 C9 CA 91 57 0F 59 B3 02 15 00 77 EB 88 D9
+aes decrypt output:93 34 03 70 69 E1 F1 E6 F9 8F 74 54 2D C6 4F 75
+hooked VDADecoderDecode:7b375d replaced:7228b0
+guessed header:payload_size=2616,type=0,unknown=0006,timestamp_sec=155661,fraction=-153364156
+recv payload prefix[20]:8C A2 1F 6B 31 76 B0 DA 73 73 5E D6 FC B3 94 A2
+guessed header:payload_size=2618,type=0,unknown=0006,timestamp_sec=155661,fraction=-10198579
+recv payload prefix[21]:97 12 90 36 DA 6F 81 CE E4 56 60 9D BF A6 08 CF
+VDADecoderDecode: decoder input=25149 bytes
+decoder input prefix[0]::00 00 2F 76 25 B8 20 03 1F C2 73 4A 4C 27 3F F1
+VDADecoderDecode: decoder input=2060 bytes
+decoder input prefix[1]::00 00 02 2E 21 E1 08 47 3F 1E 42 FC 62 67 6B 9A
+guessed header:payload_size=2615,type=0,unknown=0006,timestamp_sec=155662,fraction=132966997
+recv payload prefix[22]:52 D0 C0 51 1A B4 27 BE 11 E4 BF CA 3B 28 1A 5A
+VDADecoderDecode: decoder input=3305 bytes
+decoder input prefix[2]::00 00 04 C3 21 E2 10 45 3F 94 BA 0C 0C 72 A8 16
+VDADecoderDecode: decoder input=5557 bytes
+decoder input prefix[3]::00 00 07 CF 21 E3 18 4C FF C2 86 54 04 E7 E9 0B
+guessed header:payload_size=2617,type=0,unknown=0006,timestamp_sec=155662,fraction=276132574
+recv payload prefix[23]:C5 4F 1F 3F 9C B5 19 4C 4C BE 8D AA C8 12 20 52
+VDADecoderDecode: decoder input=8173 bytes
+decoder input prefix[4]::00 00 0C 6E 21 E4 20 53 FF BA 4C C5 1D 86 31 8E
+guessed header:payload_size=2616,type=0,unknown=0006,timestamp_sec=155662,fraction=419298150
+recv payload prefix[24]:F8 F2 72 0D A0 C0 C0 FB 85 68 9F E4 35 7C F2 63
+VDADecoderDecode: decoder input=13500 bytes
+decoder input prefix[5]::00 00 17 61 21 E5 28 5B FF BE 39 2A 24 0C 2F 7E
+guessed header:payload_size=2618,type=0,unknown=0006,timestamp_sec=155662,fraction=562463727
+recv payload prefix[25]:BE 9D 7D EC 9E D4 CA 3D 4B 29 13 DE DE 42 51 33
+VDADecoderDecode: decoder input=16925 bytes
+decoder input prefix[6]::00 00 1E 8C 21 E6 30 4E FF DA AD 55 1E AA 1F 87
+guessed header:payload_size=2615,type=0,unknown=0006,timestamp_sec=155662,fraction=705629303
+recv payload prefix[26]:EA 09 D2 BB AF AF 30 3F 97 D2 11 B9 AE 8C 49 8B
+guessed header:payload_size=0,type=2,unknown=001E,timestamp_sec=0,fraction=0
+VDADecoderDecode: decoder input=15964 bytes
+decoder input prefix[7]::00 00 1E D5 21 E7 38 45 BF 56 68 E2 CD 0E 81 7F
+guessed header:payload_size=2617,type=0,unknown=0006,timestamp_sec=155662,fraction=848794880
+recv payload prefix[27]:C3 77 65 FA 4E D5 DE 5A EB BF EA 36 77 F6 59 98
+VDADecoderDecode: decoder input=15904 bytes
+decoder input prefix[8]::00 00 1F 8E 21 E8 40 47 BF 6A 46 31 66 9B D5 33
+VDADecoderDecode: decoder input=24806 bytes
+decoder input prefix[9]::00 00 2C 70 21 E9 48 42 6F 71 80 6A 9F 29 9C A1
+guessed header:payload_size=2616,type=0,unknown=0006,timestamp_sec=155662,fraction=991960456
+recv payload prefix[28]:B1 18 A0 78 A4 4A F0 08 D9 9E 6A CB DE EB F4 88
+VDADecoderDecode: decoder input=5703 bytes
+decoder input prefix[10]::00 00 08 13 21 EA 50 42 2F C9 6C E2 34 36 E2 33
+VDADecoderDecode: decoder input=16886 bytes
+decoder input prefix[11]::00 00 1D 4E 21 EB 58 42 AF 77 A7 61 6F 00 7A 38
+VDADecoderDecode: decoder input=10885 bytes
+decoder input prefix[12]::00 00 18 23 21 EC 60 43 2F 83 AC 95 6A 36 30 04
+guessed header:payload_size=2618,type=0,unknown=0006,timestamp_sec=155662,fraction=1135126033
+recv payload prefix[29]:24 D6 E0 CC E7 E0 59 DA 4A 52 E9 CA A9 33 15 CA
+guessed header:payload_size=2621,type=0,unknown=0006,timestamp_sec=155662,fraction=1278291609
+recv payload prefix[30]:72 59 2C 4F 93 F7 B2 7A 94 63 CB 13 F3 2C 64 A6
+VDADecoderDecode: decoder input=4757 bytes
+decoder input prefix[13]::00 00 09 79 21 ED 68 43 2F 83 BB 35 6D CD 03 C0
+VDADecoderDecode: decoder input=3373 bytes
+decoder input prefix[14]::00 00 06 A0 21 EE 70 43 2F D9 A7 3E D5 B4 75 26
+VDADecoderDecode: decoder input=2869 bytes
+decoder input prefix[15]::00 00 05 7C 21 EF 78 43 2F D9 A7 3E D5 B4 75 87
+guessed header:payload_size=2620,type=0,unknown=0006,timestamp_sec=155662,fraction=1421457186
+recv payload prefix[31]:92 E0 02 68 9C 30 6E D2 48 4D DC D7 0F 36 64 73
+VDADecoderDecode: decoder input=2669 bytes
+decoder input prefix[16]::00 00 05 00 21 F0 80 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2636 bytes
+decoder input prefix[17]::00 00 04 EA 21 F1 88 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2619 bytes
+decoder input prefix[18]::00 00 04 DC 21 F2 90 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2616,type=0,unknown=0006,timestamp_sec=155662,fraction=1564622763
+recv payload prefix[32]:F4 EE 26 DE 41 E7 61 9E 5A 47 68 9E EB 24 40 AD
+VDADecoderDecode: decoder input=2619 bytes
+decoder input prefix[19]::00 00 04 D9 21 F3 98 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2616 bytes
+decoder input prefix[20]::00 00 04 D8 21 F4 A0 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2618 bytes
+decoder input prefix[21]::00 00 04 D9 21 F5 A8 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2618,type=0,unknown=0006,timestamp_sec=155662,fraction=1707788339
+recv payload prefix[33]:2D 97 6B 13 E6 4C 23 03 67 9A F9 B5 A4 26 71 8F
+VDADecoderDecode: decoder input=2615 bytes
+decoder input prefix[22]::00 00 04 D8 21 F6 B0 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2617 bytes
+decoder input prefix[23]::00 00 04 D9 21 F7 B8 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2616 bytes
+decoder input prefix[24]::00 00 04 D8 21 F8 C0 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2618 bytes
+decoder input prefix[25]::00 00 04 D9 21 F9 C8 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2615 bytes
+decoder input prefix[26]::00 00 04 D8 21 FA D0 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2617 bytes
+decoder input prefix[27]::00 00 04 D9 21 FB D8 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2615,type=0,unknown=0006,timestamp_sec=155662,fraction=1850953916
+recv payload prefix[34]:35 50 44 F3 38 D4 D8 F5 B0 5C 62 1F 2A 10 1F 3D
+VDADecoderDecode: decoder input=2616 bytes
+decoder input prefix[28]::00 00 04 D8 21 FC E0 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2617,type=0,unknown=0006,timestamp_sec=155662,fraction=1994119492
+recv payload prefix[35]:E5 03 A6 63 3D 72 45 2B F2 15 4D BF 7F F4 E9 7A
+VDADecoderDecode: decoder input=2618 bytes
+decoder input prefix[29]::00 00 04 D9 21 FD E8 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2621 bytes
+decoder input prefix[30]::00 00 04 DB 21 FE F0 A3 95 1F 86 5F D9 A7 3E D5
+guessed header:payload_size=2616,type=0,unknown=0006,timestamp_sec=155662,fraction=2137285069
+recv payload prefix[36]:97 97 73 7B D0 7A D0 96 76 DD 91 9A C5 DC 70 E4
+VDADecoderDecode: decoder input=2620 bytes
+decoder input prefix[31]::00 00 04 DB 21 FF F9 72 21 97 FF D9 A7 3E D5 B4
+VDADecoderDecode: decoder input=2616 bytes
+decoder input prefix[32]::00 00 04 D8 21 E0 00 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2618 bytes
+decoder input prefix[33]::00 00 04 D9 21 E1 08 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2618,type=0,unknown=0006,timestamp_sec=155662,fraction=-2014516651
+recv payload prefix[37]:08 0D 7A 3B 3F 18 F7 41 D7 F0 44 0B 47 0C DD 3A
+VDADecoderDecode: decoder input=2615 bytes
+decoder input prefix[34]::00 00 04 D8 21 E2 10 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2617 bytes
+decoder input prefix[35]::00 00 04 D9 21 E3 18 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2616 bytes
+decoder input prefix[36]::00 00 04 D8 21 E4 20 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2615,type=0,unknown=0006,timestamp_sec=155662,fraction=-1871351074
+recv payload prefix[38]:77 C7 28 86 F5 0E D0 42 D4 E4 27 E4 7D 0C 70 20
+VDADecoderDecode: decoder input=2618 bytes
+decoder input prefix[37]::00 00 04 D9 21 E5 28 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2617,type=0,unknown=0006,timestamp_sec=155662,fraction=-1728185498
+recv payload prefix[39]:4D 2D 3F 60 D5 0D D2 64 54 2A 0F 76 79 CE 22 E4
+VDADecoderDecode: decoder input=2615 bytes
+decoder input prefix[38]::00 00 04 D8 21 E6 30 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2617 bytes
+decoder input prefix[39]::00 00 04 D9 21 E7 38 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2616,type=0,unknown=0006,timestamp_sec=155662,fraction=-1585019921
+recv payload prefix[40]:89 0B 94 4A 71 82 14 3B 12 2B 1C 10 AC BD B6 97
+guessed header:payload_size=2625,type=0,unknown=0006,timestamp_sec=155662,fraction=-1441854345
+recv payload prefix[41]:80 10 6D 17 B1 DA 02 66 45 E7 95 1B DA 44 92 2B
+VDADecoderDecode: decoder input=2616 bytes
+decoder input prefix[40]::00 00 04 D8 21 E8 40 43 2F D9 A7 3E D5 B4 7F EF
+VDADecoderDecode: decoder input=2625 bytes
+decoder input prefix[41]::00 00 04 DD 21 E9 48 A3 15 9D 61 97 FF D9 A7 3E
+guessed header:payload_size=2618,type=0,unknown=0006,timestamp_sec=155662,fraction=-1298688768
+recv payload prefix[42]:E3 0F 08 79 74 44 86 E1 F6 DB C2 86 B7 4C 8E 92
+VDADecoderDecode: decoder input=2618 bytes
+decoder input prefix[42]::00 00 04 DA 21 EA 51 68 88 65 FF D9 A7 3E D5 B4
+guessed header:payload_size=2617,type=0,unknown=0006,timestamp_sec=155662,fraction=-1155523192
+recv payload prefix[43]:AA 2C 85 C9 28 60 9D F9 41 1D 5A AB F8 C4 75 7B
+VDADecoderDecode: decoder input=2617 bytes
+decoder input prefix[43]::00 00 04 D9 21 EB 58 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2616,type=0,unknown=0006,timestamp_sec=155662,fraction=-1012357615
+recv payload prefix[44]:E6 D6 41 6B 33 D1 EB 45 79 7A B4 FA E7 03 FD 09
+VDADecoderDecode: decoder input=2616 bytes
+decoder input prefix[44]::00 00 04 D8 21 EC 60 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2618,type=0,unknown=0006,timestamp_sec=155662,fraction=-869192039
+recv payload prefix[45]:58 B6 AD EA B7 E6 B0 B2 80 2A 60 A5 3E B8 26 9D
+VDADecoderDecode: decoder input=2618 bytes
+decoder input prefix[45]::00 00 04 D9 21 ED 68 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2615,type=0,unknown=0006,timestamp_sec=155662,fraction=-726026462
+recv payload prefix[46]:DA 67 68 3B 87 02 B2 3B E5 59 AD D7 53 6F 0D CC
+VDADecoderDecode: decoder input=2615 bytes
+decoder input prefix[46]::00 00 04 D8 21 EE 70 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2617,type=0,unknown=0006,timestamp_sec=155662,fraction=-582860885
+recv payload prefix[47]:AB 44 F1 3D 22 A3 BB 58 DD 5E 69 17 47 4A 3F C2
+VDADecoderDecode: decoder input=2617 bytes
+decoder input prefix[47]::00 00 04 D9 21 EF 78 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2616,type=0,unknown=0006,timestamp_sec=155662,fraction=-439695309
+recv payload prefix[48]:19 C8 C7 39 60 1C 34 34 AD 04 23 A0 EC F3 1F FB
+VDADecoderDecode: decoder input=2616 bytes
+decoder input prefix[48]::00 00 04 D8 21 F0 80 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2618,type=0,unknown=0006,timestamp_sec=155662,fraction=-296529732
+recv payload prefix[49]:7F 2C D5 DD 29 44 7D 42 74 93 BD 7C 92 D3 89 4B
+VDADecoderDecode: decoder input=2618 bytes
+decoder input prefix[49]::00 00 04 D9 21 F1 88 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2615,type=0,unknown=0006,timestamp_sec=155662,fraction=-153364156
+recv payload prefix[50]:A2 50 2F 47 6A A7 C4 FF 2F 8D 1B 93 66 6B 40 C6
+VDADecoderDecode: decoder input=2615 bytes
+decoder input prefix[50]::00 00 04 D8 21 F2 90 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2617,type=0,unknown=0006,timestamp_sec=155662,fraction=-10198579
+recv payload prefix[51]:07 13 60 73 4B D3 60 1C A7 69 9C 8C FC B9 49 68
+VDADecoderDecode: decoder input=2617 bytes
+decoder input prefix[51]::00 00 04 D9 21 F3 98 43 2F D9 A7 3E D5 B4 7F EF
+guessed header:payload_size=2623,type=0,unknown=0006,timestamp_sec=155663,fraction=132966997
+recv payload prefix[52]:C8 1E 07 3C D9 33 EE A3 7A 01 F3 DB CE 43 99 4E
+VDADecoderDecode: decoder input=2623 bytes
+decoder input prefix[52]::00 00 04 DC 21 F4 A0 A2 94 87 78 65 FF D9 A7 3E
+guessed header:payload_size=2621,type=0,unknown=0006,timestamp_sec=155663,fraction=276132574
+recv payload prefix[53]:B2 3B 6A A8 2D 97 AA 89 88 AA 83 29 50 89 8F CF
+VDADecoderDecode: decoder input=2621 bytes
+decoder input prefix[53]::00 00 04 DB 21 F5 A9 6C 88 65 FF D9 A7 3E D5 B4
+guessed header:payload_size=2615,type=0,unknown=0006,timestamp_sec=155663,fraction=419298150
+recv payload prefix[54]:6C A8 29 3D 26 84 1D 12 78 05 E3 50 05 98 A5 29
+VDADecoderDecode: decoder input=2615 bytes
+decoder input prefix[54]::00 00 04 D8 21 F6 B0 43 2F D9 A7 3E D5 B4 7F EF
+gues

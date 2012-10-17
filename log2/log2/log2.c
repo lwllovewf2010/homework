@@ -163,6 +163,27 @@ unsigned int logVar( unsigned int base, unsigned int val ) {
 }
 
 
+int logbase2(int n)
+{
+    float f;
+    int r;
+    
+    /* This algorithm fails (Returns negative infinity) if n = 0. We'll be
+     * using it mostly in the context of CPU numbers, so we'll take the
+     * liberty of returning 0 instead of aborting */
+    if (n == 0)
+        return 0;
+    
+    f = (float)n;
+    memcpy(&r, &f, sizeof(n));
+    
+    /* Isolate exponent and un-bias the exponent (Subtract +128) */
+    r = ((r & 0x7F800000) >> 23) - 0x80;
+    
+    return r + 1;
+}
+
+
 int main( int argc, const char **argv ) {
     
     unsigned int list[] = { 45, 65543, 7658382, 2, 135, 0, 1000, 0xFFFFFFFF };
