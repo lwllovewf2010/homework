@@ -15,7 +15,7 @@
 #include "adjlist.h"
 
 
-#define DEBUG
+//#define DEBUG
 
 #ifdef DEBUG
 #define pdbg( MSG, ARGS... )    printf( "%s: " MSG, __func__, ##ARGS )
@@ -38,7 +38,7 @@ typedef struct _property {
 
 int main( void ) {
 
-	int llen;
+	int llen, i;
 	char ibuf[ SZ_IBUF ], *p, *idx;
 	unsigned int eol, no, rb, nv;
 	property_t head;
@@ -128,18 +128,19 @@ int main( void ) {
 
 #ifdef DEBUG
 	// Display graph
-	display( head.BasicBlocks );
+	displayGraph( head.BasicBlocks );
 #endif
 
 
 	// Compute Immediate Dominators
-	depthFirstSearch( head.BasicBlocks, 0 );
+    for( i = 1 ; i < head.numOfBasicBlocks ; i++ ) {
 
+		printf( "%d\n", computeImmedinateDominator( head.BasicBlocks, head.numOfBasicBlocks, i ) );
+    }
 
 	// Free the resources
 	deinitAdjList( &head.BasicBlocks );
 	
-
 	return 0;
 }
 

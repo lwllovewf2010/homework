@@ -102,6 +102,7 @@ int appendNode( adjList_t *pAdjList, int vertex ) {
     pAdjList->next = (adjList_t *)malloc( sizeof( adjList_t ) );
     pAdjList->next->vertexNo = vertex;
     pAdjList->next->next = NULL;
+	pAdjList->next->prev = pAdjList;
     
     return TRUE;
 }
@@ -120,7 +121,7 @@ int hasEdge( adjList_t *pAdjList, int vertex ) {
 
 int insertEdge( adjList_t *pAdjList, int u, int v ) {
     
-    int ret = TRUE, ret1 = TRUE;
+    int ret = TRUE; /*, ret1 = TRUE; */
     
     if( hasVertex( pAdjList, u ) != TRUE ||
        hasVertex( pAdjList, v ) != TRUE )
@@ -146,7 +147,7 @@ int insertEdge( adjList_t *pAdjList, int u, int v ) {
 }
 
 
-void display( adjList_t *pAdjList ) {
+void displayGraph( adjList_t *pAdjList ) {
 
     int i;
     adjList_t *ppAdjList;
@@ -264,7 +265,7 @@ int packIntoSequentialList( adjList_t *pAdjList ) {
 }
 
 
-void depthFirstSearch( adjList_t *pAdjList, int vertex ) {
+void reverseOrderDepthFirstSearch( adjList_t *pAdjList, int vertex ) {
     
     adjList_t *ppAdjList;
     int i;
@@ -288,14 +289,19 @@ void depthFirstSearch( adjList_t *pAdjList, int vertex ) {
         (pAdjList + i)->visited = TRUE;
         
         // Display the just visited vertex on the screen
-        printf( "Visited VERTEX %d\n", (pAdjList + i)->vertexNo );
+        printf( "Visited VERTEX %d\n", (pAdjList + i)->vertexNo + 1 );
         
         // Visit its chain
         ppAdjList = (pAdjList + i)->next;
+		if( !ppAdjList )
+			return;
+
+		// Walk to the least edge
+		for( ; ppAdjList->next ; ppAdjList = ppAdjList->next );
         
         // Recursively calling DFS
-        for( ; ppAdjList ; ppAdjList = ppAdjList->next )
-            depthFirstSearch( pAdjList, ppAdjList->vertexNo );
+        for( ; ppAdjList ; ppAdjList = ppAdjList->prev )
+            reverseOrderDepthFirstSearch( pAdjList, ppAdjList->vertexNo );
         
         // Finish this vertex
         return;
@@ -315,6 +321,98 @@ void clearVisited( adjList_t *pAdjList ) {
     for( i = 0 ; i < MAX_VERTICES ; i++ )
         if( (pAdjList + i)->visited == TRUE )
             (pAdjList + i)->visited = FALSE;
+}
+
+
+void findDominators( adjList_t *pAdjList, unsigned int max, int vertex, char *idomMap ) {
+
+	int i, j;
+    adjList_t *tgtNode;
+	char tgtMap[ MAX_VERTICES ], tmpMap[ MAX_VERTICES], findMap[ MAX_VERTICES ];
+
+    // Sanity check
+    if( !pAdjList || vertex >= MAX_VERTICES || max >= MAX_VERTICES )
+        return;
+
+	// Entry node has itself as the only dominator
+	if( !vertex ) {
+
+		idomMap[ 0 ] = 1;
+		return;
+	}
+
+	// Clear memory
+	memset( tgtMap, 0, MAX_VERTICES );
+
+	// Look for arrorws to itself
+	for( i = 0 ; i < max ; i++ ) {
+
+		// Whether it has nodes
+		if( !(pAdjList + i)->next )
+			continue;
+
+		// Find out the arrows to itself
+		for( tgtNode = (pAdjList + i)->next ;
+			tgtNode ; tgtNode = tgtNode->next ) {
+
+			if( tgtNode->vertexNo == vertex ) {
+
+				//printf( "FOUND (%d,%d)\n", i, vertex );
+				tgtMap[ i ] = 1;
+				break;
+			}
+		}
+	}
+
+	// Find other vertices' intersected result of dominators
+	memset( tmpMap, 1, MAX_VERTICES );
+	for( i = 0 ; i < max ; i++ ) {
+
+		if( !tgtMap[ i ] )
+			continue;
+
+		// Find other vertices' dominators
+		memset( findMap, 0, MAX_VERTICES );
+		findDominators( pAdjList, max, i, findMap );
+
+		// Intersect the result
+		for( j = 0 ; j < MAX_VERTICES ; j++ ) {
+
+			//printf( "CHK[ %d ] = %d\n", j, findMap[ j ] );
+			if( findMap[ j ] == 1 && tmpMap[ j ] == 1 ) {
+				tmpMap[ j ] = 1;
+			}
+			else
+				tmpMap[ j ] = 0;
+		}
+	}
+
+	// Assign itself as one of dominators
+	tmpMap[ vertex ] = 1;
+	memcpy( idomMap, tmpMap, MAX_VERTICES );
+}
+
+
+unsigned int computeImmedinateDominator( adjList_t *pAdjList, unsigned int max, int vertex ) {
+
+    char domMap[ MAX_VERTICES ];
+	int i;
+	unsigned int immDom = 0;
+
+    // Compute Immediate Dominators
+    findDominators( pAdjList, max, vertex, domMap );
+    for( i = 0 ; i < max ; i++ ) {
+
+        if( domMap[ i ] ) {
+
+			if( i >= vertex )
+				break;
+
+			immDom = i;
+		}
+    }
+
+	return immDom;
 }
 
 

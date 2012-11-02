@@ -12,6 +12,7 @@
 
 // Definitions
 #define MAX_VERTICES        200
+#define MAX_DOMINATORS		((MAX_VERTICES / 8) + 8)
 #define TRUE                1
 #define FALSE               0
 
@@ -21,7 +22,10 @@ typedef struct _adjList {
     
     int                 vertexNo;
     struct _adjList     *next;
+	struct _adjList		*prev;
     int                 visited;
+	char				dominators[ MAX_VERTICES ];
+	int					created;
     
 } adjList_t;
 
@@ -34,12 +38,14 @@ int hasVertex( adjList_t *pAdjList, int vertex );
 int appendNode( adjList_t *pAdjList, int vertex );
 int hasEdge( adjList_t *pAdjList, int vertex );
 int insertEdge( adjList_t *pAdjList, int u, int v );
-void display( adjList_t *pAdjList );
+void displayGraph( adjList_t *pAdjList );
 unsigned int numOfVertices( adjList_t *pAdjList );
 unsigned int numOfEdges( adjList_t *pAdjList );
 int packIntoSequentialList( adjList_t *pAdjList );
-void depthFirstSearch( adjList_t *pAdjList, int vertex );
+void reverseOrderDepthFirstSearch( adjList_t *pAdjList, int vertex );
 void clearVisited( adjList_t *pAdjList );
+void findDominators( adjList_t *pAdjList, unsigned int max, int vertex, char *idomMap );
+unsigned int computeImmedinateDominator( adjList_t *pAdjList, unsigned int max, int vertex );
 
 
 #endif
