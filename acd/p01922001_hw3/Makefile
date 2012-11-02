@@ -5,8 +5,8 @@ MODS	:=	hw3
 
 all: $(MODS)
 
-hw3: hw3.c
-	$(CC) $(CFLAGS) -o $@ $<
+hw3:
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ hw3.c adjlist.c
 
 clean:
 	@$(RM) -f $(MODS)

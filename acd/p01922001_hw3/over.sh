@@ -2,4 +2,4 @@
 
 make clean
 make
-./hw3 < sample.input
+./hw3 < sample1.input
