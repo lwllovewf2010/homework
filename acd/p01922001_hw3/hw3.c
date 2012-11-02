@@ -135,6 +135,7 @@ int main( void ) {
 	// Compute Immediate Dominators
     for( i = 1 ; i < head.numOfBasicBlocks ; i++ ) {
 
+		clearVisited( head.BasicBlocks );
 		printf( "%d\n", computeImmedinateDominator( head.BasicBlocks, head.numOfBasicBlocks, i ) );
     }
 

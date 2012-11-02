@@ -15,6 +15,6 @@ echo "=== 5.3"
 echo "=== 5.4"
 ./hw3 < sample4.input
 
-echo "=== textbook"
-./hw3 < textbook.input
+#echo "=== textbook"
+#./hw3 < textbook.input
 

@@ -335,9 +335,10 @@ void findDominators( adjList_t *pAdjList, unsigned int max, int vertex, char *id
         return;
 
 	// Entry node has itself as the only dominator
+	(pAdjList + vertex)->visited = 1;
 	if( !vertex ) {
 
-		idomMap[ 0 ] = 1;
+		idomMap[ vertex ] = 1;
 		return;
 	}
 
@@ -368,7 +369,7 @@ void findDominators( adjList_t *pAdjList, unsigned int max, int vertex, char *id
 	memset( tmpMap, 1, MAX_VERTICES );
 	for( i = 0 ; i < max ; i++ ) {
 
-		if( !tgtMap[ i ] )
+		if( !tgtMap[ i ] || (pAdjList + i)->visited )
 			continue;
 
 		// Find other vertices' dominators
@@ -378,7 +379,6 @@ void findDominators( adjList_t *pAdjList, unsigned int max, int vertex, char *id
 		// Intersect the result
 		for( j = 0 ; j < MAX_VERTICES ; j++ ) {
 
-			//printf( "CHK[ %d ] = %d\n", j, findMap[ j ] );
 			if( findMap[ j ] == 1 && tmpMap[ j ] == 1 ) {
 				tmpMap[ j ] = 1;
 			}
