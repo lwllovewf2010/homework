@@ -63,8 +63,8 @@
 		6977373816569C0700BA0D3B /* mycltest */ = {
 			isa = PBXGroup;
 			children = (
-				6977374216569C8200BA0D3B /* mykernel.cl */,
 				6977373916569C0700BA0D3B /* main.c */,
+				6977374216569C8200BA0D3B /* mykernel.cl */,
 			);
 			path = mycltest;
 			sourceTree = "<group>";
@@ -213,6 +213,7 @@
 				6977373F16569C0700BA0D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

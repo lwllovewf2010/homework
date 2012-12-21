@@ -134,7 +134,7 @@ int main (int argc, const char * argv[]) {
     
     
     // Now we can check to make sure our kernel really did what we asked
-    // it to:
+    // it to:   
     
     if ( validate(test_in, test_out)) {
         fprintf(stdout, "All values were properly squared.\n");

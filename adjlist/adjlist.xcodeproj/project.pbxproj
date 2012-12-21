@@ -62,8 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				6949FF4C14AEEAF000DA973E /* adjlist.1 */,
-				6949FF5314AEEB0800DA973E /* adjlist.c */,
 				6949FF5514AEEB1300DA973E /* adjlist.h */,
+				6949FF5314AEEB0800DA973E /* adjlist.c */,
 			);
 			path = adjlist;
 			sourceTree = "<group>";
@@ -205,6 +205,7 @@
 				6949FF5214AEEAF000DA973E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
