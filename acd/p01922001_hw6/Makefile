@@ -6,7 +6,7 @@ CPP			:=	g++
 CFLAGS		:=	-O3 -Wall -shared $(shell $(LLVMCFG) --cxxflags)
 LDFLAGS		:=	$(shell $(LLVMCFG) --ldflags --libs all)
 
-CLANGINCS	:=	-O3 -Wall $(shell $(LLVMCFG) --cxxflags) \
+CLANGINCS	:=	-O2 -Wall $(shell $(LLVMCFG) --cxxflags) \
 				-I/Users/merck/Desktop/llvm/tools/clang/include
 
 CLANGLIBS	:= 	$(shell $(LLVMCFG) --ldflags --libs all) \
@@ -37,7 +37,7 @@ GlobalRE:
 	@$(CPP) $(CFLAGS) $(LDFLAGS) -o $(addsuffix .so, $@) $(addsuffix .cpp, $@)
 
 ClangTest:
-	$(CPP) $(CLANGINCS) $(CLANGLIBS) -o $@ $(addsuffix .cpp, $@)
+	@$(CPP) $(CLANGINCS) $(CLANGLIBS) -o $@ $(addsuffix .cpp, $@)
 
 clean:
 	@$(RM) -rf $(MODS) *.so *.dSYM
