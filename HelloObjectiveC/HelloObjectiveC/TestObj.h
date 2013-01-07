@@ -9,5 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface TestObj : NSView
+{
+    NSString *abc;
+}
 
 @end

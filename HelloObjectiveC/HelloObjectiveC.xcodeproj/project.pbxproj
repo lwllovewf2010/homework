@@ -11,6 +11,7 @@
 		698AF54915C6E858004D3178 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 698AF54815C6E858004D3178 /* main.m */; };
 		698AF54D15C6E858004D3178 /* HelloObjectiveC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 698AF54C15C6E858004D3178 /* HelloObjectiveC.1 */; };
 		698AF55515C6E98A004D3178 /* Greeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 698AF55415C6E98A004D3178 /* Greeter.m */; };
+		69D29AD4168BEAF40002687C /* TestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D29AD3168BEAF40002687C /* TestObj.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		698AF54C15C6E858004D3178 /* HelloObjectiveC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloObjectiveC.1; sourceTree = "<group>"; };
 		698AF55315C6E98A004D3178 /* Greeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Greeter.h; sourceTree = "<group>"; };
 		698AF55415C6E98A004D3178 /* Greeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Greeter.m; sourceTree = "<group>"; };
+		69D29AD2168BEAF40002687C /* TestObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObj.h; sourceTree = "<group>"; };
+		69D29AD3168BEAF40002687C /* TestObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObj.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				698AF54A15C6E858004D3178 /* Supporting Files */,
 				698AF55315C6E98A004D3178 /* Greeter.h */,
 				698AF55415C6E98A004D3178 /* Greeter.m */,
+				69D29AD2168BEAF40002687C /* TestObj.h */,
+				69D29AD3168BEAF40002687C /* TestObj.m */,
 			);
 			path = HelloObjectiveC;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			files = (
 				698AF54915C6E858004D3178 /* main.m in Sources */,
 				698AF55515C6E98A004D3178 /* Greeter.m in Sources */,
+				69D29AD4168BEAF40002687C /* TestObj.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +244,7 @@
 				698AF55215C6E858004D3178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

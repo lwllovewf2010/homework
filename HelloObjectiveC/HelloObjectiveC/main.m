@@ -11,10 +11,16 @@
 
 int main(int argc, const char * argv[])
 {
-    
     @autoreleasepool {
-        
+ 
+        NSString *testString;
         Greeter* myGreeter = [[Greeter alloc] init];
+        
+        testString = [NSString alloc];
+        testString = [testString init];
+        testString = @"Here's a test string in testString!";
+        
+        NSLog( @"testString: %@", testString );  
         
         [myGreeter setGreetingText: @"Hello Objective-C!!" ];
         [myGreeter issueGreeting];

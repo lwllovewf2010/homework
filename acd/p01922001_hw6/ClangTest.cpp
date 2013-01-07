@@ -1,6 +1,5 @@
-#include <iostream>
-
 #include "llvm/Support/Host.h"
+#include "llvm/Support/raw_ostream.h"
 
 #include "clang/AST/ASTConsumer.h"
 #include "clang/AST/RecursiveASTVisitor.h"
@@ -52,7 +51,7 @@ int main( int argc, char **argv ) {
 			break;
 
 		ci.getPreprocessor().DumpToken( tok );
-		std::cout << std::endl;
+		//llvm::errs() << std::endl;
 
 	} while ( tok.isNot( clang::tok::eof ) );
 
