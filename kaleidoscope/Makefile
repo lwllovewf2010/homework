@@ -1,12 +1,15 @@
 CODEDIR		:=	/Users/merck/References/compiler
+SWDIR		:=	/Users/merck/Sw
+
 LLVMSRC		:=	$(CODEDIR)/llvm-3.2.src
-LLVMPATH	:=	$(CODEDIR)/llvm32
-LLVMBPATH	:=	$(LLVMPATH)/bin/Debug
+LLVMBIN		:=	$(SWDIR)/llvm
+
+LLVMBPATH	:=	$(LLVMBIN)/Release+Asserts/bin
 LLVMCFG		:=	$(LLVMBPATH)/llvm-config
 
 CC			:=	$(LLVMBPATH)/clang
 CPP			:=	$(LLVMBPATH)/clang++
-CFLAGS		:=	-O3 -Wall -shared $(shell $(LLVMCFG) --cxxflags)
+CPPFLAGS	:=	-O3 -Wall $(shell $(LLVMCFG) --cxxflags)
 LDFLAGS		:=	$(shell $(LLVMCFG) --ldflags --libs all)
 
 MODS		:=	kal
@@ -14,8 +17,8 @@ MODS		:=	kal
 all: $(MODS)
 
 kal:
-	$(CPP) $(CFLAGS) $(LDFLAGS) -o $(addsuffix .so, $@) $(addsuffix .cpp, $@)
+	$(CPP) $(CPPFLAGS) $(LDFLAGS) -o $@ main.cpp lexer.cpp ast.cpp
 
 clean:
-	@$(RM) -rf $(MODS) *.so *.dSYM
+	$(RM) -rf $(MODS) *.dSYM
 
