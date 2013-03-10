@@ -11,6 +11,41 @@
 using namespace llvm;
 
 
+static std::map<char, int> BinopPrecedence;
+extern int CurTok;
+
+
+// top ::= definition | external | expression | ';'
+static void MainLoop() {
+
+    while( 1 ) {
+
+        fprintf( stderr, "ready> " );
+        switch( CurTok ) {
+
+        case tok_eof:
+            return;
+
+        case ';':
+            getNextToken();
+            break;
+
+        case tok_def:
+            HandleDefinition();
+            break;
+
+        case tok_extern:
+            HandleExtern();
+            break;
+
+        default:
+            HandleTopLevelExpression();
+            break;
+        }
+    }
+}
+
+
 int main( int argc, char **argv ) {
 
 

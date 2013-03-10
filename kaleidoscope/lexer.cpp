@@ -11,8 +11,8 @@
 using namespace llvm;
 
 
-static std::string IdentifierStr;
-static double NumVal;
+std::string IdentifierStr;
+double NumVal;
 
 
 //

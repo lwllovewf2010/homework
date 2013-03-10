@@ -17,7 +17,7 @@ MODS		:=	kal
 all: $(MODS)
 
 kal:
-	$(CPP) $(CPPFLAGS) $(LDFLAGS) -o $@ main.cpp lexer.cpp ast.cpp
+	$(CPP) $(CPPFLAGS) $(LDFLAGS) -o $@ main.cpp lexer.cpp ast.cpp parser.cpp
 
 clean:
 	$(RM) -rf $(MODS) *.dSYM

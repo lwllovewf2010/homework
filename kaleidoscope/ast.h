@@ -84,3 +84,9 @@ public:
 };
 
 
+int getNextToken();
+void HandleDefinition();
+void HandleExtern();
+void HandleTopLevelExpression();
+
+

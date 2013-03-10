@@ -9,4 +9,5 @@ enum Token {
 	tok_number = -5,
 };
 
+int gettok();
 

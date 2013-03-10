@@ -11,6 +11,10 @@
 using namespace llvm;
 
 
+extern std::string IdentifierStr;
+extern double NumVal;
+
+
 //
 // Parser
 //
@@ -18,7 +22,7 @@ using namespace llvm;
 // CurTok/getNextToken - Provide a simple token buffer. CurTok is the current
 // token the parser is looking at. getNextToken reads another token from the
 // Lexer and updates CurTok with its results.
-static int CurTok;
+int CurTok;
 
 
 int getNextToken() {
@@ -265,7 +269,7 @@ static FunctionAST *ParseDefinition() {
 
 
 // topLevelexpr ::= expression
-static FunctionAST *ParseTpLevelExpr() {
+static FunctionAST *ParseTopLevelExpr() {
 
 	if( ExprAST *E = ParseExpression() ) {
 
@@ -289,7 +293,7 @@ static PrototypeAST *ParseExtern() {
 //
 // Top-Level parsing
 //
-static void HandleDefinition() {
+void HandleDefinition() {
 
 	if( ParseDefinition() ) {
 
@@ -303,7 +307,7 @@ static void HandleDefinition() {
 }
 
 
-static void HandleExtern() {
+void HandleExtern() {
 
 	if( ParseExtern() ) {
 
@@ -317,7 +321,7 @@ static void HandleExtern() {
 }
 
 
-static void HandleTopLevelExpression() {
+void HandleTopLevelExpression() {
 
 	// Evaluate a top-level expression into an anonymous function.
 	if( ParseTopLevelExpr() ) {
@@ -329,37 +333,6 @@ static void HandleTopLevelExpression() {
 		// Skip token for error recovery
 		getNextToken();
 	}
-}
-
-
-// top ::= definition | external | expression | ';'
-static void MainLoop() {
-
-	while( 1 ) {
-
-		fprintf( stderr, "ready> " );
-		switch( CurTok ) {
-
-		case tok_eof:
-			return;
-
-		case ';':
-			getNextToken();
-			break;
-
-		case tok_def:
-			HandleDefinition();
-			break;
-
-		case tok_extern:
-			HandleExtern();
-			break;
-
-		default:
-			handleTopLevelExpression();
-			break;
-		}
-	} 
 }
 
 
