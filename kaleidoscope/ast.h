@@ -84,9 +84,11 @@ public:
 };
 
 
+// Prototypes
 int getNextToken();
 void HandleDefinition();
 void HandleExtern();
 void HandleTopLevelExpression();
+static ExprAST *ParseExpression();
 
 

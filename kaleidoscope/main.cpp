@@ -11,7 +11,7 @@
 using namespace llvm;
 
 
-static std::map<char, int> BinopPrecedence;
+extern std::map<char, int> BinopPrecedence;
 extern int CurTok;
 
 
@@ -47,7 +47,6 @@ static void MainLoop() {
 
 
 int main( int argc, char **argv ) {
-
 
 	// Install standard binary operators.
 	// 1 is lowest precedence.

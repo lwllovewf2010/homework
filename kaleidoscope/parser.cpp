@@ -11,13 +11,19 @@
 using namespace llvm;
 
 
-extern std::string IdentifierStr;
-extern double NumVal;
-
-
 //
 // Parser
 //
+
+
+// BinopPrecedence - This holds the precedence for each binary operator that is
+// defined.
+std::map<char, int> BinopPrecedence;
+
+
+extern std::string IdentifierStr;
+extern double NumVal;
+
 
 // CurTok/getNextToken - Provide a simple token buffer. CurTok is the current
 // token the parser is looking at. getNextToken reads another token from the
@@ -31,14 +37,10 @@ int getNextToken() {
 }
 
 
-// BinopPrecedence - This holds the precedence for each binary operator that is
-// defined.
-static std::map<char, int> BinopPrecedence;
- 
-
 // GetTokPrecedence - Get the precedence of the pending binary operator token.
 int GetTokPrecedence() {
 
+	// Make sure it's a ASCII character
 	if( !isascii( CurTok ) )
 		return -1;
 
@@ -71,9 +73,6 @@ FunctionAST *ErrorF( const char *str ) {
 	Error( str );
 	return 0;
 }
-
-
-static ExprAST *ParseExpression();
 
 
 // identifierexpr
@@ -311,7 +310,7 @@ void HandleExtern() {
 
 	if( ParseExtern() ) {
 
-		fprintf( stderr, "Pased an extrn\n" );
+		fprintf( stderr, "Parsed an extrn\n" );
 	}
 	else {
 
