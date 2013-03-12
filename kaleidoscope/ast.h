@@ -8,6 +8,7 @@ class ExprAST {
 
 public:
 	virtual ~ExprAST() {}
+	virtual Value *Codegen() = 0;
 };
 
 
@@ -18,7 +19,7 @@ class NumberExprAST : public ExprAST {
 
 public:
 	NumberExprAST( double val ) : Val( val ) {}
-
+	virtual Value *Codegen();
 };
 
 
@@ -29,7 +30,7 @@ class VariableExprAST : public ExprAST {
 
 public:
 	VariableExprAST( const std::string &name ) : Name( name ) {}
-
+	virtual Value *Codegen();
 };
 
 
@@ -43,6 +44,7 @@ public:
 	BinaryExprAST( char op, ExprAST *lhs, ExprAST *rhs )
 		: Op( op ), LHS( lhs ), RHS( rhs ) {}
 
+	virtual Value *Codegen();
 };
 
 
@@ -55,6 +57,8 @@ class CallExprAST : public ExprAST {
 public:
 	CallExprAST( const std::string &callee, std::vector<ExprAST *> &args )
 		: Callee( callee ), Args( args ) {}
+
+	virtual Value *Codegen();
 };
 
 
@@ -69,6 +73,8 @@ class PrototypeAST {
 public:
 	PrototypeAST( const std::string &name, const std::vector<std::string> &args ) 
 		: Name( name ), Args( args ) {}
+
+	Function *Codegen();
 };
 
 
@@ -81,6 +87,8 @@ class FunctionAST {
 public:
 	FunctionAST( PrototypeAST *proto, ExprAST *body )
 		: Proto( proto ), Body( body ) {}
+
+	Function *Codegen();
 };
 
 
@@ -89,6 +97,8 @@ int getNextToken();
 void HandleDefinition();
 void HandleExtern();
 void HandleTopLevelExpression();
-static ExprAST *ParseExpression();
+ExprAST *ParseExpression();
+ExprAST *Error( const char *str );
+FunctionAST *ErrorF( const char *str );
 
 

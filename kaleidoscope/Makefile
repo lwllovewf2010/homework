@@ -1,5 +1,5 @@
-CODEDIR		:=	/Users/merck/References/compiler
-SWDIR		:=	/Users/merck/Sw
+CODEDIR		:=	/home/merck/Sw
+SWDIR		:=	/home/merck/Sw
 
 LLVMSRC		:=	$(CODEDIR)/llvm-3.2.src
 LLVMBIN		:=	$(SWDIR)/llvm
@@ -10,14 +10,14 @@ LLVMCFG		:=	$(LLVMBPATH)/llvm-config
 CC			:=	$(LLVMBPATH)/clang
 CPP			:=	$(LLVMBPATH)/clang++
 CPPFLAGS	:=	-O3 -Wall $(shell $(LLVMCFG) --cxxflags)
-LDFLAGS		:=	$(shell $(LLVMCFG) --ldflags --libs all)
+LDFLAGS		:=	$(shell $(LLVMCFG) --ldflags --libs engine)
 
 MODS		:=	kal
 
 all: $(MODS)
 
 kal:
-	$(CPP) $(CPPFLAGS) $(LDFLAGS) -o $@ main.cpp lexer.cpp ast.cpp parser.cpp
+	$(CPP) -o $@ main.cpp lexer.cpp parser.cpp codegen.cpp $(CPPFLAGS) $(LDFLAGS)
 
 clean:
 	$(RM) -rf $(MODS) *.dSYM

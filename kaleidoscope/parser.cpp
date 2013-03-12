@@ -1,14 +1,20 @@
 #include "llvm/Support/raw_ostream.h"
+#include "llvm/DerivedTypes.h"
+#include "llvm/IRBuilder.h"
+#include "llvm/LLVMContext.h"
+#include "llvm/Module.h"
+#include "llvm/Analysis/Verifier.h"
+
 #include <cstdio>
 #include <cstdlib>
 #include <string>
 #include <map>
 #include <vector>
 
+using namespace llvm;
+
 #include "token.h"
 #include "ast.h"
-
-using namespace llvm;
 
 
 //
@@ -187,7 +193,7 @@ static ExprAST *ParseBinOpRHS( int ExprPrec, ExprAST *LHS ) {
 
 		// Okay, we know this is a binop
 		int BinOp = CurTok;
-		getNextToken;		// eat binop
+		getNextToken();		// eat binop
 
 		// Parse the primary expression after the binary operator
 		ExprAST *RHS = ParsePrimary();
@@ -212,7 +218,7 @@ static ExprAST *ParseBinOpRHS( int ExprPrec, ExprAST *LHS ) {
 
 // expression
 //   ::= primary binoprhs
-static ExprAST *ParseExpression() {
+ExprAST *ParseExpression() {
 
 	ExprAST *LHS = ParsePrimary();
 
@@ -231,7 +237,7 @@ static PrototypeAST *ParsePrototype() {
 		return ErrorP( "Expected function name in prototype" );
 
 	std::string FnName = IdentifierStr;
-	getNextToken();
+	getNextToken(); // eat id
 
 	if( CurTok != '(' )
 		return ErrorP( "Expected '(' in prototype" );
@@ -260,6 +266,7 @@ static FunctionAST *ParseDefinition() {
 	if( Proto == 0 )
 		return 0;
 
+	// Handle the body of the function
 	if( ExprAST *E = ParseExpression() )
 		return new FunctionAST( Proto, E );
 
@@ -294,9 +301,13 @@ static PrototypeAST *ParseExtern() {
 //
 void HandleDefinition() {
 
-	if( ParseDefinition() ) {
+	if( FunctionAST *F = ParseDefinition() ) {
 
-		fprintf( stderr, "Parsed a function defintion.\n" );
+		if( Function *LF = F->Codegen() ) {
+
+			fprintf( stderr, "Read function defintion:" );
+			LF->dump();
+		}
 	}
 	else {
 
@@ -308,9 +319,13 @@ void HandleDefinition() {
 
 void HandleExtern() {
 
-	if( ParseExtern() ) {
+	if( PrototypeAST *P = ParseExtern() ) {
 
-		fprintf( stderr, "Parsed an extrn\n" );
+		if( Function *F = P->Codegen() ) {
+
+			fprintf( stderr, "Read extern:" );
+			F->dump();
+		}
 	}
 	else {
 
@@ -323,9 +338,13 @@ void HandleExtern() {
 void HandleTopLevelExpression() {
 
 	// Evaluate a top-level expression into an anonymous function.
-	if( ParseTopLevelExpr() ) {
+	if( FunctionAST *F = ParseTopLevelExpr() ) {
 
-		fprintf( stderr, "Parsed a top-level expr\n" );
+		if( Function *LF = F->Codegen() ) {
+
+			fprintf( stderr, "Read top-level experssion:" );
+			LF->dump();
+		}
 	}
 	else {
 

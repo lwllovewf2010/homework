@@ -1,5 +1,6 @@
 
 
+// Enumeration
 enum Token {
 
 	tok_eof = -1,
@@ -9,5 +10,8 @@ enum Token {
 	tok_number = -5,
 };
 
+
+// Prototypes
 int gettok();
+
 
