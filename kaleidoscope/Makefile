@@ -13,12 +13,13 @@ CPPFLAGS	:=	-O3 -Wall $(shell $(LLVMCFG) --cxxflags)
 LDFLAGS		:=	$(shell $(LLVMCFG) --ldflags --libs engine)
 
 MODS		:=	kal
+FILES		:=	main.cpp lexer.cpp parser.cpp codegen.cpp
 
 all: $(MODS)
 
 kal:
-	$(CPP) -o $@ main.cpp lexer.cpp parser.cpp codegen.cpp $(CPPFLAGS) $(LDFLAGS)
+	@$(CPP) -o $@ $(FILES) $(CPPFLAGS) $(LDFLAGS)
 
 clean:
-	$(RM) -rf $(MODS) *.dSYM
+	@$(RM) -rf $(MODS) *.dSYM
 
