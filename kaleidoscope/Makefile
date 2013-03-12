@@ -1,5 +1,12 @@
+OS			:=	$(shell uname -s)
+
+ifeq ($(OS), Darwin)
+CODEDIR		:=	/Users/merck/References/compiler
+SWDIR		:=	/Users/merck/Sw
+else
 CODEDIR		:=	/home/merck/Sw
 SWDIR		:=	/home/merck/Sw
+endif
 
 LLVMSRC		:=	$(CODEDIR)/llvm-3.2.src
 LLVMBIN		:=	$(SWDIR)/llvm
