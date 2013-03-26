@@ -4,6 +4,7 @@
 #include "llvm/LLVMContext.h"
 #include "llvm/Module.h"
 #include "llvm/Analysis/Verifier.h"
+#include "llvm/ExecutionEngine/JIT.h"
 
 #include <cstdio>
 #include <cstdlib>
@@ -29,6 +30,7 @@ std::map<char, int> BinopPrecedence;
 
 extern std::string IdentifierStr;
 extern double NumVal;
+ExecutionEngine *TheExecutionEngine;
 
 
 // CurTok/getNextToken - Provide a simple token buffer. CurTok is the current
@@ -344,6 +346,14 @@ void HandleTopLevelExpression() {
 
 			fprintf( stderr, "Read top-level experssion:" );
 			LF->dump();
+
+			// JIT the function, returning a function pointer
+			void *FPtr = TheExecutionEngine->getPointerToFunction( LF );
+
+			// Case it to the right type (takes no arguments, returns a 
+			// double) so we can call it as a native function.
+			double (*FP)() = (double (*)())(intptr_t)FPtr;
+			fprintf( stderr, "Evaluated to %f\n", FP() );
 		}
 	}
 	else {

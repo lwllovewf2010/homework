@@ -18,6 +18,7 @@ CC			:=	$(LLVMBPATH)/clang
 CPP			:=	$(LLVMBPATH)/clang++
 CPPFLAGS	:=	-O3 -Wall $(shell $(LLVMCFG) --cxxflags)
 LDFLAGS		:=	$(shell $(LLVMCFG) --ldflags --libs engine)
+LDFLAGS		+=	-rdynamic
 
 MODS		:=	kal
 FILES		:=	main.cpp lexer.cpp parser.cpp codegen.cpp

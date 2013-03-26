@@ -4,6 +4,7 @@
 #include "llvm/LLVMContext.h"
 #include "llvm/Module.h"
 #include "llvm/Analysis/Verifier.h"
+#include "llvm/PassManager.h"
 
 #include <cstdio>
 #include <cstdlib>
@@ -23,6 +24,7 @@ using namespace llvm;
 Module *TheModule;
 IRBuilder<> Builder( getGlobalContext() );
 std::map<std::string, Value *> NamedValues;
+FunctionPassManager *TheFPM;
 
 
 Value *ErrorV( const char *Str ) {
@@ -168,6 +170,9 @@ Function *FunctionAST::Codegen() {
 
 		// Validate the generated code, checking for consistency
 		verifyFunction( *TheFunction );
+
+		// Optimize the function.
+		TheFPM->run( *TheFunction );
 
 		return TheFunction;
 	}
