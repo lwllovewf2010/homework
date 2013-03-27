@@ -105,6 +105,22 @@ public:
 };
 
 
+// ForExprAST - Expression class for for/in
+class ForExprAST : public ExprAST {
+
+	std::string VarName;
+	ExprAST *Start, *End, *Step, *Body;
+
+public:
+	ForExprAST( const std::string &varname, ExprAST *start, ExprAST *end,
+				ExprAST *step, ExprAST *body )
+		: VarName( varname ), Start( start ), End( end ), Step( step ), 
+		Body( body ) {}
+
+	virtual Value *Codegen();
+};
+
+
 // Prototypes
 int getNextToken();
 void HandleDefinition();

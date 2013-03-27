@@ -188,6 +188,56 @@ ExprAST *ParseIfExpr() {
 }
 
 
+// forexpr ::= 'for' identifier '=' expr ',' (',' expr)? 'in' expression
+ExprAST *ParseForExpr() {
+
+	getNextToken(); // eat the for
+
+	if( CurTok != tok_identifier )
+		return Error( "expected identifier after for" );
+
+	std::string IdName = IdentifierStr;
+	getNextToken();
+
+	if( CurTok != '=' )
+		return Error( "expected '=' after for" );
+	getNextToken(); // eat '='
+
+
+	ExprAST *Start = ParseExpression();
+	if( Start == 0 )
+		return 0;
+
+	if( CurTok != ',' )
+		return Error( "expected ',' after for start value" );
+	getNextToken();
+
+	ExprAST *End = ParseExpression();
+	if( End == 0 )
+		return 0;
+
+	// The step value if optional
+	ExprAST *Step = 0;
+	if( CurTok == ',' ) {
+
+		getNextToken();
+		Step = ParseExpression();
+		if( Step == 0 )
+			return 0;
+	}
+
+	if( CurTok != tok_in )
+		return Error( "expected 'in' after for" );
+	getNextToken(); // eat 'in'
+
+	ExprAST *Body = ParseExpression();
+	if( Body == 0 )
+		return 0;
+
+	return new ForExprAST( IdName, Start, End, Step, Body );
+}
+
+
 // primary
 //   ::= identifierexpr
 //   ::= numberexpr
@@ -210,6 +260,9 @@ static ExprAST *ParsePrimary() {
 
 	case tok_if:
 		return ParseIfExpr();
+
+	case tok_for:
+		return ParseForExpr();
 	}
 }
 
