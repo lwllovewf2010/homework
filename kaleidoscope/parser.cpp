@@ -267,6 +267,25 @@ static ExprAST *ParsePrimary() {
 }
 
 
+// unary
+//   ::= primary
+//   ::= '!' unary
+static ExprAST *ParseUnary() {
+
+	// If the current token is not an operator, it must be primary expr.
+	if( !isascii( CurTok ) || CurTok == '(' || CurTok == ',' )
+		return ParsePrimary();
+
+	// If this is a unary operator, read it.
+	int Opc = CurTok;
+	getNextToken();
+	if( ExprAST *Operand = ParseUnary() )
+		return new UnaryExprAST( Opc, Operand );
+
+	return 0;
+}
+
+
 // binoprhs
 //   ::= ('+' primary)*
 static ExprAST *ParseBinOpRHS( int ExprPrec, ExprAST *LHS ) {
@@ -285,8 +304,8 @@ static ExprAST *ParseBinOpRHS( int ExprPrec, ExprAST *LHS ) {
 		int BinOp = CurTok;
 		getNextToken();		// eat binop
 
-		// Parse the primary expression after the binary operator
-		ExprAST *RHS = ParsePrimary();
+		// Parse the unary expression after binary operator
+		ExprAST *RHS = ParseUnary();
 		if( !RHS )
 			return 0;
 
@@ -307,10 +326,11 @@ static ExprAST *ParseBinOpRHS( int ExprPrec, ExprAST *LHS ) {
 
 
 // expression
-//   ::= primary binoprhs
+//   ::= unary binoprhs
+//
 ExprAST *ParseExpression() {
 
-	ExprAST *LHS = ParsePrimary();
+	ExprAST *LHS = ParseUnary();
 
 	if( !LHS )
 		return 0;
@@ -322,6 +342,7 @@ ExprAST *ParseExpression() {
 // prototype
 //   ::= id '(' id* ')'
 //   ::= binary LETTER number? (id, id)
+//   ::= unary LETTER (id)
 static PrototypeAST *ParsePrototype() {
 
 	std::string FnName;
@@ -337,6 +358,16 @@ static PrototypeAST *ParsePrototype() {
 	case tok_identifier:
 		FnName = IdentifierStr;
 		Kind = 0;
+		getNextToken();
+		break;
+
+	case tok_unary:
+		getNextToken();
+		if( !isascii( CurTok ) )
+			return ErrorP( "Expected unary operator" );
+		FnName = "unary";
+		FnName += (char)CurTok;
+		Kind = 1;
 		getNextToken();
 		break;
 

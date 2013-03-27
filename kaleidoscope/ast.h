@@ -139,6 +139,20 @@ public:
 };
 
 
+// UnaryExprAST - Expression class for a unary operator.
+class UnaryExprAST : public ExprAST {
+
+	char Opcode;
+	ExprAST *Operand;
+
+public:
+	UnaryExprAST( char opcode, ExprAST *operand )
+	: Opcode( opcode ), Operand( operand ) {}
+
+	virtual Value *Codegen();
+};
+
+
 // Prototypes
 int getNextToken();
 void HandleDefinition();

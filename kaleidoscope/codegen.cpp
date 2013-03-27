@@ -364,3 +364,18 @@ Value *ForExprAST::Codegen() {
 }
 
 
+Value *UnaryExprAST::Codegen() {
+
+	Value *OperandV = Operand->Codegen();
+
+	if( OperandV == 0 )
+		return 0;
+
+	Function *F = TheModule->getFunction( std::string( "unary" ) + Opcode );
+	if( F == 0 )
+		return ErrorV( "Unknown unary operator" );
+
+	return Builder.CreateCall( F, OperandV, "unop" );
+}
+
+
