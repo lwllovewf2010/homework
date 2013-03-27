@@ -156,6 +156,38 @@ static ExprAST *ParseParenExpr() {
 }
 
 
+// Ifexpr ::= 'if' expression 'then' expression 'else' expression
+ExprAST *ParseIfExpr() {
+
+	getNextToken(); // eat the if
+
+	// condition.
+	ExprAST *Cond = ParseExpression();
+	if( !Cond )
+		return 0;
+
+	if( CurTok != tok_then )
+		return Error( "expected then" );
+
+	getNextToken(); // eat the then
+
+	ExprAST *Then = ParseExpression();
+	if( Then == 0 )
+		return 0;
+
+	if( CurTok != tok_else )
+		return Error( "expected else" );
+
+	getNextToken();
+
+	ExprAST *Else = ParseExpression();
+	if( !Else )
+		return 0;
+
+	return new IfExprAST( Cond, Then, Else );
+}
+
+
 // primary
 //   ::= identifierexpr
 //   ::= numberexpr
@@ -175,6 +207,9 @@ static ExprAST *ParsePrimary() {
 
 	case '(':
 		return ParseParenExpr();
+
+	case tok_if:
+		return ParseIfExpr();
 	}
 }
 

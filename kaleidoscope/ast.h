@@ -92,6 +92,19 @@ public:
 };
 
 
+// IfExprAST - Expression class for if/then/else.
+class IfExprAST : public ExprAST {
+
+	ExprAST *Cond, *Then, *Else;
+
+public:
+	IfExprAST( ExprAST *cond, ExprAST *then, ExprAST *_else )
+		: Cond( cond ), Then( then ), Else( _else ) {}
+
+	virtual Value *Codegen();
+};
+
+
 // Prototypes
 int getNextToken();
 void HandleDefinition();
