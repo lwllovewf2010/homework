@@ -25,6 +25,7 @@ Module *TheModule;
 IRBuilder<> Builder( getGlobalContext() );
 std::map<std::string, Value *> NamedValues;
 FunctionPassManager *TheFPM;
+extern std::map<char, int> BinopPrecedence;
 
 
 Value *ErrorV( const char *Str ) {
@@ -73,8 +74,16 @@ Value *BinaryExprAST::Codegen() {
 		return Builder.CreateUIToFP( L, Type::getDoubleTy( getGlobalContext() ), "booltmp" );
 
 	default:
-		return ErrorV( "Invalid binary operator" );
+		break;
 	}
+
+	// If it wasn't a builtin binary operator, it must be a user defined one.
+	// Emit a call to it.
+	Function *F = TheModule->getFunction( std::string( "binary" ) + Op );
+	assert( F && "binary operator not found!" );
+
+	Value *Ops[ 2 ] = { L, R };
+	return Builder.CreateCall( F, Ops, "binop" );
 }
 
 
@@ -158,6 +167,10 @@ Function *FunctionAST::Codegen() {
 	Function *TheFunction = Proto->Codegen();
 	if( TheFunction == 0 )
 		return 0;
+
+	// If this is an operator, install it
+	if( Proto->isBinaryOp() )
+		BinopPrecedence[ Proto->getOperatorName() ] = Proto->getBinaryPrecedence();
 
 	// Create a new basic block to start insertion into.
 	BasicBlock *BB = BasicBlock::Create( getGlobalContext(), "entry", TheFunction );

@@ -70,9 +70,27 @@ class PrototypeAST {
 	std::string Name;
 	std::vector<std::string> Args;
 
+	bool isOperator;
+	unsigned Precedence;	// Precedence if a binary op.
+
 public:
-	PrototypeAST( const std::string &name, const std::vector<std::string> &args ) 
-		: Name( name ), Args( args ) {}
+	PrototypeAST( const std::string &name, const std::vector<std::string> &args,
+					bool isoperator = false, unsigned prec = 0 ) 
+		: Name( name ), Args( args ), isOperator( isoperator ), Precedence( prec ) {}
+
+	bool isUnaryOp() const { return isOperator && Args.size() == 1; }
+	bool isBinaryOp() const { return isOperator && Args.size() == 2; }
+
+	char getOperatorName() const {
+
+		assert( isUnaryOp() || isBinaryOp() );
+		return Name[ Name.size() - 1 ];
+	}
+
+	unsigned getBinaryPrecedence() const {
+
+		return Precedence;
+	}
 
 	Function *Codegen();
 };

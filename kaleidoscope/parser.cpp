@@ -321,13 +321,44 @@ ExprAST *ParseExpression() {
 
 // prototype
 //   ::= id '(' id* ')'
+//   ::= binary LETTER number? (id, id)
 static PrototypeAST *ParsePrototype() {
 
-	if( CurTok != tok_identifier )
+	std::string FnName;
+
+	unsigned Kind = 0; // 0 = identifier, 1 = unary, 2 = binary
+	unsigned BinaryPrecedence = 30;
+
+	switch( CurTok ) {
+
+	default:
 		return ErrorP( "Expected function name in prototype" );
 
-	std::string FnName = IdentifierStr;
-	getNextToken(); // eat id
+	case tok_identifier:
+		FnName = IdentifierStr;
+		Kind = 0;
+		getNextToken();
+		break;
+
+	case tok_binary:
+		getNextToken();
+		if( !isascii( CurTok ) )
+			return ErrorP( "Expected binary operator" );
+		FnName = "binary";
+		FnName += (char)CurTok;
+		Kind = 2;
+		getNextToken();
+
+		// Read the precedence if present
+		if( CurTok == tok_number ) {
+
+			if( NumVal < 1 || NumVal > 100 )
+				return ErrorP( "Invalid precedence: must be 1..100" );
+			BinaryPrecedence = (unsigned)NumVal;
+			getNextToken();
+		}
+		break;
+	}
 
 	if( CurTok != '(' )
 		return ErrorP( "Expected '(' in prototype" );
@@ -342,7 +373,11 @@ static PrototypeAST *ParsePrototype() {
 	// success.
 	getNextToken();		// eat ')'.
 
-	return new PrototypeAST( FnName, ArgNames );
+	// Verify right number of names for operator
+	if( Kind && ArgNames.size() != Kind )
+		return ErrorP( "Invalid number of operands for operator" );
+
+	return new PrototypeAST( FnName, ArgNames, Kind != 0, BinaryPrecedence );
 }
 
 
