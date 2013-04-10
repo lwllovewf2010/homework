@@ -17,7 +17,7 @@ LLVMCFG		:=	$(LLVMBPATH)/llvm-config
 CC			:=	$(LLVMBPATH)/clang
 CPP			:=	$(LLVMBPATH)/clang++
 CPPFLAGS	:=	-O3 -Wall $(shell $(LLVMCFG) --cxxflags)
-LDFLAGS		:=	$(shell $(LLVMCFG) --ldflags --libs engine)
+LDFLAGS		:=	$(shell $(LLVMCFG) --ldflags --libs core jit native)
 LDFLAGS		+=	-rdynamic
 
 MODS		:=	kal

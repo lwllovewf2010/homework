@@ -38,6 +38,14 @@ double putchard( double x ) {
 }
 
 
+extern "C"
+double printd( double X ) {
+
+	printf( "%f\n", X );
+	return 0;
+}
+
+
 // top ::= definition | external | expression | ';'
 static void MainLoop() {
 
