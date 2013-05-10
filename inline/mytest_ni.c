@@ -4,7 +4,7 @@
 # define inline            inline          __attribute__((always_inline))
 
 
-int test_wrap( int (*enter)(int *a, int *b, int c), int *x, int *y, int z ) {
+__attribute__((fastcall)) int test_wrap( int (*enter)(int *a, int *b, int c), int *x, int *y, int z ) {
 
 	return enter( x, y, z );
 }

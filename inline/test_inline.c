@@ -56,7 +56,7 @@ struct cpuidle_driver {
 };
 
 
-int cpuidle_wrap_enter(struct cpuidle_device *dev,
+__attribute__((fastcall)) int cpuidle_wrap_enter(struct cpuidle_device *dev,
                 struct cpuidle_driver *drv, int index,
                 int (*enter)(struct cpuidle_device *dev,
                     struct cpuidle_driver *drv, int index))
@@ -73,7 +73,7 @@ int cpuidle_wrap_enter(struct cpuidle_device *dev,
 }
 
 
-static inline int cpuidle_enter(struct cpuidle_device *dev,
+__attribute__((fastcall)) static inline int cpuidle_enter(struct cpuidle_device *dev,
                 struct cpuidle_driver *drv, int index)
 {
     struct cpuidle_state *target_state = &drv->states[index];
@@ -81,14 +81,14 @@ static inline int cpuidle_enter(struct cpuidle_device *dev,
 }
 
 
-static inline int cpuidle_enter_tk(struct cpuidle_device *dev,
+__attribute__((fastcall)) static inline int cpuidle_enter_tk(struct cpuidle_device *dev,
                    struct cpuidle_driver *drv, int index)
 {
     return cpuidle_wrap_enter(dev, drv, index, cpuidle_enter);
 }
 
 
-typedef int (*cpuidle_enter_t)(struct cpuidle_device *dev,
+typedef __attribute__((fastcall)) int (*cpuidle_enter_t)(struct cpuidle_device *dev,
                    struct cpuidle_driver *drv, int index);
 
 
