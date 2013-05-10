@@ -1,20 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+# define inline            inline          __attribute__((always_inline))
 
-__attribute__((fastcall)) static inline int test1( int *a, int *b, int c ) {
 
-	return *a + *b + c;
+int test_wrap( int (*enter)(int *a, int *b, int c), int *x, int *y, int z ) {
+
+	return enter( x, y, z );
 }
 
 
-__attribute__((fastcall)) static inline int test2( int *a, int *b, int c ) {
+__attribute__((fastcall)) static inline int test_enter( int *a, int *b, int c ) {
 
-	return 123 + *a - *b + c;
+    return 123 + *a - *b + c;
 }
 
 
-typedef int (*func_test_t)( int *a, int *b, int c );
+__attribute__((fastcall)) static inline int test_tk( int *a, int *b, int c ) {
+
+    return test_wrap( test_enter, a, b , c );
+}
+
+
+typedef __attribute__((fastcall)) int (*func_test_t)( int *a, int *b, int c );
 static func_test_t func_test_ops;
 
 
@@ -34,10 +42,10 @@ int main( int argc, char **argv ) {
 	printf( "en = %d\n", en );
 
 	func_test_ops = en ?
-		test1 : test2;
+		test_tk : test_enter;
 
-	printf( "test1 = %p\n", test1 );
-	printf( "test2 = %p\n", test2 );
+	printf( "tk    = %p\n", test_tk );
+	printf( "enter = %p\n", test_enter );
 
 	ret = func_test_ops( &a, &b, 67 );
 
