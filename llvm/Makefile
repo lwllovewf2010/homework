@@ -23,7 +23,7 @@ LD			:=	$(LLVMBPATH)/llc
 CFLAGS      :=  -Wall $(shell $(LLVMCFG) --cxxflags)
 LDFLAGS     :=  $(shell $(LLVMCFG) --ldflags --libs all)
 
-C_MODS		:= hello.bc
+C_MODS		:= hello.bc krnoops.bc inline.bc
 AS_MODS		:= mytest.bin
 
 all: $(C_MODS) $(AS_MODS)
@@ -31,12 +31,14 @@ all: $(C_MODS) $(AS_MODS)
 %.bc: %.c
 	@$(CC) -emit-llvm $< -c -o $@
 	@$(DIS) $@ -o $(@:%.bc=%.ll)
+	@$(LD) $@ -o $(@:%.bc=%.s)
+	@$(CC) $(@:%.bc=%.s) -o $(@:%.bc=%.bin)
 
 %.bin: %.ll
-	$(AS) $< -o $(<:%.ll=%.bc)
-	$(LD) $(<:%.ll=%.bc) -o $(<:%.ll=%.s)
-	$(CC) $(<:%.ll=%.s) -o $@
+	@$(AS) $< -o $(<:%.ll=%.bc)
+	@$(LD) $(<:%.ll=%.bc) -o $(<:%.ll=%.s)
+	@$(CC) $(<:%.ll=%.s) -o $@
 
 clean:
-	@$(RM) -f *.bc $(C_MODS:%.bc=%.ll) *.bin
+	@$(RM) -f *.s *.bc $(C_MODS:%.bc=%.ll) *.bin
 
