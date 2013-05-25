@@ -1,0 +1,183 @@
+Tmycltest
+v5
+r1
+cCheck dependencies
+cCompile /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+cCreate i386 bitcode from /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+cCompileC build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/main.o /Users/merck/Projects/homework/opencl/mycltest/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mykernel.cl.o /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCreate x86_64 bitcode from /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+cCreate gpu_32 bitcode from /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+cLd /Users/merck/Projects/homework/opencl/build/Release/mycltest normal x86_64
+cGenerateDSYMFile /Users/merck/Projects/homework/opencl/build/Release/mycltest.dSYM /Users/merck/Projects/homework/opencl/build/Release/mycltest
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005177C9AA00000000000000AA
+t1366804906
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenCL.framework/Headers/opencl.h
+c0000000051079E3A00000000000001EF
+t1359453754
+s495
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenCL.framework/OpenCL
+c000000005145927E0000000000011434
+t1363513982
+s70708
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdio.h
+c0000000051079E3C0000000000004523
+t1359453756
+s17699
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/stdlib.h
+c0000000051079E3C0000000000003089
+t1359453756
+s12425
+
+N/Users/merck/Projects/homework/opencl/build/Release/OpenCL/mykernel.cl.gpu_32.bc
+t2
+s0
+
+N/Users/merck/Projects/homework/opencl/build/Release/OpenCL/mykernel.cl.i386.bc
+t2
+s0
+
+N/Users/merck/Projects/homework/opencl/build/Release/OpenCL/mykernel.cl.x86_64.bc
+t2
+s0
+
+N/Users/merck/Projects/homework/opencl/build/Release/mycltest
+t2
+s0
+
+N/Users/merck/Projects/homework/opencl/build/Release/mycltest.dSYM
+t2
+s0
+
+N/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.c
+t2
+s0
+
+N/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.h
+t2
+s0
+
+N/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mycltest.LinkFileList
+c000000005179580500000000000000E1
+t1366906885
+s225
+
+N/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mykernel.cl.o
+t2
+s0
+
+N/Users/merck/Projects/homework/opencl/mycltest/main.c
+c0000000050D1938F0000000000001B37
+t1355912079
+s6967
+i<stdio.h>
+i<stdlib.h>
+i<OpenCL/opencl.h>
+i"mykernel.cl.h"
+
+N/Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+c0000000050C1F24500000000000009F5
+t1354887749
+s2549
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesd251e2848f29b741^b7ef05858f29b741^---0#1#0#--18"Check dependencies36"15987FBD-D15B-4108-9E40-5AC8D0573F6D-
+
+CCompile /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+s388599685.029874
+e388599685.370260
+r1
+xCompile
+x/Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Compile mycltest/mykernel.cl0b0d08858f29b741^b4c85e858f29b741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/merck/Projects/homework/opencl/mycltest/mykernel.cl0000000000000000^385"Compile mycltest/mykernel.cl    cd /Users/merck/Projects/homework/opencl    /System/Library/Frameworks/OpenCL.framework/Libraries/openclc -x cl -cl-std=CL1.1 -cl-auto-vectorize-enable -gcl-bc-dir OpenCL -emit-gcl /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl -gcl-output-dir /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources36"AA3C051F-7987-48B2-A9F3-CCD527943AFF-
+
+CCompileC build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/main.o /Users/merck/Projects/homework/opencl/mycltest/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s388599685.379371
+e388599685.803060
+r1
+xCompileC
+xbuild/opencl.build/Release/mycltest.build/Objects-normal/x86_64/main.o
+x/Users/merck/Projects/homework/opencl/mycltest/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/merck/Projects/homework/opencl/mycltest/main.c734961858f29b741^e693cd858f29b741^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/merck/Projects/homework/opencl/mycltest/main.c0000000000000000^2586"CompileC build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/main.o mycltest/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/merck/Projects/homework/opencl    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-generated-files.hmap -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-own-target-headers.hmap -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-all-target-headers.hmap -iquote /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-project-headers.hmap -I/Users/merck/Projects/homework/opencl/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/x86_64 -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources -F/Users/merck/Projects/homework/opencl/build/Release -MMD -MT dependencies -MF /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/main.dia -c /Users/merck/Projects/homework/opencl/mycltest/main.c -o /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/main.o36"69C8595A-B38C-43DB-A7F9-4BA110EB2608-
+
+CCompileC build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mykernel.cl.o /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s388599685.379398
+e388599685.803067
+r1
+xCompileC
+xbuild/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mykernel.cl.o
+x/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.c1b4a61858f29b741^9fabcd858f29b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.c0000000000000000^2724"CompileC build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mykernel.cl.o build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/merck/Projects/homework/opencl    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-generated-files.hmap -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-own-target-headers.hmap -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-all-target-headers.hmap -iquote /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-project-headers.hmap -I/Users/merck/Projects/homework/opencl/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/x86_64 -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources -F/Users/merck/Projects/homework/opencl/build/Release -MMD -MT dependencies -MF /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mykernel.cl.d --serialize-diagnostics /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mykernel.cl.dia -c /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.c -o /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mykernel.cl.o36"524EE8B7-28C0-4950-82D4-1F44ACA882EE-
+
+CCreate gpu_32 bitcode from /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+s388599685.744336
+e388599685.974255
+r1
+xCreate
+xgpu_32
+xbitcode
+xfrom
+x/Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Create gpu_32 bitcode from mycltest/mykernel.cl82a9be858f29b741^1f68f9858f29b741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/merck/Projects/homework/opencl/mycltest/mykernel.cl0000000000000000^1432"Create gpu_32 bitcode from mycltest/mykernel.cl    cd /Users/merck/Projects/homework/opencl    /System/Library/Frameworks/OpenCL.framework/Libraries/openclc -x cl -cl-std=CL1.1 -Os -iquote /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-generated-files.hmap -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-own-target-headers.hmap -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-all-target-headers.hmap -iquote /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-project-headers.hmap -I/Users/merck/Projects/homework/opencl/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/x86_64 -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources -F/Users/merck/Projects/homework/opencl/build/Release -triple gpu_32-applecl-darwin -emit-llvm-bc /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl -o /Users/merck/Projects/homework/opencl/build/Release/OpenCL/mykernel.cl.gpu_32.bc36"F01891D1-2808-4824-9288-5912A918B447-
+
+CCreate i386 bitcode from /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+s388599685.379371
+e388599685.743321
+r1
+xCreate
+xi386
+xbitcode
+xfrom
+x/Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Create i386 bitcode from mycltest/mykernel.cl854161858f29b741^535bbe858f29b741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/merck/Projects/homework/opencl/mycltest/mykernel.cl0000000000000000^1426"Create i386 bitcode from mycltest/mykernel.cl    cd /Users/merck/Projects/homework/opencl    /System/Library/Frameworks/OpenCL.framework/Libraries/openclc -x cl -cl-std=CL1.1 -Os -iquote /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-generated-files.hmap -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-own-target-headers.hmap -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-all-target-headers.hmap -iquote /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-project-headers.hmap -I/Users/merck/Projects/homework/opencl/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/x86_64 -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources -F/Users/merck/Projects/homework/opencl/build/Release -triple i386-applecl-darwin -emit-llvm-bc /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl -o /Users/merck/Projects/homework/opencl/build/Release/OpenCL/mykernel.cl.i386.bc36"750CF1FF-5B59-406F-ACE9-6D23E456F3C4-
+
+CCreate x86_64 bitcode from /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+s388599685.379473
+e388599685.743092
+r1
+xCreate
+xx86_64
+xbitcode
+xfrom
+x/Users/merck/Projects/homework/opencl/mycltest/mykernel.cl
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Create x86_64 bitcode from mycltest/mykernel.cl204161858f29b741^e948be858f29b741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/merck/Projects/homework/opencl/mycltest/mykernel.cl0000000000000000^1432"Create x86_64 bitcode from mycltest/mykernel.cl    cd /Users/merck/Projects/homework/opencl    /System/Library/Frameworks/OpenCL.framework/Libraries/openclc -x cl -cl-std=CL1.1 -Os -iquote /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-generated-files.hmap -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-own-target-headers.hmap -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-all-target-headers.hmap -iquote /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/mycltest-project-headers.hmap -I/Users/merck/Projects/homework/opencl/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/x86_64 -I/Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources -F/Users/merck/Projects/homework/opencl/build/Release -triple x86_64-applecl-darwin -emit-llvm-bc /Users/merck/Projects/homework/opencl/mycltest/mykernel.cl -o /Users/merck/Projects/homework/opencl/build/Release/OpenCL/mykernel.cl.x86_64.bc36"35AFF5EE-F777-4B7D-A2B4-D321CDDDEBFC-
+
+CGenerateDSYMFile /Users/merck/Projects/homework/opencl/build/Release/mycltest.dSYM /Users/merck/Projects/homework/opencl/build/Release/mycltest
+s388599685.951784
+e388599685.982585
+r1
+xGenerateDSYMFile
+x/Users/merck/Projects/homework/opencl/build/Release/mycltest.dSYM
+x/Users/merck/Projects/homework/opencl/build/Release/mycltest
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Generate /Users/merck/Projects/homework/opencl/build/Release/mycltest.dSYM2fc3f3858f29b741^8f8afb858f29b741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/merck/Projects/homework/opencl/build/Release/mycltest.dSYM000000000080d041^343"GenerateDSYMFile build/Release/mycltest.dSYM build/Release/mycltest    cd /Users/merck/Projects/homework/opencl    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/merck/Projects/homework/opencl/build/Release/mycltest -o /Users/merck/Projects/homework/opencl/build/Release/mycltest.dSYM36"7AB26831-2644-4768-B443-8DC96C0DFD7A-
+
+CLd /Users/merck/Projects/homework/opencl/build/Release/mycltest normal x86_64
+s388599685.809934
+e388599685.944970
+r1
+xLd
+x/Users/merck/Projects/homework/opencl/build/Release/mycltest
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Link /Users/merck/Projects/homework/opencl/build/Release/mycltest6d73cf858f29b741^31eff1858f29b741^---0#0#0#--695"Ld build/Release/mycltest normal x86_64    cd /Users/merck/Projects/homework/opencl    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/merck/Projects/homework/opencl/build/Release -F/Users/merck/Projects/homework/opencl/build/Release -filelist /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mycltest.LinkFileList -mmacosx-version-min=10.8 -framework OpenCL -o /Users/merck/Projects/homework/opencl/build/Release/mycltest36"EE8F8878-D6F0-4A9E-9668-05CE77D050EC-
+

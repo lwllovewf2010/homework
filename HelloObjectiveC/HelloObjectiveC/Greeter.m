@@ -16,8 +16,10 @@
 }
 
 - (void) setGreetingText: (NSString*) newText
+                    test: (NSString *) myNewText
 {
     greetingText = newText;
+    greetingText = myNewText;
 }
 
 - (void) issueGreeting

@@ -9,6 +9,7 @@
 #include <iostream>
 #include <vector>
 #include <bitset>
+#include "DerivedClass.h"
 
 using namespace std;
 
@@ -22,7 +23,35 @@ int main() {
     
     vector<string> v1( 8, "Test" );
     string text = "Merck";
+    
+    TestClass *dc = new TestClass();
+    
+    dc->PerformTest( 456 );
+    dc->CheckTest();
+    dc->TestConst();
+    
+    delete dc;
+    
+    dc = new DerivedClass( 45 );
+    dc->PerformTest( 890 );
+    dc->CheckTest();
+    
+    delete dc;
+    
     v1.push_back( text );
+    
+    vector<int> ivec;
+    
+    ivec.reserve( 50 );
+    
+    cout << "Cap  = " << ivec.capacity() << "\n";
+    cout << "Size = " << ivec.size() << "\n";
+    
+    ivec.push_back( 123 );
+    ivec.push_back( 456 );
+    ivec.pop_back();
+    
+    cout << "Size = " << ivec.size() << "\n";
     
     cout << abc << endl;
     cout << "v1.size = " << v1.size() << endl;

@@ -1,0 +1,9 @@
+ffffffffffffffffffffffffffffffff a18adab64fe8972725ed153ea85256b0 ffffffffffffffffffffffffffffffff 0 /Users/merck/Projects/homework/opencl/build/Release/mycltest.dSYM
+0000000050c1f24500000000000009f5 12ce1337651a023700b94baf2ea3d4f7 ffffffffffffffffffffffffffffffff 0 /Users/merck/Projects/homework/opencl/build/Release/OpenCL/mykernel.cl.gpu_32.bc
+ffffffffffffffffffffffffffffffff cc4ff14031a5b485f69e9550479f747b ffffffffffffffffffffffffffffffff 0 /Users/merck/Projects/homework/opencl/build/Release/mycltest
+ffffffffffffffffffffffffffffffff 5c26e15b09b23c4c96d211a17875bf21 ffffffffffffffffffffffffffffffff 0 /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/main.o
+ffffffffffffffffffffffffffffffff dccfc0fbd855ba37301d5eff03bdc63c ffffffffffffffffffffffffffffffff 0 /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/Objects-normal/x86_64/mykernel.cl.o
+0000000050c1f24500000000000009f5 a12490a2623f5dbfa44889c03838b9d1 ffffffffffffffffffffffffffffffff 0 /Users/merck/Projects/homework/opencl/build/Release/OpenCL/mykernel.cl.i386.bc
+0000000050c1f24500000000000009f5 ea784d5c965e743616a975615fa3c8f8 ffffffffffffffffffffffffffffffff 0 /Users/merck/Projects/homework/opencl/build/Release/OpenCL/mykernel.cl.x86_64.bc
+0000000050c1f24500000000000009f5 f774be6ecf90f08eba1f4c2b93002c03 ffffffffffffffffffffffffffffffff 0 /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.c
+0000000050c1f24500000000000009f5 f774be6ecf90f08eba1f4c2b93002c03 ffffffffffffffffffffffffffffffff 0 /Users/merck/Projects/homework/opencl/build/opencl.build/Release/mycltest.build/DerivedSources/mykernel.cl.h

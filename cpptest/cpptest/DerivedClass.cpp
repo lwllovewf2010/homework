@@ -7,3 +7,29 @@
 //
 
 #include "DerivedClass.h"
+
+
+DerivedClass::DerivedClass() {
+
+    std::cout << "DerivedClass()\n";
+}
+
+
+DerivedClass::~DerivedClass() {
+
+    std::cout << "~DerivedClass()\n";
+}
+
+
+int DerivedClass::CheckTest() {
+
+    std::cout << "DerivedClass::CheckTest()\n";
+    return 1;
+}
+
+
+void DerivedClass::PerformTest( int abc ) {
+
+    std::cout << "DerivedClass::PerformTest( " << abc << " )\n";
+}
+

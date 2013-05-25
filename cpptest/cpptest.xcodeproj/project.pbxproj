@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6935E62416AD3885007DB978 /* TestClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6935E62216AD3885007DB978 /* TestClass.cpp */; };
+		6935E62816AD3988007DB978 /* DerivedClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6935E62616AD3988007DB978 /* DerivedClass.cpp */; };
 		69D51C1515D8FF76004069AF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69D51C1415D8FF76004069AF /* main.cpp */; };
 		69D51C1715D8FF76004069AF /* cpptest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 69D51C1615D8FF76004069AF /* cpptest.1 */; };
 /* End PBXBuildFile section */
@@ -25,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6935E62216AD3885007DB978 /* TestClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestClass.cpp; sourceTree = "<group>"; };
+		6935E62316AD3885007DB978 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		6935E62616AD3988007DB978 /* DerivedClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DerivedClass.cpp; sourceTree = "<group>"; };
+		6935E62716AD3988007DB978 /* DerivedClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DerivedClass.h; sourceTree = "<group>"; };
 		69D51C1015D8FF76004069AF /* cpptest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpptest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D51C1415D8FF76004069AF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		69D51C1615D8FF76004069AF /* cpptest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = cpptest.1; sourceTree = "<group>"; };
@@ -62,6 +68,10 @@
 			children = (
 				69D51C1415D8FF76004069AF /* main.cpp */,
 				69D51C1615D8FF76004069AF /* cpptest.1 */,
+				6935E62216AD3885007DB978 /* TestClass.cpp */,
+				6935E62316AD3885007DB978 /* TestClass.h */,
+				6935E62616AD3988007DB978 /* DerivedClass.cpp */,
+				6935E62716AD3988007DB978 /* DerivedClass.h */,
 			);
 			path = cpptest;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				69D51C1515D8FF76004069AF /* main.cpp in Sources */,
+				6935E62416AD3885007DB978 /* TestClass.cpp in Sources */,
+				6935E62816AD3988007DB978 /* DerivedClass.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +218,7 @@
 				69D51C1C15D8FF76004069AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

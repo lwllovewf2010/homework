@@ -14,3 +14,8 @@
 }
 
 @end
+
+@protocol MyProtocol
+-(void)encodeWithCoder:(NSCoder *)aCoder;
+-(void)initWithCoder:(NSCoder *)aDecoder;
+@end

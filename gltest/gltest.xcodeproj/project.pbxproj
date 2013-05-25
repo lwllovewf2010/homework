@@ -13,22 +13,9 @@
 		691A6E1815135FA500BDDD9E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 691A6E1615135FA500BDDD9E /* Credits.rtf */; };
 		691A6E1B15135FA500BDDD9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 691A6E1A15135FA500BDDD9E /* AppDelegate.m */; };
 		691A6E1E15135FA500BDDD9E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691A6E1C15135FA500BDDD9E /* MainMenu.xib */; };
-		691A6E2615135FA500BDDD9E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691A6E2515135FA500BDDD9E /* SenTestingKit.framework */; };
-		691A6E2715135FA500BDDD9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691A6E0715135FA500BDDD9E /* Cocoa.framework */; };
-		691A6E2F15135FA500BDDD9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 691A6E2D15135FA500BDDD9E /* InfoPlist.strings */; };
-		691A6E3215135FA500BDDD9E /* gltestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 691A6E3115135FA500BDDD9E /* gltestTests.m */; };
-		691A6E3C15135FC200BDDD9E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691A6E3B15135FC200BDDD9E /* GLUT.framework */; };
+		69C39ABB16B25ED800CDDD71 /* MyOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C39ABA16B25ED800CDDD71 /* MyOpenGLView.m */; };
+		69C39ABD16B2610D00CDDD71 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C39ABC16B2610D00CDDD71 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		691A6E2815135FA500BDDD9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 691A6DFA15135FA500BDDD9E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 691A6E0215135FA500BDDD9E;
-			remoteInfo = gltest;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		691A6E0315135FA500BDDD9E /* gltest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gltest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,13 +31,11 @@
 		691A6E1915135FA500BDDD9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		691A6E1A15135FA500BDDD9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		691A6E1D15135FA500BDDD9E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		691A6E2415135FA500BDDD9E /* gltestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gltestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		691A6E2515135FA500BDDD9E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		691A6E2C15135FA500BDDD9E /* gltestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gltestTests-Info.plist"; sourceTree = "<group>"; };
-		691A6E2E15135FA500BDDD9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		691A6E3015135FA500BDDD9E /* gltestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gltestTests.h; sourceTree = "<group>"; };
-		691A6E3115135FA500BDDD9E /* gltestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gltestTests.m; sourceTree = "<group>"; };
 		691A6E3B15135FC200BDDD9E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		69C39AB916B25ED800CDDD71 /* MyOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOpenGLView.h; sourceTree = "<group>"; };
+		69C39ABA16B25ED800CDDD71 /* MyOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOpenGLView.m; sourceTree = "<group>"; };
+		69C39ABC16B2610D00CDDD71 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				691A6E3C15135FC200BDDD9E /* GLUT.framework in Frameworks */,
+				69C39ABD16B2610D00CDDD71 /* OpenGL.framework in Frameworks */,
 				691A6E0815135FA500BDDD9E /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		691A6E2015135FA500BDDD9E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				691A6E2615135FA500BDDD9E /* SenTestingKit.framework in Frameworks */,
-				691A6E2715135FA500BDDD9E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +54,8 @@
 		691A6DF815135FA500BDDD9E = {
 			isa = PBXGroup;
 			children = (
-				691A6E3B15135FC200BDDD9E /* GLUT.framework */,
+				69C39ABC16B2610D00CDDD71 /* OpenGL.framework */,
 				691A6E0D15135FA500BDDD9E /* gltest */,
-				691A6E2A15135FA500BDDD9E /* gltestTests */,
 				691A6E0615135FA500BDDD9E /* Frameworks */,
 				691A6E0415135FA500BDDD9E /* Products */,
 			);
@@ -90,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				691A6E0315135FA500BDDD9E /* gltest.app */,
-				691A6E2415135FA500BDDD9E /* gltestTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +72,7 @@
 		691A6E0615135FA500BDDD9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				691A6E3B15135FC200BDDD9E /* GLUT.framework */,
 				691A6E0715135FA500BDDD9E /* Cocoa.framework */,
 				691A6E2515135FA500BDDD9E /* SenTestingKit.framework */,
 				691A6E0915135FA500BDDD9E /* Other Frameworks */,
@@ -122,6 +97,8 @@
 				691A6E1A15135FA500BDDD9E /* AppDelegate.m */,
 				691A6E1C15135FA500BDDD9E /* MainMenu.xib */,
 				691A6E0E15135FA500BDDD9E /* Supporting Files */,
+				69C39AB916B25ED800CDDD71 /* MyOpenGLView.h */,
+				69C39ABA16B25ED800CDDD71 /* MyOpenGLView.m */,
 			);
 			path = gltest;
 			sourceTree = "<group>";
@@ -134,25 +111,6 @@
 				691A6E1315135FA500BDDD9E /* main.m */,
 				691A6E1515135FA500BDDD9E /* gltest-Prefix.pch */,
 				691A6E1615135FA500BDDD9E /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		691A6E2A15135FA500BDDD9E /* gltestTests */ = {
-			isa = PBXGroup;
-			children = (
-				691A6E3015135FA500BDDD9E /* gltestTests.h */,
-				691A6E3115135FA500BDDD9E /* gltestTests.m */,
-				691A6E2B15135FA500BDDD9E /* Supporting Files */,
-			);
-			path = gltestTests;
-			sourceTree = "<group>";
-		};
-		691A6E2B15135FA500BDDD9E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				691A6E2C15135FA500BDDD9E /* gltestTests-Info.plist */,
-				691A6E2D15135FA500BDDD9E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -177,25 +135,6 @@
 			productReference = 691A6E0315135FA500BDDD9E /* gltest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		691A6E2315135FA500BDDD9E /* gltestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 691A6E3815135FA500BDDD9E /* Build configuration list for PBXNativeTarget "gltestTests" */;
-			buildPhases = (
-				691A6E1F15135FA500BDDD9E /* Sources */,
-				691A6E2015135FA500BDDD9E /* Frameworks */,
-				691A6E2115135FA500BDDD9E /* Resources */,
-				691A6E2215135FA500BDDD9E /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				691A6E2915135FA500BDDD9E /* PBXTargetDependency */,
-			);
-			name = gltestTests;
-			productName = gltestTests;
-			productReference = 691A6E2415135FA500BDDD9E /* gltestTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,7 +156,6 @@
 			projectRoot = "";
 			targets = (
 				691A6E0215135FA500BDDD9E /* gltest */,
-				691A6E2315135FA500BDDD9E /* gltestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,31 +171,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		691A6E2115135FA500BDDD9E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				691A6E2F15135FA500BDDD9E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		691A6E2215135FA500BDDD9E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		691A6DFF15135FA500BDDD9E /* Sources */ = {
@@ -266,26 +180,11 @@
 			files = (
 				691A6E1415135FA500BDDD9E /* main.m in Sources */,
 				691A6E1B15135FA500BDDD9E /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		691A6E1F15135FA500BDDD9E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				691A6E3215135FA500BDDD9E /* gltestTests.m in Sources */,
+				69C39ABB16B25ED800CDDD71 /* MyOpenGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		691A6E2915135FA500BDDD9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 691A6E0215135FA500BDDD9E /* gltest */;
-			targetProxy = 691A6E2815135FA500BDDD9E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		691A6E1015135FA500BDDD9E /* InfoPlist.strings */ = {
@@ -310,14 +209,6 @@
 				691A6E1D15135FA500BDDD9E /* en */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		691A6E2D15135FA500BDDD9E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				691A6E2E15135FA500BDDD9E /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -392,34 +283,6 @@
 			};
 			name = Release;
 		};
-		691A6E3915135FA500BDDD9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/gltest.app/Contents/MacOS/gltest";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gltest/gltest-Prefix.pch";
-				INFOPLIST_FILE = "gltestTests/gltestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		691A6E3A15135FA500BDDD9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/gltest.app/Contents/MacOS/gltest";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gltest/gltest-Prefix.pch";
-				INFOPLIST_FILE = "gltestTests/gltestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,14 +302,7 @@
 				691A6E3715135FA500BDDD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		691A6E3815135FA500BDDD9E /* Build configuration list for PBXNativeTarget "gltestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				691A6E3915135FA500BDDD9E /* Debug */,
-				691A6E3A15135FA500BDDD9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

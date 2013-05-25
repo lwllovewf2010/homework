@@ -1,8 +1,18 @@
-CODEDIR		:=	/Users/merck/References/compiler/
-LLVMSRC		:=	$(CODEDIR)/llvm-3.1.src
-LLVMPATH	:=	$(CODEDIR)/llvm31
-LLVMBPATH	:=	$(LLVMPATH)/Release+Asserts/bin
-LLVMCFG		:=	$(LLVMBPATH)/llvm-config
+OS          :=  $(shell uname -s)
+
+ifeq ($(OS), Darwin)
+CODEDIR     :=  /Users/merck/References/compiler
+SWDIR       :=  /Users/merck/Sw
+else
+CODEDIR     :=  /home/merck/Sw
+SWDIR       :=  /home/merck/Sw
+endif
+
+LLVMSRC     :=  $(CODEDIR)/llvm-3.2.src
+LLVMBIN     :=  $(SWDIR)/llvm
+
+LLVMBPATH   :=  $(LLVMBIN)/Release+Asserts/bin
+LLVMCFG     :=  $(LLVMBPATH)/llvm-config
 
 CC			:=	$(LLVMBPATH)/clang
 CPP			:=	$(LLVMBPATH)/clang++
@@ -27,7 +37,7 @@ CLANGLIBS	:= 	$(shell $(LLVMCFG) --ldflags --libs all) \
 				-lLLVMMC \
 				-lLLVMSupport
 
-MODS		:=	Hello LocalRE GlobalRE PrintDomTree #ClangTest
+MODS		:=	Hello LocalRE GlobalRE PrintDomTree ClangTest
 
 all: $(MODS)
 

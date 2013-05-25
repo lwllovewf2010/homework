@@ -10,4 +10,17 @@
 
 @implementation Test
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+#if 0
+    self = [super initWithCoder:aDecoder];
+    if( self ) {
+        
+        NSLog( @"TestObj::initWithCoder\n" );
+    }
+#endif
+    
+    return self;
+}
+
 @end

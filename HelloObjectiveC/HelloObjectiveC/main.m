@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Greeter.h"
+#import "TestObj.h"
+#import "MyEvent.h"
 
 int main(int argc, const char * argv[])
 {
@@ -15,6 +17,8 @@ int main(int argc, const char * argv[])
  
         NSString *testString;
         Greeter* myGreeter = [[Greeter alloc] init];
+        TestObj *testObj = [[TestObj alloc] init];
+        MyEvent *myEvent = [[MyEvent alloc] init];
         
         testString = [NSString alloc];
         testString = [testString init];
@@ -22,9 +26,22 @@ int main(int argc, const char * argv[])
         
         NSLog( @"testString: %@", testString );  
         
-        [myGreeter setGreetingText: @"Hello Objective-C!!" ];
+        [myGreeter setGreetingText: @"Hello Objective-C!!"
+                              test: @"My New Test Text!!" ];
+        
         [myGreeter issueGreeting];
+        
+        NSLog( @"Enter main loop\n" );
+        
+        NSNotification *notification = [NSNotification notificationWithName:@"MyEventClass" object: nil];
+        
+        [[NSNotificationQueue defaultQueue] enqueueNotification:notification
+                                                   postingStyle:NSPostWhenIdle
+                                                   coalesceMask:NSNotificationNoCoalescing
+                                                       forModes:nil];
+        for( ; ; );
     }
+
     return 0;
 }
 
