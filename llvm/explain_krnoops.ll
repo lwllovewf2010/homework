@@ -62,6 +62,23 @@ entry:
   ret void
 }
 
+; nounwind: indicates that the function never returns with an unwind or exceptional control flow.
+; If the function does unwind, its runtime behavior is undefined.
+
+; uwtable: indicates that the ABI being targeted requires that an unwind table entry be produced
+; for this function even if we can show that no exceptions passes by it. This is normally the case
+; for the ELF x86-64 abi, but it can be disabled for some compilation units.
+
+; ssp: indicates that the funtion should emit a stack smashing protector.
+; It's in the form of a "canary" -- a random value placed on the stack before the local variables
+; that's checked upon return from the function to see if it has been overwritten. A heuristic
+; is used to determine if a function needs stack protectors or not.
+; The heuristic used will be enable protectors for functions with:
+;  Character arrays Larger than ssp-buffer-size (Default: 8)
+;  Aggregate containing character arrays larger than ssp-buffer-size
+;  Calls to alloca() with variable size or constant size greater than ssp-buffer-size
+
+
 declare i32 @fprintf(%struct.__sFILE*, i8*, ...)
 
 define i32 @checkHexAscii(i8 signext %c) nounwind uwtable ssp {
