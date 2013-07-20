@@ -8,7 +8,7 @@ CODEDIR		:=	/home/merck/Sw
 SWDIR		:=	/home/merck/Sw
 endif
 
-LLVMSRC		:=	$(CODEDIR)/llvm-3.2.src
+LLVMSRC		:=	$(CODEDIR)/llvm-3.3.src
 LLVMBIN		:=	$(SWDIR)/llvm
 
 LLVMBPATH	:=	$(LLVMBIN)/Release+Asserts/bin
