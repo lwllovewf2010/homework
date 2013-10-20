@@ -37,10 +37,13 @@ static charToToken_t charToTokenTbl[] = {
 { '@',	TOK_AT },
 { '<',	TOK_LESSER },
 { '>',	TOK_GREATER },
+{ '%',	TOK_PRECENT },
+{ '^',	TOK_CARET },
+{ '*',	TOK_STAR },
 };
 
 
-static bool isAlphabet( const s8 c ) {
+static inline bool isAlphabet( const s8 c ) {
 
     if( c >= 'A' && c <= 'Z' )
         return true;
@@ -48,14 +51,11 @@ static bool isAlphabet( const s8 c ) {
     if( c >= 'a' && c <= 'z' )
         return true;
 
-	if( c == '.' || '-' )
-		return true;
-
     return false;
 }
 
 
-static bool isAlphabetNumber( const s8 c ) {
+static inline bool isAlphabetNumber( const s8 c ) {
 
     if( isAlphabet( c ) )
         return true;
@@ -64,6 +64,27 @@ static bool isAlphabetNumber( const s8 c ) {
         return true;
 
     return false;
+}
+
+
+static bool isValidString( const s8 c ) {
+
+	if( c == '$' || c == ':' )
+		return false;
+
+	if( c >= 0x21 && c <= 0x7E )
+		return true;
+
+	return false;
+}
+
+
+static bool isPrintable( const s8 c ) {
+
+	if( c < 0x20 || c > 0x7E )
+		return false;
+
+	return true;
 }
 
 
@@ -163,7 +184,7 @@ u8 lexerNextToken( u8 **c, s32 len ) {
 	}
 
 	// String
-	if( isAlphabetNumber( **c ) )  {
+	if( isValidString( **c ) )  {
 
 		token = TOK_STR;
 		tokenStrStart = *c;
@@ -178,7 +199,7 @@ u8 lexerNextToken( u8 **c, s32 len ) {
 			// Seeing a newline, space, dallor, or tab, treat it as a delimiter
             if( (*(*c + i) == '\r' && *(*c + i + 1) == '\n')
 				|| (*(*c + i) == '\n' || *(*c + i) == ' ' || *(*c + i) == '\t')
-				|| (*(*c + i) == '$') || (*(*c + i) == ':') ) {
+				|| (isValidString( *(*c + i) ) == false) ) {
 
                 offset = i;
 				tokenStrEnd = *c + (i - 1);
@@ -243,7 +264,7 @@ s32 main( s32 argc, s8 **argv ) {
 	u8 *fp;
 	struct stat sb;
 
-	if( argc != 2 ) {
+	if( argc < 2 ) {
 
 		fprintf( stderr, "Invalid amount of the input arguments\n" );
 		return -1;
@@ -284,7 +305,7 @@ s32 main( s32 argc, s8 **argv ) {
 	parse( fp, sb.st_size );
 
 
-ErrExit1:
+//ErrExit1:
 	// Unmap the file
 	munmap( fp, sb.st_size );
 

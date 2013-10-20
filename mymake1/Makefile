@@ -5,13 +5,14 @@ MOD	:=	main
 TEST ?= abc
 TEST1 += 1
 TEST2 = 123
+9TS = 12
 
 .PHONY: all
 all: $(MOD)
-	./$(MOD) ./Makefile
+	./$(MOD) ./Makefile $(9TS) : $9
 
 main:
-	g++ -o $(@) $M $@.c
+	g++ -Wall -o $(@) $M $@.c
 
 clean:
 	rm -f $(MOD)

@@ -17,7 +17,10 @@ enum {
 	TOK_LESSER,			// 12
 	TOK_GREATER,		// 13
 	TOK_VAR,			// 14
-	TOK_EOF,			// 15
+	TOK_PRECENT,		// 15
+	TOK_CARET,			// 16
+	TOK_STAR,			// 17
+	TOK_EOF,			// 18
 	TOK_MAX,
 };
 
