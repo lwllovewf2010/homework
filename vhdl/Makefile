@@ -7,6 +7,9 @@ all:
 	ghdl -a adder_tb.vhdl
 	ghdl -e adder_tb
 	ghdl -r adder_tb
+	ghdl -a test1.vhdl
+	ghdl -e test1
+	ghdl -r test1
 
 clean:
 	rm -f *.cf
