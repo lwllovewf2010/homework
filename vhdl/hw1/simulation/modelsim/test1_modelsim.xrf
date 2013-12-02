@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, /home/merck/Desktop/hw1/test1.bdf
+source_file = 1, /home/merck/Desktop/hw1/db/test1.cbx.xml
+design_name = test1
+instance = comp, \f~output\, f~output, test1, 1
+instance = comp, \x3~input\, x3~input, test1, 1
+instance = comp, \x1~input\, x1~input, test1, 1
+instance = comp, \x2~input\, x2~input, test1, 1
+instance = comp, \inst2~0\, inst2~0, test1, 1
