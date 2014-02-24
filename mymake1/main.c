@@ -233,6 +233,23 @@ s32 parse( u8* fp, s32 len ) {
 			break;
 		}
 
+		switch( token ) {
+
+			// Variable
+			case TOK_STR:
+
+			// Target
+			case TOK_STR:
+
+			// Receipt
+			case TOK_NEWLINE:
+
+			default:
+				printf( "Unhandled token & character: \"%c\"\n", token );
+				break;
+		}
+
+#if 0
 		if( token >= TOK_MAX ) {
 
 			printf( "Char    : %c\n", token );
@@ -251,6 +268,7 @@ s32 parse( u8* fp, s32 len ) {
 		}
 		else
 			printf( "TOKEN ID: %d\n", token );
+#endif
 	}
 
 	return 0;

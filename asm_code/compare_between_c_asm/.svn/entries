@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="3"
+   name=""
+   committed-date="2005-06-29T02:21:13.924220Z"
+   url="http://svn.olux.org/Data/Others/assembly/compare_between_c_asm"
+   last-author="merck"
+   kind="dir"
+   revision="3"/>
+<entry
+   name="test"
+   kind="dir"/>
+<entry
+   committed-rev="3"
+   name="open_write_close.c"
+   text-time="2005-01-01T07:10:19.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="653a2eb6653bbf99c729e7476570fcef"
+   last-author="merck"
+   kind="file"/>
+<entry
+   committed-rev="3"
+   name="write_stdout_asm"
+   text-time="2004-12-31T16:14:20.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="d67f4d911539ba599c857edc5e721022"
+   last-author="merck"
+   kind="file"
+   prop-time="2005-06-29T02:05:50.000000Z"/>
+<entry
+   committed-rev="3"
+   name="write_stdout"
+   text-time="2004-12-31T13:19:15.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="a4343f3d150cc276972d9bad55bfaa5b"
+   last-author="merck"
+   kind="file"
+   prop-time="2005-06-29T02:05:50.000000Z"/>
+<entry
+   committed-rev="3"
+   name="write_stdout_O3"
+   text-time="2004-12-31T18:55:38.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="a447101176d3ba6818f17350cf79f6ba"
+   last-author="merck"
+   kind="file"
+   prop-time="2005-06-29T02:05:50.000000Z"/>
+<entry
+   committed-rev="3"
+   name="write_stdout.s"
+   text-time="2004-12-31T18:31:59.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="f1b12dd2b1e343a2cb3425e918540ab8"
+   last-author="merck"
+   kind="file"/>
+<entry
+   committed-rev="3"
+   name="write_stdout_O3.s"
+   text-time="2004-12-31T18:41:15.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="b7ab7c436d1ad4c2f341166f3164ecb8"
+   last-author="merck"
+   kind="file"/>
+<entry
+   committed-rev="3"
+   name="open_write_close"
+   text-time="2005-01-01T07:12:10.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="1c475717118a8e0378326a9440a377df"
+   last-author="merck"
+   kind="file"
+   prop-time="2005-06-29T02:05:51.000000Z"/>
+<entry
+   committed-rev="3"
+   name="open_write_close.s"
+   text-time="2005-01-01T07:11:24.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="6a6e7d803aa0bae8b2f1d16de60d1006"
+   last-author="merck"
+   kind="file"/>
+<entry
+   committed-rev="3"
+   name="abc.txt"
+   text-time="2004-12-31T13:17:56.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="merck"
+   kind="file"/>
+<entry
+   committed-rev="3"
+   name="write_stdout_noO"
+   text-time="2004-12-31T18:55:47.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="4334800cf46225c729cab490408396a9"
+   last-author="merck"
+   kind="file"
+   prop-time="2005-06-29T02:05:50.000000Z"/>
+<entry
+   committed-rev="3"
+   name="rwfile.asm"
+   text-time="2004-12-31T06:39:20.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="bf9e02e9cba415c4018659e2d67afb7e"
+   last-author="merck"
+   kind="file"/>
+<entry
+   committed-rev="3"
+   name="write_stdout_noO.s"
+   text-time="2004-12-31T14:47:45.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="944ceb1b3b84fe52ae9f137e0678b81c"
+   last-author="merck"
+   kind="file"/>
+<entry
+   committed-rev="3"
+   name="write_stdout_asm.asm"
+   text-time="2004-12-31T16:14:16.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="82a242d58280181e30cb681a5a67e561"
+   last-author="merck"
+   kind="file"/>
+<entry
+   committed-rev="3"
+   name="write_stdout.c"
+   text-time="2004-12-31T13:19:03.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="04d3d2e34bc9217fea3e314851c03d76"
+   last-author="merck"
+   kind="file"/>
+</wc-entries>

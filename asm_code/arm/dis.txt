@@ -1,0 +1,230 @@
+arm-none-linux-gnueabi-objdump -d hello
+
+hello:     file format elf32-littlearm
+
+Disassembly of section .init:
+
+00008278 <_init>:
+    8278:	e52de004 	str	lr, [sp, #-4]!
+    827c:	e24dd004 	sub	sp, sp, #4	; 0x4
+    8280:	eb000020 	bl	8308 <call_gmon_start>
+    8284:	e28dd004 	add	sp, sp, #4	; 0x4
+    8288:	e8bd8000 	ldmia	sp!, {pc}
+Disassembly of section .plt:
+
+0000828c <.plt>:
+    828c:	e52de004 	str	lr, [sp, #-4]!
+    8290:	e59fe004 	ldr	lr, [pc, #4]	; 829c <.plt+0x10>
+    8294:	e08fe00e 	add	lr, pc, lr
+    8298:	e5bef008 	ldr	pc, [lr, #8]!
+    829c:	0000840c 	andeq	r8, r0, ip, lsl #8
+    82a0:	e28fc600 	add	ip, pc, #0	; 0x0
+    82a4:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    82a8:	e5bcf40c 	ldr	pc, [ip, #1036]!
+    82ac:	e28fc600 	add	ip, pc, #0	; 0x0
+    82b0:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    82b4:	e5bcf404 	ldr	pc, [ip, #1028]!
+    82b8:	e28fc600 	add	ip, pc, #0	; 0x0
+    82bc:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    82c0:	e5bcf3fc 	ldr	pc, [ip, #1020]!
+    82c4:	e28fc600 	add	ip, pc, #0	; 0x0
+    82c8:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    82cc:	e5bcf3f4 	ldr	pc, [ip, #1012]!
+Disassembly of section .text:
+
+000082d0 <_start>:
+    82d0:	e59fc024 	ldr	ip, [pc, #36]	; 82fc <.text+0x2c>
+    82d4:	e3a0b000 	mov	fp, #0	; 0x0
+    82d8:	e49d1004 	ldr	r1, [sp], #4
+    82dc:	e1a0200d 	mov	r2, sp
+    82e0:	e52d2004 	str	r2, [sp, #-4]!
+    82e4:	e52d0004 	str	r0, [sp, #-4]!
+    82e8:	e59f0010 	ldr	r0, [pc, #16]	; 8300 <.text+0x30>
+    82ec:	e59f3010 	ldr	r3, [pc, #16]	; 8304 <.text+0x34>
+    82f0:	e52dc004 	str	ip, [sp, #-4]!
+    82f4:	ebffffec 	bl	82ac <.text-0x24>
+    82f8:	ebffffe8 	bl	82a0 <.text-0x30>
+    82fc:	000084c4 	andeq	r8, r0, r4, asr #9
+    8300:	00008464 	andeq	r8, r0, r4, ror #8
+    8304:	00008524 	andeq	r8, r0, r4, lsr #10
+
+00008308 <call_gmon_start>:
+    8308:	e52da004 	str	sl, [sp, #-4]!
+    830c:	e59fa020 	ldr	sl, [pc, #32]	; 8334 <.text+0x64>
+    8310:	e59f3020 	ldr	r3, [pc, #32]	; 8338 <.text+0x68>
+    8314:	e08fa00a 	add	sl, pc, sl
+    8318:	e79a2003 	ldr	r2, [sl, r3]
+    831c:	e3520000 	cmp	r2, #0	; 0x0
+    8320:	0a000001 	beq	832c <call_gmon_start+0x24>
+    8324:	e8bd0400 	ldmia	sp!, {sl}
+    8328:	eaffffe5 	b	82c4 <.text-0xc>
+    832c:	e8bd0400 	ldmia	sp!, {sl}
+    8330:	e12fff1e 	bx	lr
+    8334:	0000838c 	andeq	r8, r0, ip, lsl #7
+    8338:	0000001c 	andeq	r0, r0, ip, lsl r0
+
+0000833c <__do_global_dtors_aux>:
+    833c:	e59f2010 	ldr	r2, [pc, #16]	; 8354 <.text+0x84>
+    8340:	e5d23000 	ldrb	r3, [r2]
+    8344:	e3530000 	cmp	r3, #0	; 0x0
+    8348:	02833001 	addeq	r3, r3, #1	; 0x1
+    834c:	05c23000 	streqb	r3, [r2]
+    8350:	e12fff1e 	bx	lr
+    8354:	000106d0 	ldreqd	r0, [r1], -r0
+
+00008358 <frame_dummy>:
+    8358:	e52de004 	str	lr, [sp, #-4]!
+    835c:	e59f0024 	ldr	r0, [pc, #36]	; 8388 <.text+0xb8>
+    8360:	e24dd004 	sub	sp, sp, #4	; 0x4
+    8364:	e5903000 	ldr	r3, [r0]
+    8368:	e59f201c 	ldr	r2, [pc, #28]	; 838c <.text+0xbc>
+    836c:	e3530000 	cmp	r3, #0	; 0x0
+    8370:	0a000002 	beq	8380 <frame_dummy+0x28>
+    8374:	e3520000 	cmp	r2, #0	; 0x0
+    8378:	0a000000 	beq	8380 <frame_dummy+0x28>
+    837c:	e12fff32 	blx	r2
+    8380:	e28dd004 	add	sp, sp, #4	; 0x4
+    8384:	e8bd8000 	ldmia	sp!, {pc}
+    8388:	000105bc 	streqh	r0, [r1], -ip
+    838c:	00000000 	andeq	r0, r0, r0
+
+00008390 <CallByValue>:
+    8390:	e1a0c00d 	mov	ip, sp
+    8394:	e92dd800 	stmdb	sp!, {fp, ip, lr, pc}
+    8398:	e24cb004 	sub	fp, ip, #4	; 0x4
+    839c:	e24dd008 	sub	sp, sp, #8	; 0x8
+    83a0:	e50b0010 	str	r0, [fp, #-16]
+    83a4:	e59f303c 	ldr	r3, [pc, #60]	; 83e8 <.text+0x118>
+    83a8:	e50b3010 	str	r3, [fp, #-16]
+    83ac:	e51b3010 	ldr	r3, [fp, #-16]
+    83b0:	e1a02083 	mov	r2, r3, lsl #1
+    83b4:	e1a03182 	mov	r3, r2, lsl #3
+    83b8:	e0823003 	add	r3, r2, r3
+    83bc:	e50b3010 	str	r3, [fp, #-16]
+    83c0:	e51b2010 	ldr	r2, [fp, #-16]
+    83c4:	e59f3020 	ldr	r3, [pc, #32]	; 83ec <.text+0x11c>
+    83c8:	e0c10293 	smull	r0, r1, r3, r2
+    83cc:	e1a03fc2 	mov	r3, r2, asr #31
+    83d0:	e0633001 	rsb	r3, r3, r1
+    83d4:	e50b3010 	str	r3, [fp, #-16]
+    83d8:	e51b3010 	ldr	r3, [fp, #-16]
+    83dc:	e1a00003 	mov	r0, r3
+    83e0:	e24bd00c 	sub	sp, fp, #12	; 0xc
+    83e4:	e89da800 	ldmia	sp, {fp, sp, pc}
+    83e8:	00001234 	andeq	r1, r0, r4, lsr r2
+    83ec:	55555556 	ldrplb	r5, [r5, #-1366]
+
+000083f0 <TestRoutine>:
+    83f0:	e1a0c00d 	mov	ip, sp
+    83f4:	e92dd800 	stmdb	sp!, {fp, ip, lr, pc}
+    83f8:	e24cb004 	sub	fp, ip, #4	; 0x4
+    83fc:	e24dd008 	sub	sp, sp, #8	; 0x8
+    8400:	e50b0010 	str	r0, [fp, #-16]
+    8404:	e51b2010 	ldr	r2, [fp, #-16]
+    8408:	e59f304c 	ldr	r3, [pc, #76]	; 845c <.text+0x18c>
+    840c:	e5823000 	str	r3, [r2]
+    8410:	e51b3010 	ldr	r3, [fp, #-16]
+    8414:	e5933000 	ldr	r3, [r3]
+    8418:	e1a02083 	mov	r2, r3, lsl #1
+    841c:	e1a03182 	mov	r3, r2, lsl #3
+    8420:	e0822003 	add	r2, r2, r3
+    8424:	e51b3010 	ldr	r3, [fp, #-16]
+    8428:	e5832000 	str	r2, [r3]
+    842c:	e51b3010 	ldr	r3, [fp, #-16]
+    8430:	e5932000 	ldr	r2, [r3]
+    8434:	e59f3024 	ldr	r3, [pc, #36]	; 8460 <.text+0x190>
+    8438:	e0c10293 	smull	r0, r1, r3, r2
+    843c:	e1a03fc2 	mov	r3, r2, asr #31
+    8440:	e0632001 	rsb	r2, r3, r1
+    8444:	e51b3010 	ldr	r3, [fp, #-16]
+    8448:	e5832000 	str	r2, [r3]
+    844c:	e51b3010 	ldr	r3, [fp, #-16]
+    8450:	e1a00003 	mov	r0, r3
+    8454:	e24bd00c 	sub	sp, fp, #12	; 0xc
+    8458:	e89da800 	ldmia	sp, {fp, sp, pc}
+    845c:	00001234 	andeq	r1, r0, r4, lsr r2
+    8460:	55555556 	ldrplb	r5, [r5, #-1366]
+
+00008464 <main>:
+    8464:	e1a0c00d 	mov	ip, sp
+    8468:	e92dd800 	stmdb	sp!, {fp, ip, lr, pc}
+    846c:	e24cb004 	sub	fp, ip, #4	; 0x4
+    8470:	e24dd008 	sub	sp, sp, #8	; 0x8
+    8474:	e3a03062 	mov	r3, #98	; 0x62
+    8478:	e50b3014 	str	r3, [fp, #-20]
+    847c:	e24b3014 	sub	r3, fp, #20	; 0x14
+    8480:	e1a00003 	mov	r0, r3
+    8484:	ebffffd9 	bl	83f0 <TestRoutine>
+    8488:	e1a03000 	mov	r3, r0
+    848c:	e50b3010 	str	r3, [fp, #-16]
+    8490:	e51b2010 	ldr	r2, [fp, #-16]
+    8494:	e3a0302d 	mov	r3, #45	; 0x2d
+    8498:	e5823000 	str	r3, [r2]
+    849c:	e51b3010 	ldr	r3, [fp, #-16]
+    84a0:	e5933000 	ldr	r3, [r3]
+    84a4:	e59f0014 	ldr	r0, [pc, #20]	; 84c0 <.text+0x1f0>
+    84a8:	e1a01003 	mov	r1, r3
+    84ac:	ebffff81 	bl	82b8 <.text-0x18>
+    84b0:	e3a03000 	mov	r3, #0	; 0x0
+    84b4:	e1a00003 	mov	r0, r3
+    84b8:	e24bd00c 	sub	sp, fp, #12	; 0xc
+    84bc:	e89da800 	ldmia	sp, {fp, sp, pc}
+    84c0:	00008594 	muleq	r0, r4, r5
+
+000084c4 <__libc_csu_fini>:
+    84c4:	e92d4470 	stmdb	sp!, {r4, r5, r6, sl, lr}
+    84c8:	e59f2048 	ldr	r2, [pc, #72]	; 8518 <.text+0x248>
+    84cc:	e59f3048 	ldr	r3, [pc, #72]	; 851c <.text+0x24c>
+    84d0:	e59fa048 	ldr	sl, [pc, #72]	; 8520 <.text+0x250>
+    84d4:	e0623003 	rsb	r3, r2, r3
+    84d8:	e08fa00a 	add	sl, pc, sl
+    84dc:	e1b06143 	movs	r6, r3, asr #2
+    84e0:	e24dd004 	sub	sp, sp, #4	; 0x4
+    84e4:	e08a1002 	add	r1, sl, r2
+    84e8:	0a000007 	beq	850c <__libc_csu_fini+0x48>
+    84ec:	e1a03106 	mov	r3, r6, lsl #2
+    84f0:	e0835001 	add	r5, r3, r1
+    84f4:	e3a04000 	mov	r4, #0	; 0x0
+    84f8:	e2844001 	add	r4, r4, #1	; 0x1
+    84fc:	e5353004 	ldr	r3, [r5, #-4]!
+    8500:	e12fff33 	blx	r3
+    8504:	e1560004 	cmp	r6, r4
+    8508:	1afffffa 	bne	84f8 <__libc_csu_fini+0x34>
+    850c:	e28dd004 	add	sp, sp, #4	; 0x4
+    8510:	e8bd4470 	ldmia	sp!, {r4, r5, r6, sl, lr}
+    8514:	ea000019 	b	8580 <_fini>
+    8518:	ffffff10 	undefined instruction 0xffffff10
+    851c:	ffffff14 	undefined instruction 0xffffff14
+    8520:	000081c8 	andeq	r8, r0, r8, asr #3
+
+00008524 <__libc_csu_init>:
+    8524:	e92d4470 	stmdb	sp!, {r4, r5, r6, sl, lr}
+    8528:	e59fa044 	ldr	sl, [pc, #68]	; 8574 <.text+0x2a4>
+    852c:	e24dd004 	sub	sp, sp, #4	; 0x4
+    8530:	e08fa00a 	add	sl, pc, sl
+    8534:	ebffff4f 	bl	8278 <_init>
+    8538:	e59f2038 	ldr	r2, [pc, #56]	; 8578 <.text+0x2a8>
+    853c:	e59f3038 	ldr	r3, [pc, #56]	; 857c <.text+0x2ac>
+    8540:	e08a1002 	add	r1, sl, r2
+    8544:	e0623003 	rsb	r3, r2, r3
+    8548:	e1b06143 	movs	r6, r3, asr #2
+    854c:	0a000006 	beq	856c <__libc_csu_init+0x48>
+    8550:	e1a05001 	mov	r5, r1
+    8554:	e3a04000 	mov	r4, #0	; 0x0
+    8558:	e2844001 	add	r4, r4, #1	; 0x1
+    855c:	e4953004 	ldr	r3, [r5], #4
+    8560:	e12fff33 	blx	r3
+    8564:	e1560004 	cmp	r6, r4
+    8568:	1afffffa 	bne	8558 <__libc_csu_init+0x34>
+    856c:	e28dd004 	add	sp, sp, #4	; 0x4
+    8570:	e8bd8470 	ldmia	sp!, {r4, r5, r6, sl, pc}
+    8574:	00008170 	andeq	r8, r0, r0, ror r1
+    8578:	ffffff0c 	undefined instruction 0xffffff0c
+    857c:	ffffff10 	undefined instruction 0xffffff10
+Disassembly of section .fini:
+
+00008580 <_fini>:
+    8580:	e52de004 	str	lr, [sp, #-4]!
+    8584:	e24dd004 	sub	sp, sp, #4	; 0x4
+    8588:	e28dd004 	add	sp, sp, #4	; 0x4
+    858c:	e8bd8000 	ldmia	sp!, {pc}

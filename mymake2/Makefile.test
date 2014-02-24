@@ -1,0 +1,16 @@
+#
+# This is a test makefile
+#
+MOD	:=	token
+
+.DEFAULT
+all: $(MOD)
+	./$(MOD) "Makefile"
+
+token:
+	flex++ -o $@.cpp $@.l
+	g++ -o $@ $@.cpp
+
+clean:
+	rm -f $(MOD).cpp $(MOD)
+

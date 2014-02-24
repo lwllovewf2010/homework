@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="3"
+   name=""
+   committed-date="2005-06-29T02:21:13.924220Z"
+   url="http://svn.olux.org/Data/Others/assembly/asm_open_write_close"
+   last-author="merck"
+   kind="dir"
+   revision="3"/>
+<entry
+   committed-rev="3"
+   name="open_write_close"
+   text-time="2005-01-01T07:02:41.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="26647ad1f69bd356d442989e7d0cf4b8"
+   last-author="merck"
+   kind="file"
+   prop-time="2005-06-29T02:05:51.000000Z"/>
+<entry
+   committed-rev="3"
+   name="open_write_close.S"
+   text-time="2005-01-01T07:02:28.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="a30492aeff124c8c5d4afaee07c74fab"
+   last-author="merck"
+   kind="file"/>
+<entry
+   committed-rev="3"
+   name="abc.txt"
+   text-time="2005-01-01T07:02:54.000000Z"
+   committed-date="2005-06-29T02:21:13.924220Z"
+   checksum="2e855ade64027b14ae3d0659053b1971"
+   last-author="merck"
+   kind="file"
+   prop-time="2005-06-29T02:05:51.000000Z"/>
+</wc-entries>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="3"
+   name=""
+   committed-date="2005-06-29T02:21:13.924220Z"
+   url="http://svn.olux.org/Data/Others/assembly"
+   last-author="merck"
+   kind="dir"
+   revision="3"/>
+<entry
+   name="asm_open_write_close"
+   kind="dir"/>
+<entry
+   name="compare_between_c_asm"
+   kind="dir"/>
+</wc-entries>
