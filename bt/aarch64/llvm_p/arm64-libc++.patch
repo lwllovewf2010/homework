@@ -1,0 +1,123 @@
+diff --git include/__config include/__config
+index a5081dd..05995be 100644
+--- include/__config
++++ include/__config
+@@ -203,6 +203,10 @@
+ 
+ #if defined(__clang__)
+ 
++#if !defined(__i386__) && !defined(__x86_64__) && !defined(__arm__)
++#define _LIBCPP_ALTERNATE_STRING_LAYOUT
++#endif
++
+ #if __has_feature(cxx_alignas)
+ #  define _ALIGNAS_TYPE(x) alignas(x)
+ #  define _ALIGNAS(x) alignas(x)
+@@ -560,6 +564,10 @@ template <unsigned> struct __static_assert_check {};
+ #define _LIBCPP_EXTERN_TEMPLATE2(...) extern template __VA_ARGS__;
+ #endif
+ 
++#if __APPLE__ && defined(__LP64__) && !defined(__x86_64__)
++#define _LIBCPP_NONUNIQUE_RTTI_BIT (1ULL << 63)
++#endif
++
+ #if defined(__APPLE__) || defined(__FreeBSD__) || defined(_WIN32) || defined(__sun__) || defined(__NetBSD__)
+ #define _LIBCPP_LOCALE__L_EXTENSIONS 1
+ #endif
+diff --git include/typeinfo include/typeinfo
+index 6ffee0f..7fcc824 100644
+--- include/typeinfo
++++ include/typeinfo
+@@ -60,6 +60,7 @@ public:
+ #include <__config>
+ #include <exception>
+ #include <cstddef>
++#include <cstdint>
+ 
+ #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
+ #pragma GCC system_header
+@@ -73,32 +74,83 @@ class _LIBCPP_EXCEPTION_ABI type_info
+     type_info& operator=(const type_info&);
+     type_info(const type_info&);
+ protected:
++#ifndef _LIBCPP_NONUNIQUE_RTTI_BIT
+     const char* __type_name;
++#else
++    // A const char* with the non-unique RTTI bit possibly set.
++    uintptr_t __type_name;
++#endif
+ 
+     _LIBCPP_INLINE_VISIBILITY
+     explicit type_info(const char* __n)
++#ifndef _LIBCPP_NONUNIQUE_RTTI_BIT
+         : __type_name(__n) {}
++#else
++        : __type_name(reinterpret_cast<uintptr_t>(__n)) {}
++#endif
+ 
+ public:
+     virtual ~type_info();
+ 
+     _LIBCPP_INLINE_VISIBILITY
+-    const char* name() const _NOEXCEPT {return __type_name;}
++    const char* name() const _NOEXCEPT
++#ifndef _LIBCPP_NONUNIQUE_RTTI_BIT
++        {return __type_name;}
++#else
++        {return reinterpret_cast<const char*>(__type_name & ~_LIBCPP_NONUNIQUE_RTTI_BIT);}
++#endif
+ 
+     _LIBCPP_INLINE_VISIBILITY
+     bool before(const type_info& __arg) const _NOEXCEPT
++#ifndef _LIBCPP_NONUNIQUE_RTTI_BIT
+         {return __type_name < __arg.__type_name;}
++#else
++        {if (!((__type_name & __arg.__type_name) & _LIBCPP_NONUNIQUE_RTTI_BIT))
++           return __type_name < __arg.__type_name;
++         return __compare_nonunique_names(__arg) < 0;}
++#endif
++
+     _LIBCPP_INLINE_VISIBILITY
+     size_t hash_code() const _NOEXCEPT
++#ifndef _LIBCPP_NONUNIQUE_RTTI_BIT
+         {return *reinterpret_cast<const size_t*>(&__type_name);}
++#else
++        {if (!(__type_name & _LIBCPP_NONUNIQUE_RTTI_BIT)) return __type_name;
++         const char *__ptr = __name_for_load();
++         size_t __hash = 5381;
++         while (unsigned char __c = static_cast<unsigned char>(*__ptr++))
++           __hash = (__hash * 33) ^ __c;
++         return __hash;}
++#endif
+ 
+     _LIBCPP_INLINE_VISIBILITY
+     bool operator==(const type_info& __arg) const _NOEXCEPT
++#ifndef _LIBCPP_NONUNIQUE_RTTI_BIT
+         {return __type_name == __arg.__type_name;}
++#else
++        {if (__type_name == __arg.__type_name) return true;
++         if (!((__type_name & __arg.__type_name) & _LIBCPP_NONUNIQUE_RTTI_BIT))
++           return false;
++         return __compare_nonunique_names(__arg) == 0;}
++#endif
+     _LIBCPP_INLINE_VISIBILITY
+     bool operator!=(const type_info& __arg) const _NOEXCEPT
+         {return !operator==(__arg);}
+ 
++#ifdef _LIBCPP_NONUNIQUE_RTTI_BIT
++  private:
++    _LIBCPP_INLINE_VISIBILITY
++    int __compare_nonunique_names(const type_info &__arg) const _NOEXCEPT
++        {return __builtin_strcmp(__name_for_load(), __arg.__name_for_load());}
++
++    _LIBCPP_INLINE_VISIBILITY
++    const char *__name_for_load() const _NOEXCEPT
++        {uintptr_t __data = __type_name;
++#if 1
++         __data &= ~_LIBCPP_NONUNIQUE_RTTI_BIT;
++#endif
++         return reinterpret_cast<const char*>(__data);}
++#endif
+ };
+ 
+ class _LIBCPP_EXCEPTION_ABI bad_cast
