@@ -1,0 +1,208 @@
+diff --git SDKs/darwin/usr/include/stdio.h SDKs/darwin/usr/include/stdio.h
+index ab5f1a3..c79a68e 100644
+--- SDKs/darwin/usr/include/stdio.h
++++ SDKs/darwin/usr/include/stdio.h
+@@ -34,7 +34,7 @@ typedef __SIZE_TYPE__ size_t;
+ #    define __FDOPEN_NAME  "_fdopen"
+ #    define __FOPEN_NAME "_fopen"
+ #    define __FWRITE_NAME "_fwrite"
+-#  elif defined(__arm)
++#  elif defined(__arm) || defined(__arm64)
+ #    define __FDOPEN_NAME  "_fdopen"
+ #    define __FOPEN_NAME "_fopen"
+ #    define __FWRITE_NAME "_fwrite"
+@@ -46,7 +46,7 @@ typedef __SIZE_TYPE__ size_t;
+ #    define __FDOPEN_NAME  "_fdopen"
+ #    define __FOPEN_NAME "_fopen"
+ #    define __FWRITE_NAME "_fwrite"
+-#  elif defined(__arm)
++#  elif defined(__arm) || defined(__arm64)
+ #    define __FDOPEN_NAME  "_fdopen"
+ #    define __FOPEN_NAME "_fopen"
+ #    define __FWRITE_NAME "_fwrite"
+diff --git SDKs/darwin/usr/include/string.h SDKs/darwin/usr/include/string.h
+index c6ab5d8..1ecf884 100644
+--- SDKs/darwin/usr/include/string.h
++++ SDKs/darwin/usr/include/string.h
+@@ -32,13 +32,13 @@ char *strncpy(char *, const char *, size_t);
+ #if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__)
+ #  if defined(__i386)
+ #    define __STRERROR_NAME  "_strerror$UNIX2003"
+-#  elif defined(__x86_64__) || defined(__arm)
++#  elif defined(__x86_64__) || defined(__arm) || defined(__arm64)
+ #    define __STRERROR_NAME  "_strerror"
+ #  else
+ #    error "unrecognized architecture for targetting OS X"
+ #  endif
+ #elif defined(__ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__)
+-#  if defined(__i386) || defined (__x86_64) || defined(__arm)
++#  if defined(__i386) || defined (__x86_64) || defined(__arm) || defined(__arm64)
+ #    define __STRERROR_NAME  "_strerror"
+ #  else
+ #    error "unrecognized architecture for targetting iOS"
+diff --git SDKs/darwin/usr/include/sys/fcntl.h SDKs/darwin/usr/include/sys/fcntl.h
+index b71706b..99256a2 100644
+--- SDKs/darwin/usr/include/sys/fcntl.h
++++ SDKs/darwin/usr/include/sys/fcntl.h
+@@ -23,7 +23,7 @@
+ #    define __OPEN_NAME  "_open$UNIX2003"
+ #  elif defined(__x86_64__)
+ #    define __OPEN_NAME  "_open"
+-#  elif defined(__arm)
++#  elif defined(__arm) || defined(__arm64)
+ #    define __OPEN_NAME  "_open"
+ #  else
+ #    error "unrecognized architecture for targetting OS X"
+@@ -31,7 +31,7 @@
+ #elif defined(__ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__)
+ #  if defined(__i386) || defined (__x86_64)
+ #    define __OPEN_NAME  "_open"
+-#  elif defined(__arm)
++#  elif defined(__arm) || defined(__arm64)
+ #    define __OPEN_NAME  "_open"
+ #  else
+ #    error "unrecognized architecture for targetting iOS"
+diff --git lib/builtins/Makefile.mk lib/builtins/Makefile.mk
+index 3143d91..3b24ff4 100644
+--- lib/builtins/Makefile.mk
++++ lib/builtins/Makefile.mk
+@@ -13,6 +13,9 @@ SubDirs :=
+ # Add arch specific optimized implementations.
+ SubDirs += i386 ppc x86_64 arm
+ 
++# Add ARM64 dir.
++SubDirs += arm64
++
+ # Define the variables for this specific directory.
+ Sources := $(foreach file,$(wildcard $(Dir)/*.c),$(notdir $(file)))
+ ObjNames := $(Sources:%.c=%.o)
+diff --git lib/builtins/arm64/Makefile.mk lib/builtins/arm64/Makefile.mk
+new file mode 100644
+index 0000000..7f7e386
+--- /dev/null
++++ lib/builtins/arm64/Makefile.mk
+@@ -0,0 +1,20 @@
++#===- lib/builtins/arm64/Makefile.mk -----------------------*- Makefile -*--===#
++#
++#                     The LLVM Compiler Infrastructure
++#
++# This file is distributed under the University of Illinois Open Source
++# License. See LICENSE.TXT for details.
++#
++#===------------------------------------------------------------------------===#
++
++ModuleName := builtins
++SubDirs := 
++OnlyArchs := arm64 
++
++AsmSources := $(foreach file,$(wildcard $(Dir)/*.S),$(notdir $(file)))
++Sources := $(foreach file,$(wildcard $(Dir)/*.c),$(notdir $(file)))
++ObjNames := $(Sources:%.c=%.o) $(AsmSources:%.S=%.o)
++Implementation := Optimized
++
++# FIXME: use automatic dependencies?
++Dependencies := $(wildcard lib/*.h $(Dir)/*.h)
+diff --git lib/builtins/arm64/dummy.c lib/builtins/arm64/dummy.c
+new file mode 100644
+index 0000000..76bec30
+--- /dev/null
++++ lib/builtins/arm64/dummy.c
+@@ -0,0 +1,13 @@
++/* ===---------- dummy.c - Implements dummy function, for bringup -----------===
++ *
++ *                     The LLVM Compiler Infrastructure
++ *
++ * This file is dual licensed under the MIT and the University of Illinois Open
++ * Source Licenses. See LICENSE.TXT for details.
++ *
++ * ===----------------------------------------------------------------------===
++ */
++
++static void dummy(void) __attribute__((used));
++
++static void dummy(void) {}
+diff --git make/platform/clang_darwin.mk make/platform/clang_darwin.mk
+index 32803af..52a7ec5 100644
+--- make/platform/clang_darwin.mk
++++ make/platform/clang_darwin.mk
+@@ -117,6 +117,13 @@ UniversalArchs.cc_kext_ios5 := $(filter-out armv7, $(UniversalArchs.cc_kext_ios5
+ UniversalArchs.profile_ios := $(filter-out armv7, $(UniversalArchs.profile_ios))
+ endif
+ 
++### ARM64 Support ###
++# Explicitly add these, to workaround CheckArches function not including the
++# CFLAGS, and not wanting to require an ARM64 assembler be installed.
++UniversalArchs.ios += arm64
++UniversalArchs.cc_kext += arm64
++UniversalArchs.profile_ios += arm64
++
+ # If RC_SUPPORTED_ARCHS is defined, treat it as a list of the architectures we
+ # are intended to support and limit what we try to build to that.
+ #
+@@ -176,6 +183,7 @@ CFLAGS.ios.x86_64h	:= $(CFLAGS) $(IOSSIM_DEPLOYMENT_ARGS)
+ CFLAGS.ios.armv7	:= $(CFLAGS) $(IOS_DEPLOYMENT_ARGS)
+ CFLAGS.ios.armv7k	:= $(CFLAGS) $(IOS_DEPLOYMENT_ARGS)
+ CFLAGS.ios.armv7s	:= $(CFLAGS) $(IOS_DEPLOYMENT_ARGS)
++CFLAGS.ios.arm64	:= $(CFLAGS) $(IOS6_DEPLOYMENT_ARGS)
+ CFLAGS.osx.i386		:= $(CFLAGS) $(OSX_DEPLOYMENT_ARGS)
+ CFLAGS.osx.x86_64	:= $(CFLAGS) $(OSX_DEPLOYMENT_ARGS)
+ CFLAGS.osx.x86_64h	:= $(CFLAGS) $(OSX_DEPLOYMENT_ARGS)
+@@ -185,6 +193,7 @@ CFLAGS.cc_kext.x86_64h	:= $(CFLAGS) $(OSX_DEPLOYMENT_ARGS)
+ CFLAGS.cc_kext.armv7	:= $(CFLAGS) $(IOS6_DEPLOYMENT_ARGS)
+ CFLAGS.cc_kext.armv7k	:= $(CFLAGS) $(IOS6_DEPLOYMENT_ARGS)
+ CFLAGS.cc_kext.armv7s	:= $(CFLAGS) $(IOS6_DEPLOYMENT_ARGS)
++CFLAGS.cc_kext.arm64	:= $(CFLAGS) $(IOS6_DEPLOYMENT_ARGS)
+ CFLAGS.cc_kext_ios5.armv7  := $(CFLAGS) $(IOS_DEPLOYMENT_ARGS)
+ CFLAGS.cc_kext_ios5.armv7k := $(CFLAGS) $(IOS_DEPLOYMENT_ARGS)
+ CFLAGS.cc_kext_ios5.armv7s := $(CFLAGS) $(IOS_DEPLOYMENT_ARGS)
+@@ -197,6 +206,7 @@ CFLAGS.profile_ios.x86_64h := $(CFLAGS) $(IOSSIM_DEPLOYMENT_ARGS)
+ CFLAGS.profile_ios.armv7  := $(CFLAGS) $(IOS_DEPLOYMENT_ARGS)
+ CFLAGS.profile_ios.armv7k := $(CFLAGS) $(IOS_DEPLOYMENT_ARGS)
+ CFLAGS.profile_ios.armv7s := $(CFLAGS) $(IOS_DEPLOYMENT_ARGS)
++CFLAGS.profile_ios.arm64  := $(CFLAGS) $(IOS6_DEPLOYMENT_ARGS)
+ 
+ # Configure the asan_osx_dynamic library to be built shared.
+ SHARED_LIBRARY.asan_osx_dynamic := 1
+@@ -219,6 +229,7 @@ FUNCTIONS.ios.i386    := $(FUNCTIONS.ios) \
+                          divsi3 udivsi3
+ FUNCTIONS.ios.x86_64  := $(FUNCTIONS.ios.i386)
+ FUNCTIONS.ios.x86_64h := $(FUNCTIONS.ios.x86_64)
++FUNCTIONS.ios.arm64   := dummy
+ 
+ FUNCTIONS.osx	:= mulosi4 mulodi4 muloti4
+ 
+@@ -386,6 +397,7 @@ CCKEXT_ARMVFP_FUNCTIONS := $(CCKEXT_ARM_FUNCTIONS) \
+ FUNCTIONS.cc_kext.armv7 := $(CCKEXT_ARMVFP_FUNCTIONS)
+ FUNCTIONS.cc_kext.armv7k := $(CCKEXT_ARMVFP_FUNCTIONS)
+ FUNCTIONS.cc_kext.armv7s := $(CCKEXT_ARMVFP_FUNCTIONS)
++FUNCTIONS.cc_kext.arm64 := dummy
+ FUNCTIONS.cc_kext_ios5.armv7 := $(CCKEXT_ARMVFP_FUNCTIONS)
+ FUNCTIONS.cc_kext_ios5.armv7k := $(CCKEXT_ARMVFP_FUNCTIONS)
+ FUNCTIONS.cc_kext_ios5.armv7s := $(CCKEXT_ARMVFP_FUNCTIONS)
+@@ -471,6 +483,8 @@ FUNCTIONS.cc_kext.armv7k := \
+ 	$(filter-out $(CCKEXT_MISSING_FUNCTIONS),$(FUNCTIONS.cc_kext.armv7k))
+ FUNCTIONS.cc_kext.armv7s := \
+ 	$(filter-out $(CCKEXT_MISSING_FUNCTIONS),$(FUNCTIONS.cc_kext.armv7s))
++FUNCTIONS.cc_kext.arm64 := \
++	$(filter-out $(CCKEXT_MISSING_FUNCTIONS),$(FUNCTIONS.cc_kext.arm64))
+ FUNCTIONS.cc_kext_ios5.armv7 := \
+ 	$(filter-out $(CCKEXT_MISSING_FUNCTIONS),$(FUNCTIONS.cc_kext_ios5.armv7))
+ FUNCTIONS.cc_kext_ios5.armv7k := \
+diff --git make/platform/darwin_bni.mk make/platform/darwin_bni.mk
+index 03e8d29..229609a 100644
+--- make/platform/darwin_bni.mk
++++ make/platform/darwin_bni.mk
+@@ -115,3 +115,13 @@ FUNCTIONS.armv7 := $(FUNCTIONS) \
+ 
+ FUNCTIONS.armv7s := $(FUNCTIONS.armv7)
+ 
++FUNCTIONS.arm64 :=  divti3 modti3 \
++					udivmodti4 \
++					udivti3 umodti3 \
++					powisf2 powidf2 \
++					clzti2 \
++					fixdfti fixsfti \
++					fixunsdfti fixunssfti fixunssfti \
++					floattidf floattisf floatuntidf floatuntisf \
++					gcc_personality_v0 atomic
++
