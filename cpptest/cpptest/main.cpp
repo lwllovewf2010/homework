@@ -31,6 +31,12 @@ void make_use( DerivedClass* p ) {
 }
 
 
+int use_functor( add_x& fctor ) {
+
+ return fctor( 56 );
+}
+
+
 int main() {
     
  int cc = 1234;
@@ -43,9 +49,14 @@ int main() {
  
  // Test Functor Start
  add_x add_48( 48 );
+ add_x add_182( 182 );
  int i = add_48( 192 );
+ int y = use_functor( add_48 );
+ int z = use_functor( add_182 );
  
-	cout << "Functor" << i << "\n";
+	cout << "Functor i = " << i << "\n";
+ cout << "Functor y = " << y << "\n";
+ cout << "Functor z = " << z << "\n";
  // Test Functor End
  
  
