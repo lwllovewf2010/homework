@@ -9,7 +9,9 @@
 #include "DerivedClass.h"
 
 
-DerivedClass::DerivedClass() {
+DerivedClass::DerivedClass()
+ : price( 0 ),
+   average( 0 ) {
 
     std::cout << "DerivedClass()\n";
 }

@@ -16,16 +16,20 @@
 class DerivedClass : public TestClass {
 
 public:
-    DerivedClass();
+ DerivedClass();
 
-    DerivedClass( int x ): TestClass( 556 ) {
+ DerivedClass( int x ): TestClass( 556 ) {
         
-        std::cout << "DerivedClass::DerivedClass( " << x << " )\n";
-    }
+   std::cout << "DerivedClass::DerivedClass( " << x << " )\n";
+ }
 
-    virtual ~DerivedClass();
-    virtual int CheckTest();
-    void PerformTest( int abc );
+ virtual ~DerivedClass();
+ virtual int CheckTest();
+ void PerformTest( int abc );
+ 
+private:
+ int price;
+ int average;
 };
 
 

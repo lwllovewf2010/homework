@@ -1,6 +1,4 @@
-#include <iostream>
 
-using namespace std;
 
 struct add_x {
 
@@ -17,6 +15,7 @@ private:
 };
 
 
+/*
 int main(int argc, char **argv) {
 
 	add_x add_48( 48 );
@@ -26,5 +25,5 @@ int main(int argc, char **argv) {
 
 	return 0;
 }
-
+*/
 
