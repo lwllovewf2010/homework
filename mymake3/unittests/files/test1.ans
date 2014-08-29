@@ -1,0 +1,453 @@
+Lexer::TOK_SPACE(3),len:1,line:1,offs:0,offe:0
+" "
+Lexer::TOK_SPACE(3),len:1,line:1,offs:1,offe:1
+" "
+Lexer::TOK_SPACE(3),len:1,line:1,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:1,offs:3,offe:3
+" "
+Lexer::TOK_NEWLINE(1),len:1,line:2,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:12,line:2,offs:0,offe:11
+"# Comment 12"
+Lexer::TOK_NEWLINE(1),len:1,line:3,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:14,line:3,offs:0,offe:13
+"# COmment 4567"
+Lexer::TOK_NEWLINE(1),len:1,line:4,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:15,line:4,offs:0,offe:14
+"# Comment 64454"
+Lexer::TOK_NEWLINE(1),len:1,line:5,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:6,offs:0,offe:0
+"
+"
+Lexer::TOK_SPACE(3),len:1,line:6,offs:0,offe:0
+" "
+Lexer::TOK_SPACE(3),len:1,line:6,offs:1,offe:1
+" "
+Lexer::TOK_SPACE(3),len:1,line:6,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:6,offs:3,offe:3
+" "
+Lexer::TOK_COMMENT(2),len:12,line:6,offs:4,offe:15
+"# Merck Hung"
+Lexer::TOK_NEWLINE(1),len:1,line:7,offs:0,offe:0
+"
+"
+Lexer::TOK_SPACE(3),len:1,line:7,offs:0,offe:0
+" "
+Lexer::TOK_SPACE(3),len:1,line:7,offs:1,offe:1
+" "
+Lexer::TOK_SPACE(3),len:1,line:7,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:7,offs:3,offe:3
+" "
+Lexer::TOK_COMMENT(2),len:21,line:7,offs:4,offe:24
+"# merckhung@gmail.com"
+Lexer::TOK_NEWLINE(1),len:1,line:8,offs:0,offe:0
+"
+"
+Lexer::TOK_SPACE(3),len:1,line:8,offs:0,offe:0
+" "
+Lexer::TOK_SPACE(3),len:1,line:8,offs:1,offe:1
+" "
+Lexer::TOK_SPACE(3),len:1,line:8,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:8,offs:3,offe:3
+" "
+Lexer::TOK_COMMENT(2),len:27,line:8,offs:4,offe:30
+"# Please contact merck hung"
+Lexer::TOK_NEWLINE(1),len:1,line:9,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:9,offs:0,offe:0
+"	"
+Lexer::TOK_TAB(5),len:1,line:9,offs:1,offe:1
+"	"
+Lexer::TOK_COMMENT(2),len:13,line:9,offs:2,offe:14
+"# Hello world"
+Lexer::TOK_NEWLINE(1),len:1,line:10,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:11,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:11,offs:0,offe:2
+"MOD"
+Lexer::TOK_SPACE(3),len:1,line:11,offs:3,offe:3
+" "
+Lexer::TOK_COLON(6),len:1,line:11,offs:4,offe:4
+":"
+Lexer::TOK_EQUAL(8),len:1,line:11,offs:5,offe:5
+"="
+Lexer::TOK_SPACE(3),len:1,line:11,offs:6,offe:6
+" "
+Lexer::TOK_STR(4),len:3,line:11,offs:7,offe:9
+"123"
+Lexer::TOK_SPACE(3),len:1,line:11,offs:10,offe:10
+" "
+Lexer::TOK_COMMENT(2),len:12,line:11,offs:11,offe:22
+"#Comment2323"
+Lexer::TOK_NEWLINE(1),len:1,line:12,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:13,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:13,offs:0,offe:2
+"all"
+Lexer::TOK_COLON(6),len:1,line:13,offs:3,offe:3
+":"
+Lexer::TOK_SPACE(3),len:1,line:13,offs:4,offe:4
+" "
+Lexer::TOK_VAR(14),len:3,line:13,offs:7,offe:9
+"MOD"
+Lexer::TOK_SPACE(3),len:1,line:13,offs:11,offe:11
+" "
+Lexer::TOK_COMMENT(2),len:24,line:13,offs:12,offe:35
+"# This is a comment test"
+Lexer::TOK_NEWLINE(1),len:1,line:14,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:14,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:3,line:14,offs:1,offe:3
+"gcc"
+Lexer::TOK_SPACE(3),len:1,line:14,offs:4,offe:4
+" "
+Lexer::TOK_STR(4),len:2,line:14,offs:5,offe:6
+"-o"
+Lexer::TOK_SPACE(3),len:1,line:14,offs:7,offe:7
+" "
+Lexer::TOK_STR(4),len:4,line:14,offs:8,offe:11
+"test"
+Lexer::TOK_SPACE(3),len:1,line:14,offs:12,offe:12
+" "
+Lexer::TOK_STR(4),len:6,line:14,offs:13,offe:18
+"test.c"
+Lexer::TOK_NEWLINE(1),len:1,line:15,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:15,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:2,line:15,offs:1,offe:2
+"rm"
+Lexer::TOK_SPACE(3),len:1,line:15,offs:3,offe:3
+" "
+Lexer::TOK_STR(4),len:2,line:15,offs:4,offe:5
+"-f"
+Lexer::TOK_SPACE(3),len:1,line:15,offs:6,offe:6
+" "
+Lexer::TOK_STR(4),len:1,line:15,offs:7,offe:7
+"1"
+Lexer::TOK_NEWLINE(1),len:1,line:16,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:17,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:17,offs:0,offe:2
+"123"
+Lexer::TOK_COLON(6),len:1,line:17,offs:3,offe:3
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:18,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:19,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:5,line:19,offs:0,offe:4
+"clean"
+Lexer::TOK_COLON(6),len:1,line:19,offs:5,offe:5
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:20,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:20,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:2,line:20,offs:1,offe:2
+"rm"
+Lexer::TOK_SPACE(3),len:1,line:20,offs:3,offe:3
+" "
+Lexer::TOK_STR(4),len:2,line:20,offs:4,offe:5
+"-f"
+Lexer::TOK_SPACE(3),len:1,line:20,offs:6,offe:6
+" "
+Lexer::TOK_STR(4),len:4,line:20,offs:7,offe:10
+"test"
+Lexer::TOK_NEWLINE(1),len:1,line:21,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:22,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:22,offs:0,offe:2
+"tst"
+Lexer::TOK_COLON(6),len:1,line:22,offs:3,offe:3
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:23,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:23,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:2,line:23,offs:1,offe:2
+"rm"
+Lexer::TOK_SPACE(3),len:1,line:23,offs:3,offe:3
+" "
+Lexer::TOK_STR(4),len:2,line:23,offs:4,offe:5
+"-f"
+Lexer::TOK_SPACE(3),len:1,line:23,offs:6,offe:6
+" "
+Lexer::TOK_STR(4),len:3,line:23,offs:7,offe:9
+"123"
+Lexer::TOK_NEWLINE(1),len:1,line:24,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:25,offs:0,offe:0
+"
+"
+Lexer::TOK_SPACE(3),len:1,line:1,offs:0,offe:0
+" "
+Lexer::TOK_SPACE(3),len:1,line:1,offs:1,offe:1
+" "
+Lexer::TOK_SPACE(3),len:1,line:1,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:1,offs:3,offe:3
+" "
+Lexer::TOK_NEWLINE(1),len:1,line:2,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:12,line:2,offs:0,offe:11
+"# Comment 12"
+Lexer::TOK_NEWLINE(1),len:1,line:3,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:14,line:3,offs:0,offe:13
+"# COmment 4567"
+Lexer::TOK_NEWLINE(1),len:1,line:4,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:15,line:4,offs:0,offe:14
+"# Comment 64454"
+Lexer::TOK_NEWLINE(1),len:1,line:5,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:6,offs:0,offe:0
+"
+"
+Lexer::TOK_SPACE(3),len:1,line:6,offs:0,offe:0
+" "
+Lexer::TOK_SPACE(3),len:1,line:6,offs:1,offe:1
+" "
+Lexer::TOK_SPACE(3),len:1,line:6,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:6,offs:3,offe:3
+" "
+Lexer::TOK_COMMENT(2),len:12,line:6,offs:4,offe:15
+"# Merck Hung"
+Lexer::TOK_NEWLINE(1),len:1,line:7,offs:0,offe:0
+"
+"
+Lexer::TOK_SPACE(3),len:1,line:7,offs:0,offe:0
+" "
+Lexer::TOK_SPACE(3),len:1,line:7,offs:1,offe:1
+" "
+Lexer::TOK_SPACE(3),len:1,line:7,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:7,offs:3,offe:3
+" "
+Lexer::TOK_COMMENT(2),len:21,line:7,offs:4,offe:24
+"# merckhung@gmail.com"
+Lexer::TOK_NEWLINE(1),len:1,line:8,offs:0,offe:0
+"
+"
+Lexer::TOK_SPACE(3),len:1,line:8,offs:0,offe:0
+" "
+Lexer::TOK_SPACE(3),len:1,line:8,offs:1,offe:1
+" "
+Lexer::TOK_SPACE(3),len:1,line:8,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:8,offs:3,offe:3
+" "
+Lexer::TOK_COMMENT(2),len:27,line:8,offs:4,offe:30
+"# Please contact merck hung"
+Lexer::TOK_NEWLINE(1),len:1,line:9,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:9,offs:0,offe:0
+"	"
+Lexer::TOK_TAB(5),len:1,line:9,offs:1,offe:1
+"	"
+Lexer::TOK_COMMENT(2),len:13,line:9,offs:2,offe:14
+"# Hello world"
+Lexer::TOK_NEWLINE(1),len:1,line:10,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:11,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:11,offs:0,offe:2
+"MOD"
+Lexer::TOK_SPACE(3),len:1,line:11,offs:3,offe:3
+" "
+Lexer::TOK_COLON(6),len:1,line:11,offs:4,offe:4
+":"
+Lexer::TOK_EQUAL(8),len:1,line:11,offs:5,offe:5
+"="
+Lexer::TOK_SPACE(3),len:1,line:11,offs:6,offe:6
+" "
+Lexer::TOK_STR(4),len:3,line:11,offs:7,offe:9
+"123"
+Lexer::TOK_SPACE(3),len:1,line:11,offs:10,offe:10
+" "
+Lexer::TOK_COMMENT(2),len:12,line:11,offs:11,offe:22
+"#Comment2323"
+Lexer::TOK_NEWLINE(1),len:1,line:12,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:13,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:13,offs:0,offe:2
+"all"
+Lexer::TOK_COLON(6),len:1,line:13,offs:3,offe:3
+":"
+Lexer::TOK_SPACE(3),len:1,line:13,offs:4,offe:4
+" "
+Lexer::TOK_VAR(14),len:3,line:13,offs:7,offe:9
+"MOD"
+Lexer::TOK_SPACE(3),len:1,line:13,offs:11,offe:11
+" "
+Lexer::TOK_COMMENT(2),len:24,line:13,offs:12,offe:35
+"# This is a comment test"
+Lexer::TOK_NEWLINE(1),len:1,line:14,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:14,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:3,line:14,offs:1,offe:3
+"gcc"
+Lexer::TOK_SPACE(3),len:1,line:14,offs:4,offe:4
+" "
+Lexer::TOK_STR(4),len:2,line:14,offs:5,offe:6
+"-o"
+Lexer::TOK_SPACE(3),len:1,line:14,offs:7,offe:7
+" "
+Lexer::TOK_STR(4),len:4,line:14,offs:8,offe:11
+"test"
+Lexer::TOK_SPACE(3),len:1,line:14,offs:12,offe:12
+" "
+Lexer::TOK_STR(4),len:6,line:14,offs:13,offe:18
+"test.c"
+Lexer::TOK_NEWLINE(1),len:1,line:15,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:15,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:2,line:15,offs:1,offe:2
+"rm"
+Lexer::TOK_SPACE(3),len:1,line:15,offs:3,offe:3
+" "
+Lexer::TOK_STR(4),len:2,line:15,offs:4,offe:5
+"-f"
+Lexer::TOK_SPACE(3),len:1,line:15,offs:6,offe:6
+" "
+Lexer::TOK_STR(4),len:1,line:15,offs:7,offe:7
+"1"
+Lexer::TOK_NEWLINE(1),len:1,line:16,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:17,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:17,offs:0,offe:2
+"123"
+Lexer::TOK_COLON(6),len:1,line:17,offs:3,offe:3
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:18,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:19,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:5,line:19,offs:0,offe:4
+"clean"
+Lexer::TOK_COLON(6),len:1,line:19,offs:5,offe:5
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:20,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:20,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:2,line:20,offs:1,offe:2
+"rm"
+Lexer::TOK_SPACE(3),len:1,line:20,offs:3,offe:3
+" "
+Lexer::TOK_STR(4),len:2,line:20,offs:4,offe:5
+"-f"
+Lexer::TOK_SPACE(3),len:1,line:20,offs:6,offe:6
+" "
+Lexer::TOK_STR(4),len:4,line:20,offs:7,offe:10
+"test"
+Lexer::TOK_NEWLINE(1),len:1,line:21,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:22,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:22,offs:0,offe:2
+"tst"
+Lexer::TOK_COLON(6),len:1,line:22,offs:3,offe:3
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:23,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:23,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:2,line:23,offs:1,offe:2
+"rm"
+Lexer::TOK_SPACE(3),len:1,line:23,offs:3,offe:3
+" "
+Lexer::TOK_STR(4),len:2,line:23,offs:4,offe:5
+"-f"
+Lexer::TOK_SPACE(3),len:1,line:23,offs:6,offe:6
+" "
+Lexer::TOK_STR(4),len:3,line:23,offs:7,offe:9
+"123"
+Lexer::TOK_NEWLINE(1),len:1,line:24,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:25,offs:0,offe:0
+"
+"
+LINE 1 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 2 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 3 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 4 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 5 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 6 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 7 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 8 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 9 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 10 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 11 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 12 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 13 is predicted as type: Lexer::LP_TARGET(1)
+LINE 14 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 15 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 16 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 17 is predicted as type: Lexer::LP_TARGET(1)
+LINE 18 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 19 is predicted as type: Lexer::LP_TARGET(1)
+LINE 20 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 21 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 22 is predicted as type: Lexer::LP_TARGET(1)
+LINE 23 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 24 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 25 is predicted as type: Lexer::LP_NORMAL(0)

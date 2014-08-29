@@ -1,0 +1,236 @@
+Lexer::TOK_STR(4),len:8,line:1,offs:0,offe:7
+"TEST=123"
+Lexer::TOK_SPACE(3),len:1,line:1,offs:8,offe:8
+" "
+Lexer::TOK_STR(4),len:3,line:1,offs:9,offe:11
+"456"
+Lexer::TOK_SPACE(3),len:1,line:1,offs:12,offe:12
+" "
+Lexer::TOK_STR(4),len:4,line:1,offs:13,offe:16
+"7899"
+Lexer::TOK_SPACE(3),len:1,line:1,offs:17,offe:17
+" "
+Lexer::TOK_STR(4),len:3,line:1,offs:18,offe:20
+"999"
+Lexer::TOK_NEWLINE(1),len:1,line:2,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:6,line:2,offs:0,offe:5
+"MYCHK="
+Lexer::TOK_VAR(14),len:4,line:2,offs:8,offe:11
+"TEST"
+Lexer::TOK_VAR(14),len:3,line:2,offs:15,offe:17
+"SHD"
+Lexer::TOK_VAR(14),len:3,line:2,offs:21,offe:23
+"345"
+Lexer::TOK_STR(4),len:6,line:2,offs:25,offe:30
+"/check"
+Lexer::TOK_NEWLINE(1),len:1,line:3,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:18,line:3,offs:0,offe:17
+"UI=122343284294242"
+Lexer::TOK_SPACE(3),len:1,line:3,offs:18,offe:18
+" "
+Lexer::TOK_STR(4),len:9,line:3,offs:19,offe:27
+"423432234"
+Lexer::TOK_NEWLINE(1),len:1,line:4,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:4,offs:0,offe:14
+"DJF=32322323232"
+Lexer::TOK_SPACE(3),len:1,line:4,offs:15,offe:15
+" "
+Lexer::TOK_STR(4),len:13,line:4,offs:16,offe:28
+"4442423432432"
+Lexer::TOK_SPACE(3),len:1,line:4,offs:29,offe:29
+" "
+Lexer::TOK_VAR(14),len:3,line:4,offs:32,offe:34
+"MDO"
+Lexer::TOK_NEWLINE(1),len:1,line:5,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:6,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:6,offs:0,offe:2
+"all"
+Lexer::TOK_COLON(6),len:1,line:6,offs:3,offe:3
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:7,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:7,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:4,line:7,offs:1,offe:4
+"test"
+Lexer::TOK_NEWLINE(1),len:1,line:8,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:1,line:8,offs:0,offe:0
+"b"
+Lexer::TOK_COLON(6),len:1,line:8,offs:1,offe:1
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:9,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:9,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:3,line:9,offs:1,offe:3
+"cmp"
+Lexer::TOK_NEWLINE(1),len:1,line:10,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:1,line:10,offs:0,offe:0
+"c"
+Lexer::TOK_COLON(6),len:1,line:10,offs:1,offe:1
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:11,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:11,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:3,line:11,offs:1,offe:3
+"123"
+Lexer::TOK_NEWLINE(1),len:1,line:12,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:1,line:12,offs:0,offe:0
+"d"
+Lexer::TOK_COLON(6),len:1,line:12,offs:1,offe:1
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:13,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:13,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:3,line:13,offs:1,offe:3
+"567"
+Lexer::TOK_NEWLINE(1),len:1,line:14,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:8,line:1,offs:0,offe:7
+"TEST=123"
+Lexer::TOK_SPACE(3),len:1,line:1,offs:8,offe:8
+" "
+Lexer::TOK_STR(4),len:3,line:1,offs:9,offe:11
+"456"
+Lexer::TOK_SPACE(3),len:1,line:1,offs:12,offe:12
+" "
+Lexer::TOK_STR(4),len:4,line:1,offs:13,offe:16
+"7899"
+Lexer::TOK_SPACE(3),len:1,line:1,offs:17,offe:17
+" "
+Lexer::TOK_STR(4),len:3,line:1,offs:18,offe:20
+"999"
+Lexer::TOK_NEWLINE(1),len:1,line:2,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:6,line:2,offs:0,offe:5
+"MYCHK="
+Lexer::TOK_VAR(14),len:4,line:2,offs:8,offe:11
+"TEST"
+Lexer::TOK_VAR(14),len:3,line:2,offs:15,offe:17
+"SHD"
+Lexer::TOK_VAR(14),len:3,line:2,offs:21,offe:23
+"345"
+Lexer::TOK_STR(4),len:6,line:2,offs:25,offe:30
+"/check"
+Lexer::TOK_NEWLINE(1),len:1,line:3,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:18,line:3,offs:0,offe:17
+"UI=122343284294242"
+Lexer::TOK_SPACE(3),len:1,line:3,offs:18,offe:18
+" "
+Lexer::TOK_STR(4),len:9,line:3,offs:19,offe:27
+"423432234"
+Lexer::TOK_NEWLINE(1),len:1,line:4,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:4,offs:0,offe:14
+"DJF=32322323232"
+Lexer::TOK_SPACE(3),len:1,line:4,offs:15,offe:15
+" "
+Lexer::TOK_STR(4),len:13,line:4,offs:16,offe:28
+"4442423432432"
+Lexer::TOK_SPACE(3),len:1,line:4,offs:29,offe:29
+" "
+Lexer::TOK_VAR(14),len:3,line:4,offs:32,offe:34
+"MDO"
+Lexer::TOK_NEWLINE(1),len:1,line:5,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:6,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:6,offs:0,offe:2
+"all"
+Lexer::TOK_COLON(6),len:1,line:6,offs:3,offe:3
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:7,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:7,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:4,line:7,offs:1,offe:4
+"test"
+Lexer::TOK_NEWLINE(1),len:1,line:8,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:1,line:8,offs:0,offe:0
+"b"
+Lexer::TOK_COLON(6),len:1,line:8,offs:1,offe:1
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:9,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:9,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:3,line:9,offs:1,offe:3
+"cmp"
+Lexer::TOK_NEWLINE(1),len:1,line:10,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:1,line:10,offs:0,offe:0
+"c"
+Lexer::TOK_COLON(6),len:1,line:10,offs:1,offe:1
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:11,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:11,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:3,line:11,offs:1,offe:3
+"123"
+Lexer::TOK_NEWLINE(1),len:1,line:12,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:1,line:12,offs:0,offe:0
+"d"
+Lexer::TOK_COLON(6),len:1,line:12,offs:1,offe:1
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:13,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:13,offs:0,offe:0
+"	"
+Lexer::TOK_STR(4),len:3,line:13,offs:1,offe:3
+"567"
+Lexer::TOK_NEWLINE(1),len:1,line:14,offs:0,offe:0
+"
+"
+LINE 1 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 2 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 3 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 4 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 5 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 6 is predicted as type: Lexer::LP_TARGET(1)
+LINE 7 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 8 is predicted as type: Lexer::LP_TARGET(1)
+LINE 9 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 10 is predicted as type: Lexer::LP_TARGET(1)
+LINE 11 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 12 is predicted as type: Lexer::LP_TARGET(1)
+LINE 13 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 14 is predicted as type: Lexer::LP_NORMAL(0)

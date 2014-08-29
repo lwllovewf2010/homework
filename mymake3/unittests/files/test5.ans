@@ -1,0 +1,3790 @@
+Lexer::TOK_COMMENT(2),len:6,line:1,offs:0,offe:5
+"# LLVM"
+Lexer::TOK_NEWLINE(1),len:1,line:2,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:2,offs:0,offe:1
+"OS"
+Lexer::TOK_TAB(5),len:1,line:2,offs:2,offe:2
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:3,offe:3
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:4,offe:4
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:5,offe:5
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:6,offe:6
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:12,offe:12
+"	"
+Lexer::TOK_COLON(6),len:1,line:2,offs:13,offe:13
+":"
+Lexer::TOK_EQUAL(8),len:1,line:2,offs:14,offe:14
+"="
+Lexer::TOK_SPACE(3),len:1,line:2,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:2,offs:16,offe:16
+" "
+Lexer::TOK_VAR(14),len:14,line:2,offs:19,offe:32
+"shell uname -s"
+Lexer::TOK_NEWLINE(1),len:1,line:3,offs:0,offe:0
+"
+"
+Lexer::TOK_IFEQ(27),len:4,line:3,offs:0,offe:3
+"ifeq"
+Lexer::TOK_SPACE(3),len:1,line:3,offs:4,offe:4
+" "
+Lexer::TOK_STR(4),len:1,line:3,offs:5,offe:5
+"("
+Lexer::TOK_VAR(14),len:2,line:3,offs:8,offe:9
+"OS"
+Lexer::TOK_STR(4),len:1,line:3,offs:11,offe:11
+","
+Lexer::TOK_SPACE(3),len:1,line:3,offs:12,offe:12
+" "
+Lexer::TOK_STR(4),len:7,line:3,offs:13,offe:19
+"Darwin)"
+Lexer::TOK_NEWLINE(1),len:1,line:4,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:4,offs:0,offe:6
+"CODEDIR"
+Lexer::TOK_TAB(5),len:1,line:4,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:4,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:4,offs:17,offe:17
+"="
+Lexer::TOK_SPACE(3),len:1,line:4,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:4,offs:19,offe:19
+" "
+Lexer::TOK_STR(4),len:32,line:4,offs:20,offe:51
+"/Users/merck/References/compiler"
+Lexer::TOK_NEWLINE(1),len:1,line:5,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:5,line:5,offs:0,offe:4
+"SWDIR"
+Lexer::TOK_TAB(5),len:1,line:5,offs:5,offe:5
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:6,offe:6
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:14,offe:14
+"	"
+Lexer::TOK_COLON(6),len:1,line:5,offs:15,offe:15
+":"
+Lexer::TOK_EQUAL(8),len:1,line:5,offs:16,offe:16
+"="
+Lexer::TOK_SPACE(3),len:1,line:5,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:5,offs:18,offe:18
+" "
+Lexer::TOK_STR(4),len:15,line:5,offs:19,offe:33
+"/Users/merck/Sw"
+Lexer::TOK_NEWLINE(1),len:1,line:6,offs:0,offe:0
+"
+"
+Lexer::TOK_ELSE(29),len:4,line:6,offs:0,offe:3
+"else"
+Lexer::TOK_NEWLINE(1),len:1,line:7,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:7,offs:0,offe:6
+"CODEDIR"
+Lexer::TOK_TAB(5),len:1,line:7,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:7,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:7,offs:17,offe:17
+"="
+Lexer::TOK_SPACE(3),len:1,line:7,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:7,offs:19,offe:19
+" "
+Lexer::TOK_STR(4),len:14,line:7,offs:20,offe:33
+"/home/merck/Sw"
+Lexer::TOK_NEWLINE(1),len:1,line:8,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:5,line:8,offs:0,offe:4
+"SWDIR"
+Lexer::TOK_TAB(5),len:1,line:8,offs:5,offe:5
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:6,offe:6
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:14,offe:14
+"	"
+Lexer::TOK_COLON(6),len:1,line:8,offs:15,offe:15
+":"
+Lexer::TOK_EQUAL(8),len:1,line:8,offs:16,offe:16
+"="
+Lexer::TOK_SPACE(3),len:1,line:8,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:8,offs:18,offe:18
+" "
+Lexer::TOK_STR(4),len:14,line:8,offs:19,offe:32
+"/home/merck/Sw"
+Lexer::TOK_NEWLINE(1),len:1,line:9,offs:0,offe:0
+"
+"
+Lexer::TOK_ENDIF(30),len:5,line:9,offs:0,offe:4
+"endif"
+Lexer::TOK_NEWLINE(1),len:1,line:10,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:10,offs:0,offe:6
+"LLVMSRC"
+Lexer::TOK_TAB(5),len:1,line:10,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:10,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:10,offs:17,offe:17
+"="
+Lexer::TOK_SPACE(3),len:1,line:10,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:10,offs:19,offe:19
+" "
+Lexer::TOK_VAR(14),len:7,line:10,offs:22,offe:28
+"CODEDIR"
+Lexer::TOK_STR(4),len:13,line:10,offs:30,offe:42
+"/llvm-3.3.src"
+Lexer::TOK_NEWLINE(1),len:1,line:11,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:11,offs:0,offe:6
+"LLVMBIN"
+Lexer::TOK_TAB(5),len:1,line:11,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:11,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:11,offs:17,offe:17
+"="
+Lexer::TOK_SPACE(3),len:1,line:11,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:11,offs:19,offe:19
+" "
+Lexer::TOK_VAR(14),len:5,line:11,offs:22,offe:26
+"SWDIR"
+Lexer::TOK_STR(4),len:5,line:11,offs:28,offe:32
+"/llvm"
+Lexer::TOK_NEWLINE(1),len:1,line:12,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:13,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:9,line:13,offs:0,offe:8
+"LLVMBPATH"
+Lexer::TOK_TAB(5),len:1,line:13,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:16,offe:16
+"	"
+Lexer::TOK_COLON(6),len:1,line:13,offs:17,offe:17
+":"
+Lexer::TOK_EQUAL(8),len:1,line:13,offs:18,offe:18
+"="
+Lexer::TOK_SPACE(3),len:1,line:13,offs:19,offe:19
+" "
+Lexer::TOK_SPACE(3),len:1,line:13,offs:20,offe:20
+" "
+Lexer::TOK_VAR(14),len:7,line:13,offs:23,offe:29
+"LLVMBIN"
+Lexer::TOK_STR(4),len:20,line:13,offs:31,offe:50
+"/Release+Asserts/bin"
+Lexer::TOK_NEWLINE(1),len:1,line:14,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:14,offs:0,offe:6
+"LLVMCFG"
+Lexer::TOK_TAB(5),len:1,line:14,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:14,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:14,offs:17,offe:17
+"="
+Lexer::TOK_SPACE(3),len:1,line:14,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:14,offs:19,offe:19
+" "
+Lexer::TOK_VAR(14),len:9,line:14,offs:22,offe:30
+"LLVMBPATH"
+Lexer::TOK_STR(4),len:12,line:14,offs:32,offe:43
+"/llvm-config"
+Lexer::TOK_NEWLINE(1),len:1,line:15,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:16,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:10,line:16,offs:0,offe:9
+"# Compiler"
+Lexer::TOK_NEWLINE(1),len:1,line:17,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:13,line:17,offs:0,offe:12
+"CROSS_COMPILE"
+Lexer::TOK_SPACE(3),len:1,line:17,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:17,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:17,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:17,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:17,offs:23,offe:23
+"="
+Lexer::TOK_NEWLINE(1),len:1,line:18,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:18,offs:0,offe:1
+"AS"
+Lexer::TOK_SPACE(3),len:1,line:18,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:18,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:18,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:18,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:18,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:18,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:9,line:18,offs:27,offe:35
+"LLVMBPATH"
+Lexer::TOK_STR(4),len:6,line:18,offs:37,offe:42
+"/clang"
+Lexer::TOK_NEWLINE(1),len:1,line:19,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:19,offs:0,offe:1
+"AR"
+Lexer::TOK_SPACE(3),len:1,line:19,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:19,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:19,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:19,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:19,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:19,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:19,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:2,line:19,offs:41,offe:42
+"ar"
+Lexer::TOK_NEWLINE(1),len:1,line:20,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:20,offs:0,offe:1
+"CC"
+Lexer::TOK_SPACE(3),len:1,line:20,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:20,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:20,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:20,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:20,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:20,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:20,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:3,line:20,offs:41,offe:43
+"gcc"
+Lexer::TOK_NEWLINE(1),len:1,line:21,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:21,offs:0,offe:2
+"CPP"
+Lexer::TOK_SPACE(3),len:1,line:21,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:21,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:21,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:21,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:21,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:21,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:9,line:21,offs:27,offe:35
+"LLVMBPATH"
+Lexer::TOK_STR(4),len:8,line:21,offs:37,offe:44
+"/clang++"
+Lexer::TOK_NEWLINE(1),len:1,line:22,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:22,offs:0,offe:1
+"LD"
+Lexer::TOK_SPACE(3),len:1,line:22,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:22,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:22,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:22,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:22,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:22,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:22,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:2,line:22,offs:41,offe:42
+"ld"
+Lexer::TOK_NEWLINE(1),len:1,line:23,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:23,offs:0,offe:1
+"NM"
+Lexer::TOK_SPACE(3),len:1,line:23,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:23,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:23,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:23,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:23,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:23,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:23,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:2,line:23,offs:41,offe:42
+"nm"
+Lexer::TOK_NEWLINE(1),len:1,line:24,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:24,offs:0,offe:6
+"OBJCOPY"
+Lexer::TOK_SPACE(3),len:1,line:24,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:24,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:24,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:24,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:24,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:24,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:24,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:7,line:24,offs:41,offe:47
+"objcopy"
+Lexer::TOK_NEWLINE(1),len:1,line:25,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:25,offs:0,offe:6
+"OBJDUMP"
+Lexer::TOK_SPACE(3),len:1,line:25,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:25,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:25,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:25,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:25,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:25,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:25,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:7,line:25,offs:41,offe:47
+"objdump"
+Lexer::TOK_NEWLINE(1),len:1,line:26,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:6,line:26,offs:0,offe:5
+"RANLIB"
+Lexer::TOK_SPACE(3),len:1,line:26,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:26,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:26,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:26,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:26,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:26,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:26,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:6,line:26,offs:41,offe:46
+"ranlib"
+Lexer::TOK_NEWLINE(1),len:1,line:27,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:27,offs:0,offe:6
+"READELF"
+Lexer::TOK_SPACE(3),len:1,line:27,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:27,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:27,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:27,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:27,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:27,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:27,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:7,line:27,offs:41,offe:47
+"readelf"
+Lexer::TOK_NEWLINE(1),len:1,line:28,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:4,line:28,offs:0,offe:3
+"SIZE"
+Lexer::TOK_SPACE(3),len:1,line:28,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:28,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:28,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:28,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:28,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:28,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:28,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:4,line:28,offs:41,offe:44
+"size"
+Lexer::TOK_NEWLINE(1),len:1,line:29,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:29,offs:0,offe:6
+"STRINGS"
+Lexer::TOK_SPACE(3),len:1,line:29,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:29,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:29,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:29,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:29,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:29,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:29,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:7,line:29,offs:41,offe:47
+"strings"
+Lexer::TOK_NEWLINE(1),len:1,line:30,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:5,line:30,offs:0,offe:4
+"STRIP"
+Lexer::TOK_SPACE(3),len:1,line:30,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:30,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:30,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:30,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:30,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:30,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:30,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:5,line:30,offs:41,offe:45
+"strip"
+Lexer::TOK_NEWLINE(1),len:1,line:31,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:32,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:14,line:32,offs:0,offe:13
+"# Common flags"
+Lexer::TOK_NEWLINE(1),len:1,line:33,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:8,line:33,offs:0,offe:7
+"CPPFLAGS"
+Lexer::TOK_TAB(5),len:1,line:33,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:33,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:33,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:33,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:33,offs:12,offe:12
+"	"
+Lexer::TOK_COLON(6),len:1,line:33,offs:13,offe:13
+":"
+Lexer::TOK_EQUAL(8),len:1,line:33,offs:14,offe:14
+"="
+Lexer::TOK_TAB(5),len:1,line:33,offs:15,offe:15
+"	"
+Lexer::TOK_STR(4),len:9,line:33,offs:16,offe:24
+"-Iinclude"
+Lexer::TOK_SPACE(3),len:1,line:33,offs:25,offe:25
+" "
+Lexer::TOK_STR(4),len:5,line:33,offs:26,offe:30
+"-Wall"
+Lexer::TOK_SPACE(3),len:1,line:33,offs:31,offe:31
+" "
+Lexer::TOK_STR(4),len:5,line:33,offs:32,offe:36
+"-fPIC"
+Lexer::TOK_SPACE(3),len:1,line:33,offs:37,offe:37
+" "
+Lexer::TOK_STR(4),len:3,line:33,offs:38,offe:40
+"-g3"
+Lexer::TOK_SPACE(3),len:1,line:33,offs:41,offe:41
+" "
+Lexer::TOK_STR(4),len:15,line:33,offs:42,offe:56
+"-DDEBUG_GORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:34,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:8,line:34,offs:0,offe:7
+"CPPFLAGS"
+Lexer::TOK_TAB(5),len:1,line:34,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:34,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:34,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:34,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:34,offs:12,offe:12
+"	"
+Lexer::TOK_PLUS(10),len:1,line:34,offs:13,offe:13
+"+"
+Lexer::TOK_EQUAL(8),len:1,line:34,offs:14,offe:14
+"="
+Lexer::TOK_TAB(5),len:1,line:34,offs:15,offe:15
+"	"
+Lexer::TOK_VAR(14),len:15,line:34,offs:18,offe:32
+"shell $(LLVMCFG"
+Lexer::TOK_SPACE(3),len:1,line:34,offs:34,offe:34
+" "
+Lexer::TOK_STR(4),len:11,line:34,offs:35,offe:45
+"--cxxflags)"
+Lexer::TOK_NEWLINE(1),len:1,line:35,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:35,offs:0,offe:6
+"LDFLAGS"
+Lexer::TOK_TAB(5),len:1,line:35,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:35,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:35,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:35,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:35,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:35,offs:12,offe:12
+"	"
+Lexer::TOK_COLON(6),len:1,line:35,offs:13,offe:13
+":"
+Lexer::TOK_EQUAL(8),len:1,line:35,offs:14,offe:14
+"="
+Lexer::TOK_NEWLINE(1),len:1,line:36,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:36,offs:0,offe:6
+"LDFLAGS"
+Lexer::TOK_TAB(5),len:1,line:36,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:36,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:36,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:36,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:36,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:36,offs:12,offe:12
+"	"
+Lexer::TOK_PLUS(10),len:1,line:36,offs:13,offe:13
+"+"
+Lexer::TOK_EQUAL(8),len:1,line:36,offs:14,offe:14
+"="
+Lexer::TOK_TAB(5),len:1,line:36,offs:15,offe:15
+"	"
+Lexer::TOK_VAR(14),len:15,line:36,offs:18,offe:32
+"shell $(LLVMCFG"
+Lexer::TOK_SPACE(3),len:1,line:36,offs:34,offe:34
+" "
+Lexer::TOK_STR(4),len:9,line:36,offs:35,offe:43
+"--ldflags"
+Lexer::TOK_SPACE(3),len:1,line:36,offs:44,offe:44
+" "
+Lexer::TOK_STR(4),len:6,line:36,offs:45,offe:50
+"--libs"
+Lexer::TOK_SPACE(3),len:1,line:36,offs:51,offe:51
+" "
+Lexer::TOK_STR(4),len:4,line:36,offs:52,offe:55
+"core"
+Lexer::TOK_SPACE(3),len:1,line:36,offs:56,offe:56
+" "
+Lexer::TOK_STR(4),len:3,line:36,offs:57,offe:59
+"jit"
+Lexer::TOK_SPACE(3),len:1,line:36,offs:60,offe:60
+" "
+Lexer::TOK_STR(4),len:7,line:36,offs:61,offe:67
+"native)"
+Lexer::TOK_NEWLINE(1),len:1,line:37,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:38,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:15,line:38,offs:0,offe:14
+"# libgormake.so"
+Lexer::TOK_NEWLINE(1),len:1,line:39,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:39,offs:0,offe:14
+"NAME_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:39,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:39,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:39,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:39,offs:18,offe:18
+"	"
+Lexer::TOK_COLON(6),len:1,line:39,offs:19,offe:19
+":"
+Lexer::TOK_EQUAL(8),len:1,line:39,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:39,offs:21,offe:21
+"	"
+Lexer::TOK_STR(4),len:13,line:39,offs:22,offe:34
+"libgormake.so"
+Lexer::TOK_NEWLINE(1),len:1,line:40,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:40,offs:0,offe:14
+"PATH_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:40,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:40,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:40,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:40,offs:18,offe:18
+"	"
+Lexer::TOK_COLON(6),len:1,line:40,offs:19,offe:19
+":"
+Lexer::TOK_EQUAL(8),len:1,line:40,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:40,offs:21,offe:21
+"	"
+Lexer::TOK_STR(4),len:14,line:40,offs:22,offe:35
+"src_libgormake"
+Lexer::TOK_NEWLINE(1),len:1,line:41,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:41,offs:0,offe:14
+"OBJS_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:41,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:41,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:41,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:41,offs:18,offe:18
+"	"
+Lexer::TOK_COLON(6),len:1,line:41,offs:19,offe:19
+":"
+Lexer::TOK_EQUAL(8),len:1,line:41,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:41,offs:21,offe:21
+"	"
+Lexer::TOK_VAR(14),len:15,line:41,offs:24,offe:38
+"PATH_LIBGORMAKE"
+Lexer::TOK_STR(4),len:8,line:41,offs:40,offe:47
+"/lexer.o"
+Lexer::TOK_NEWLINE(1),len:1,line:42,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:42,offs:0,offe:14
+"OBJS_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:42,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:42,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:42,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:42,offs:18,offe:18
+"	"
+Lexer::TOK_PLUS(10),len:1,line:42,offs:19,offe:19
+"+"
+Lexer::TOK_EQUAL(8),len:1,line:42,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:42,offs:21,offe:21
+"	"
+Lexer::TOK_VAR(14),len:15,line:42,offs:24,offe:38
+"PATH_LIBGORMAKE"
+Lexer::TOK_STR(4),len:9,line:42,offs:40,offe:48
+"/parser.o"
+Lexer::TOK_NEWLINE(1),len:1,line:43,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:43,offs:0,offe:14
+"OBJS_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:43,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:43,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:43,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:43,offs:18,offe:18
+"	"
+Lexer::TOK_PLUS(10),len:1,line:43,offs:19,offe:19
+"+"
+Lexer::TOK_EQUAL(8),len:1,line:43,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:43,offs:21,offe:21
+"	"
+Lexer::TOK_VAR(14),len:15,line:43,offs:24,offe:38
+"PATH_LIBGORMAKE"
+Lexer::TOK_STR(4),len:10,line:43,offs:40,offe:49
+"/codegen.o"
+Lexer::TOK_NEWLINE(1),len:1,line:44,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:19,line:44,offs:0,offe:18
+"CPPFLAGS_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:44,offs:19,offe:19
+"	"
+Lexer::TOK_TAB(5),len:1,line:44,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:44,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:44,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:44,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:44,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:8,line:44,offs:27,offe:34
+"CPPFLAGS"
+Lexer::TOK_NEWLINE(1),len:1,line:45,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:18,line:45,offs:0,offe:17
+"LDFLAGS_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:45,offs:18,offe:18
+"	"
+Lexer::TOK_TAB(5),len:1,line:45,offs:19,offe:19
+"	"
+Lexer::TOK_TAB(5),len:1,line:45,offs:20,offe:20
+"	"
+Lexer::TOK_COLON(6),len:1,line:45,offs:21,offe:21
+":"
+Lexer::TOK_EQUAL(8),len:1,line:45,offs:22,offe:22
+"="
+Lexer::TOK_TAB(5),len:1,line:45,offs:23,offe:23
+"	"
+Lexer::TOK_VAR(14),len:7,line:45,offs:26,offe:32
+"LDFLAGS"
+Lexer::TOK_SPACE(3),len:1,line:45,offs:34,offe:34
+" "
+Lexer::TOK_STR(4),len:7,line:45,offs:35,offe:41
+"-shared"
+Lexer::TOK_NEWLINE(1),len:1,line:46,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:47,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:9,line:47,offs:0,offe:8
+"# gormake"
+Lexer::TOK_NEWLINE(1),len:1,line:48,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:12,line:48,offs:0,offe:11
+"NAME_GORMAKE"
+Lexer::TOK_TAB(5),len:1,line:48,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:48,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:48,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:48,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:48,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:48,offs:17,offe:17
+"="
+Lexer::TOK_TAB(5),len:1,line:48,offs:18,offe:18
+"	"
+Lexer::TOK_STR(4),len:7,line:48,offs:19,offe:25
+"gormake"
+Lexer::TOK_NEWLINE(1),len:1,line:49,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:12,line:49,offs:0,offe:11
+"PATH_GORMAKE"
+Lexer::TOK_TAB(5),len:1,line:49,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:49,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:49,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:49,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:49,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:49,offs:17,offe:17
+"="
+Lexer::TOK_TAB(5),len:1,line:49,offs:18,offe:18
+"	"
+Lexer::TOK_STR(4),len:4,line:49,offs:19,offe:22
+"src_"
+Lexer::TOK_VAR(14),len:12,line:49,offs:25,offe:36
+"NAME_GORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:50,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:12,line:50,offs:0,offe:11
+"OBJS_GORMAKE"
+Lexer::TOK_TAB(5),len:1,line:50,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:50,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:50,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:50,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:50,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:50,offs:17,offe:17
+"="
+Lexer::TOK_TAB(5),len:1,line:50,offs:18,offe:18
+"	"
+Lexer::TOK_VAR(14),len:12,line:50,offs:21,offe:32
+"PATH_GORMAKE"
+Lexer::TOK_STR(4),len:7,line:50,offs:34,offe:40
+"/main.o"
+Lexer::TOK_NEWLINE(1),len:1,line:51,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:16,line:51,offs:0,offe:15
+"CPPFLAGS_GORMAKE"
+Lexer::TOK_TAB(5),len:1,line:51,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:51,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:51,offs:18,offe:18
+"	"
+Lexer::TOK_COLON(6),len:1,line:51,offs:19,offe:19
+":"
+Lexer::TOK_EQUAL(8),len:1,line:51,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:51,offs:21,offe:21
+"	"
+Lexer::TOK_VAR(14),len:8,line:51,offs:24,offe:31
+"CPPFLAGS"
+Lexer::TOK_NEWLINE(1),len:1,line:52,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:52,offs:0,offe:14
+"LDFLAGS_GORMAKE"
+Lexer::TOK_TAB(5),len:1,line:52,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:52,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:52,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:52,offs:18,offe:18
+"	"
+Lexer::TOK_COLON(6),len:1,line:52,offs:19,offe:19
+":"
+Lexer::TOK_EQUAL(8),len:1,line:52,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:52,offs:21,offe:21
+"	"
+Lexer::TOK_VAR(14),len:7,line:52,offs:24,offe:30
+"LDFLAGS"
+Lexer::TOK_SPACE(3),len:1,line:52,offs:32,offe:32
+" "
+Lexer::TOK_STR(4),len:9,line:52,offs:33,offe:41
+"-lgormake"
+Lexer::TOK_SPACE(3),len:1,line:52,offs:42,offe:42
+" "
+Lexer::TOK_STR(4),len:4,line:52,offs:43,offe:46
+"-L./"
+Lexer::TOK_NEWLINE(1),len:1,line:53,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:54,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:14,line:54,offs:0,offe:13
+"# GorgeousMake"
+Lexer::TOK_NEWLINE(1),len:1,line:55,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:17,line:55,offs:0,offe:16
+"NAME_GORGEOUSMAKE"
+Lexer::TOK_TAB(5),len:1,line:55,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:55,offs:18,offe:18
+"	"
+Lexer::TOK_TAB(5),len:1,line:55,offs:19,offe:19
+"	"
+Lexer::TOK_COLON(6),len:1,line:55,offs:20,offe:20
+":"
+Lexer::TOK_EQUAL(8),len:1,line:55,offs:21,offe:21
+"="
+Lexer::TOK_TAB(5),len:1,line:55,offs:22,offe:22
+"	"
+Lexer::TOK_STR(4),len:12,line:55,offs:23,offe:34
+"GorgeousMake"
+Lexer::TOK_NEWLINE(1),len:1,line:56,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:17,line:56,offs:0,offe:16
+"PATH_GORGEOUSMAKE"
+Lexer::TOK_TAB(5),len:1,line:56,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:56,offs:18,offe:18
+"	"
+Lexer::TOK_TAB(5),len:1,line:56,offs:19,offe:19
+"	"
+Lexer::TOK_COLON(6),len:1,line:56,offs:20,offe:20
+":"
+Lexer::TOK_EQUAL(8),len:1,line:56,offs:21,offe:21
+"="
+Lexer::TOK_TAB(5),len:1,line:56,offs:22,offe:22
+"	"
+Lexer::TOK_STR(4),len:4,line:56,offs:23,offe:26
+"src_"
+Lexer::TOK_VAR(14),len:17,line:56,offs:29,offe:45
+"NAME_GORGEOUSMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:57,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:17,line:57,offs:0,offe:16
+"OBJS_GORGEOUSMAKE"
+Lexer::TOK_TAB(5),len:1,line:57,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:57,offs:18,offe:18
+"	"
+Lexer::TOK_TAB(5),len:1,line:57,offs:19,offe:19
+"	"
+Lexer::TOK_COLON(6),len:1,line:57,offs:20,offe:20
+":"
+Lexer::TOK_EQUAL(8),len:1,line:57,offs:21,offe:21
+"="
+Lexer::TOK_TAB(5),len:1,line:57,offs:22,offe:22
+"	"
+Lexer::TOK_VAR(14),len:17,line:57,offs:25,offe:41
+"PATH_GORGEOUSMAKE"
+Lexer::TOK_STR(4),len:9,line:57,offs:43,offe:51
+"/main.cpp"
+Lexer::TOK_NEWLINE(1),len:1,line:58,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:21,line:58,offs:0,offe:20
+"CPPFLAGS_GORGEOUSMAKE"
+Lexer::TOK_TAB(5),len:1,line:58,offs:21,offe:21
+"	"
+Lexer::TOK_TAB(5),len:1,line:58,offs:22,offe:22
+"	"
+Lexer::TOK_COLON(6),len:1,line:58,offs:23,offe:23
+":"
+Lexer::TOK_EQUAL(8),len:1,line:58,offs:24,offe:24
+"="
+Lexer::TOK_TAB(5),len:1,line:58,offs:25,offe:25
+"	"
+Lexer::TOK_VAR(14),len:8,line:58,offs:28,offe:35
+"CPPFLAGS"
+Lexer::TOK_NEWLINE(1),len:1,line:59,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:20,line:59,offs:0,offe:19
+"LDFLAGS_GORGEOUSMAKE"
+Lexer::TOK_TAB(5),len:1,line:59,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:59,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:59,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:59,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:59,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:7,line:59,offs:27,offe:33
+"LDFLAGS"
+Lexer::TOK_SPACE(3),len:1,line:59,offs:35,offe:35
+" "
+Lexer::TOK_STR(4),len:9,line:59,offs:36,offe:44
+"-lgormake"
+Lexer::TOK_SPACE(3),len:1,line:59,offs:45,offe:45
+" "
+Lexer::TOK_STR(4),len:4,line:59,offs:46,offe:49
+"-L./"
+Lexer::TOK_NEWLINE(1),len:1,line:60,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:61,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:9,line:61,offs:0,offe:8
+"# Modules"
+Lexer::TOK_NEWLINE(1),len:1,line:62,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:62,offs:0,offe:6
+"MODULES"
+Lexer::TOK_TAB(5),len:1,line:62,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:62,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:62,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:62,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:62,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:62,offs:12,offe:12
+"	"
+Lexer::TOK_COLON(6),len:1,line:62,offs:13,offe:13
+":"
+Lexer::TOK_EQUAL(8),len:1,line:62,offs:14,offe:14
+"="
+Lexer::TOK_TAB(5),len:1,line:62,offs:15,offe:15
+"	"
+Lexer::TOK_VAR(14),len:15,line:62,offs:18,offe:32
+"NAME_LIBGORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:62,offs:34,offe:34
+" "
+Lexer::TOK_VAR(14),len:12,line:62,offs:37,offe:48
+"NAME_GORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:62,offs:50,offe:50
+" "
+Lexer::TOK_VAR(14),len:17,line:62,offs:53,offe:69
+"NAME_GORGEOUSMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:63,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:64,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:65,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:7,line:65,offs:0,offe:6
+"# Rules"
+Lexer::TOK_NEWLINE(1),len:1,line:66,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:66,offs:0,offe:2
+"all"
+Lexer::TOK_COLON(6),len:1,line:66,offs:3,offe:3
+":"
+Lexer::TOK_SPACE(3),len:1,line:66,offs:4,offe:4
+" "
+Lexer::TOK_VAR(14),len:7,line:66,offs:7,offe:13
+"MODULES"
+Lexer::TOK_NEWLINE(1),len:1,line:67,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:68,offs:0,offe:0
+"
+"
+Lexer::TOK_VAR(14),len:17,line:68,offs:2,offe:18
+"NAME_GORGEOUSMAKE"
+Lexer::TOK_COLON(6),len:1,line:68,offs:20,offe:20
+":"
+Lexer::TOK_SPACE(3),len:1,line:68,offs:21,offe:21
+" "
+Lexer::TOK_VAR(14),len:17,line:68,offs:24,offe:40
+"OBJS_GORGEOUSMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:69,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:69,offs:0,offe:0
+"	"
+Lexer::TOK_AT(11),len:1,line:69,offs:1,offe:1
+"@"
+Lexer::TOK_VAR(14),len:3,line:69,offs:4,offe:6
+"CPP"
+Lexer::TOK_SPACE(3),len:1,line:69,offs:8,offe:8
+" "
+Lexer::TOK_STR(4),len:2,line:69,offs:9,offe:10
+"-o"
+Lexer::TOK_SPACE(3),len:1,line:69,offs:11,offe:11
+" "
+Lexer::TOK_VAR(14),len:1,line:69,offs:13,offe:13
+"@"
+Lexer::TOK_SPACE(3),len:1,line:69,offs:14,offe:14
+" "
+Lexer::TOK_VAR(14),len:17,line:69,offs:17,offe:33
+"OBJS_GORGEOUSMAKE"
+Lexer::TOK_SPACE(3),len:1,line:69,offs:35,offe:35
+" "
+Lexer::TOK_VAR(14),len:21,line:69,offs:38,offe:58
+"CPPFLAGS_GORGEOUSMAKE"
+Lexer::TOK_SPACE(3),len:1,line:69,offs:60,offe:60
+" "
+Lexer::TOK_VAR(14),len:20,line:69,offs:63,offe:82
+"LDFLAGS_GORGEOUSMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:70,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:71,offs:0,offe:0
+"
+"
+Lexer::TOK_VAR(14),len:12,line:71,offs:2,offe:13
+"NAME_GORMAKE"
+Lexer::TOK_COLON(6),len:1,line:71,offs:15,offe:15
+":"
+Lexer::TOK_SPACE(3),len:1,line:71,offs:16,offe:16
+" "
+Lexer::TOK_VAR(14),len:12,line:71,offs:19,offe:30
+"OBJS_GORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:72,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:72,offs:0,offe:0
+"	"
+Lexer::TOK_AT(11),len:1,line:72,offs:1,offe:1
+"@"
+Lexer::TOK_VAR(14),len:3,line:72,offs:4,offe:6
+"CPP"
+Lexer::TOK_SPACE(3),len:1,line:72,offs:8,offe:8
+" "
+Lexer::TOK_STR(4),len:2,line:72,offs:9,offe:10
+"-o"
+Lexer::TOK_SPACE(3),len:1,line:72,offs:11,offe:11
+" "
+Lexer::TOK_VAR(14),len:1,line:72,offs:13,offe:13
+"@"
+Lexer::TOK_SPACE(3),len:1,line:72,offs:14,offe:14
+" "
+Lexer::TOK_VAR(14),len:12,line:72,offs:17,offe:28
+"OBJS_GORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:72,offs:30,offe:30
+" "
+Lexer::TOK_VAR(14),len:16,line:72,offs:33,offe:48
+"CPPFLAGS_GORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:72,offs:50,offe:50
+" "
+Lexer::TOK_VAR(14),len:15,line:72,offs:53,offe:67
+"LDFLAGS_GORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:73,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:74,offs:0,offe:0
+"
+"
+Lexer::TOK_VAR(14),len:15,line:74,offs:2,offe:16
+"NAME_LIBGORMAKE"
+Lexer::TOK_COLON(6),len:1,line:74,offs:18,offe:18
+":"
+Lexer::TOK_SPACE(3),len:1,line:74,offs:19,offe:19
+" "
+Lexer::TOK_VAR(14),len:15,line:74,offs:22,offe:36
+"OBJS_LIBGORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:75,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:75,offs:0,offe:0
+"	"
+Lexer::TOK_AT(11),len:1,line:75,offs:1,offe:1
+"@"
+Lexer::TOK_VAR(14),len:3,line:75,offs:4,offe:6
+"CPP"
+Lexer::TOK_SPACE(3),len:1,line:75,offs:8,offe:8
+" "
+Lexer::TOK_STR(4),len:2,line:75,offs:9,offe:10
+"-o"
+Lexer::TOK_SPACE(3),len:1,line:75,offs:11,offe:11
+" "
+Lexer::TOK_VAR(14),len:1,line:75,offs:13,offe:13
+"@"
+Lexer::TOK_SPACE(3),len:1,line:75,offs:14,offe:14
+" "
+Lexer::TOK_VAR(14),len:15,line:75,offs:17,offe:31
+"OBJS_LIBGORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:75,offs:33,offe:33
+" "
+Lexer::TOK_VAR(14),len:19,line:75,offs:36,offe:54
+"CPPFLAGS_LIBGORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:75,offs:56,offe:56
+" "
+Lexer::TOK_VAR(14),len:18,line:75,offs:59,offe:76
+"LDFLAGS_LIBGORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:76,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:77,offs:0,offe:0
+"
+"
+Lexer::TOK_PRECENT(15),len:1,line:77,offs:0,offe:0
+"%"
+Lexer::TOK_STR(4),len:2,line:77,offs:1,offe:2
+".o"
+Lexer::TOK_COLON(6),len:1,line:77,offs:3,offe:3
+":"
+Lexer::TOK_SPACE(3),len:1,line:77,offs:4,offe:4
+" "
+Lexer::TOK_PRECENT(15),len:1,line:77,offs:5,offe:5
+"%"
+Lexer::TOK_STR(4),len:4,line:77,offs:6,offe:9
+".cpp"
+Lexer::TOK_NEWLINE(1),len:1,line:78,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:78,offs:0,offe:0
+"	"
+Lexer::TOK_AT(11),len:1,line:78,offs:1,offe:1
+"@"
+Lexer::TOK_VAR(14),len:3,line:78,offs:4,offe:6
+"CPP"
+Lexer::TOK_SPACE(3),len:1,line:78,offs:8,offe:8
+" "
+Lexer::TOK_STR(4),len:2,line:78,offs:9,offe:10
+"-o"
+Lexer::TOK_SPACE(3),len:1,line:78,offs:11,offe:11
+" "
+Lexer::TOK_VAR(14),len:1,line:78,offs:13,offe:13
+"@"
+Lexer::TOK_SPACE(3),len:1,line:78,offs:14,offe:14
+" "
+Lexer::TOK_VAR(14),len:1,line:78,offs:16,offe:16
+"<"
+Lexer::TOK_SPACE(3),len:1,line:78,offs:17,offe:17
+" "
+Lexer::TOK_VAR(14),len:8,line:78,offs:20,offe:27
+"CPPFLAGS"
+Lexer::TOK_SPACE(3),len:1,line:78,offs:29,offe:29
+" "
+Lexer::TOK_STR(4),len:2,line:78,offs:30,offe:31
+"-c"
+Lexer::TOK_NEWLINE(1),len:1,line:79,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:80,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:5,line:80,offs:0,offe:4
+"clean"
+Lexer::TOK_COLON(6),len:1,line:80,offs:5,offe:5
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:81,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:81,offs:0,offe:0
+"	"
+Lexer::TOK_AT(11),len:1,line:81,offs:1,offe:1
+"@"
+Lexer::TOK_VAR(14),len:2,line:81,offs:4,offe:5
+"RM"
+Lexer::TOK_SPACE(3),len:1,line:81,offs:7,offe:7
+" "
+Lexer::TOK_STR(4),len:3,line:81,offs:8,offe:10
+"-rf"
+Lexer::TOK_SPACE(3),len:1,line:81,offs:11,offe:11
+" "
+Lexer::TOK_VAR(14),len:7,line:81,offs:14,offe:20
+"MODULES"
+Lexer::TOK_SPACE(3),len:1,line:81,offs:22,offe:22
+" "
+Lexer::TOK_STAR(17),len:1,line:81,offs:23,offe:23
+"*"
+Lexer::TOK_STR(4),len:5,line:81,offs:24,offe:28
+".dSYM"
+Lexer::TOK_NEWLINE(1),len:1,line:82,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:82,offs:0,offe:0
+"	"
+Lexer::TOK_VAR(14),len:43,line:82,offs:3,offe:45
+"shell find ./ -name "*.o" -exec rm -f {} \;"
+Lexer::TOK_NEWLINE(1),len:1,line:83,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:84,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:6,line:1,offs:0,offe:5
+"# LLVM"
+Lexer::TOK_NEWLINE(1),len:1,line:2,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:2,offs:0,offe:1
+"OS"
+Lexer::TOK_TAB(5),len:1,line:2,offs:2,offe:2
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:3,offe:3
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:4,offe:4
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:5,offe:5
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:6,offe:6
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:2,offs:12,offe:12
+"	"
+Lexer::TOK_COLON(6),len:1,line:2,offs:13,offe:13
+":"
+Lexer::TOK_EQUAL(8),len:1,line:2,offs:14,offe:14
+"="
+Lexer::TOK_SPACE(3),len:1,line:2,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:2,offs:16,offe:16
+" "
+Lexer::TOK_VAR(14),len:14,line:2,offs:19,offe:32
+"shell uname -s"
+Lexer::TOK_NEWLINE(1),len:1,line:3,offs:0,offe:0
+"
+"
+Lexer::TOK_IFEQ(27),len:4,line:3,offs:0,offe:3
+"ifeq"
+Lexer::TOK_SPACE(3),len:1,line:3,offs:4,offe:4
+" "
+Lexer::TOK_STR(4),len:1,line:3,offs:5,offe:5
+"("
+Lexer::TOK_VAR(14),len:2,line:3,offs:8,offe:9
+"OS"
+Lexer::TOK_STR(4),len:1,line:3,offs:11,offe:11
+","
+Lexer::TOK_SPACE(3),len:1,line:3,offs:12,offe:12
+" "
+Lexer::TOK_STR(4),len:7,line:3,offs:13,offe:19
+"Darwin)"
+Lexer::TOK_NEWLINE(1),len:1,line:4,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:4,offs:0,offe:6
+"CODEDIR"
+Lexer::TOK_TAB(5),len:1,line:4,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:4,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:4,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:4,offs:17,offe:17
+"="
+Lexer::TOK_SPACE(3),len:1,line:4,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:4,offs:19,offe:19
+" "
+Lexer::TOK_STR(4),len:32,line:4,offs:20,offe:51
+"/Users/merck/References/compiler"
+Lexer::TOK_NEWLINE(1),len:1,line:5,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:5,line:5,offs:0,offe:4
+"SWDIR"
+Lexer::TOK_TAB(5),len:1,line:5,offs:5,offe:5
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:6,offe:6
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:5,offs:14,offe:14
+"	"
+Lexer::TOK_COLON(6),len:1,line:5,offs:15,offe:15
+":"
+Lexer::TOK_EQUAL(8),len:1,line:5,offs:16,offe:16
+"="
+Lexer::TOK_SPACE(3),len:1,line:5,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:5,offs:18,offe:18
+" "
+Lexer::TOK_STR(4),len:15,line:5,offs:19,offe:33
+"/Users/merck/Sw"
+Lexer::TOK_NEWLINE(1),len:1,line:6,offs:0,offe:0
+"
+"
+Lexer::TOK_ELSE(29),len:4,line:6,offs:0,offe:3
+"else"
+Lexer::TOK_NEWLINE(1),len:1,line:7,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:7,offs:0,offe:6
+"CODEDIR"
+Lexer::TOK_TAB(5),len:1,line:7,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:7,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:7,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:7,offs:17,offe:17
+"="
+Lexer::TOK_SPACE(3),len:1,line:7,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:7,offs:19,offe:19
+" "
+Lexer::TOK_STR(4),len:14,line:7,offs:20,offe:33
+"/home/merck/Sw"
+Lexer::TOK_NEWLINE(1),len:1,line:8,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:5,line:8,offs:0,offe:4
+"SWDIR"
+Lexer::TOK_TAB(5),len:1,line:8,offs:5,offe:5
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:6,offe:6
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:8,offs:14,offe:14
+"	"
+Lexer::TOK_COLON(6),len:1,line:8,offs:15,offe:15
+":"
+Lexer::TOK_EQUAL(8),len:1,line:8,offs:16,offe:16
+"="
+Lexer::TOK_SPACE(3),len:1,line:8,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:8,offs:18,offe:18
+" "
+Lexer::TOK_STR(4),len:14,line:8,offs:19,offe:32
+"/home/merck/Sw"
+Lexer::TOK_NEWLINE(1),len:1,line:9,offs:0,offe:0
+"
+"
+Lexer::TOK_ENDIF(30),len:5,line:9,offs:0,offe:4
+"endif"
+Lexer::TOK_NEWLINE(1),len:1,line:10,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:10,offs:0,offe:6
+"LLVMSRC"
+Lexer::TOK_TAB(5),len:1,line:10,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:10,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:10,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:10,offs:17,offe:17
+"="
+Lexer::TOK_SPACE(3),len:1,line:10,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:10,offs:19,offe:19
+" "
+Lexer::TOK_VAR(14),len:7,line:10,offs:22,offe:28
+"CODEDIR"
+Lexer::TOK_STR(4),len:13,line:10,offs:30,offe:42
+"/llvm-3.3.src"
+Lexer::TOK_NEWLINE(1),len:1,line:11,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:11,offs:0,offe:6
+"LLVMBIN"
+Lexer::TOK_TAB(5),len:1,line:11,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:11,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:11,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:11,offs:17,offe:17
+"="
+Lexer::TOK_SPACE(3),len:1,line:11,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:11,offs:19,offe:19
+" "
+Lexer::TOK_VAR(14),len:5,line:11,offs:22,offe:26
+"SWDIR"
+Lexer::TOK_STR(4),len:5,line:11,offs:28,offe:32
+"/llvm"
+Lexer::TOK_NEWLINE(1),len:1,line:12,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:13,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:9,line:13,offs:0,offe:8
+"LLVMBPATH"
+Lexer::TOK_TAB(5),len:1,line:13,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:13,offs:16,offe:16
+"	"
+Lexer::TOK_COLON(6),len:1,line:13,offs:17,offe:17
+":"
+Lexer::TOK_EQUAL(8),len:1,line:13,offs:18,offe:18
+"="
+Lexer::TOK_SPACE(3),len:1,line:13,offs:19,offe:19
+" "
+Lexer::TOK_SPACE(3),len:1,line:13,offs:20,offe:20
+" "
+Lexer::TOK_VAR(14),len:7,line:13,offs:23,offe:29
+"LLVMBIN"
+Lexer::TOK_STR(4),len:20,line:13,offs:31,offe:50
+"/Release+Asserts/bin"
+Lexer::TOK_NEWLINE(1),len:1,line:14,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:14,offs:0,offe:6
+"LLVMCFG"
+Lexer::TOK_TAB(5),len:1,line:14,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:14,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:14,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:14,offs:17,offe:17
+"="
+Lexer::TOK_SPACE(3),len:1,line:14,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:14,offs:19,offe:19
+" "
+Lexer::TOK_VAR(14),len:9,line:14,offs:22,offe:30
+"LLVMBPATH"
+Lexer::TOK_STR(4),len:12,line:14,offs:32,offe:43
+"/llvm-config"
+Lexer::TOK_NEWLINE(1),len:1,line:15,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:16,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:10,line:16,offs:0,offe:9
+"# Compiler"
+Lexer::TOK_NEWLINE(1),len:1,line:17,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:13,line:17,offs:0,offe:12
+"CROSS_COMPILE"
+Lexer::TOK_SPACE(3),len:1,line:17,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:17,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:17,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:17,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:17,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:17,offs:23,offe:23
+"="
+Lexer::TOK_NEWLINE(1),len:1,line:18,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:18,offs:0,offe:1
+"AS"
+Lexer::TOK_SPACE(3),len:1,line:18,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:18,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:18,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:18,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:18,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:18,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:18,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:9,line:18,offs:27,offe:35
+"LLVMBPATH"
+Lexer::TOK_STR(4),len:6,line:18,offs:37,offe:42
+"/clang"
+Lexer::TOK_NEWLINE(1),len:1,line:19,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:19,offs:0,offe:1
+"AR"
+Lexer::TOK_SPACE(3),len:1,line:19,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:19,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:19,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:19,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:19,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:19,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:19,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:19,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:2,line:19,offs:41,offe:42
+"ar"
+Lexer::TOK_NEWLINE(1),len:1,line:20,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:20,offs:0,offe:1
+"CC"
+Lexer::TOK_SPACE(3),len:1,line:20,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:20,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:20,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:20,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:20,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:20,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:20,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:20,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:3,line:20,offs:41,offe:43
+"gcc"
+Lexer::TOK_NEWLINE(1),len:1,line:21,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:21,offs:0,offe:2
+"CPP"
+Lexer::TOK_SPACE(3),len:1,line:21,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:21,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:21,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:21,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:21,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:21,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:21,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:9,line:21,offs:27,offe:35
+"LLVMBPATH"
+Lexer::TOK_STR(4),len:8,line:21,offs:37,offe:44
+"/clang++"
+Lexer::TOK_NEWLINE(1),len:1,line:22,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:22,offs:0,offe:1
+"LD"
+Lexer::TOK_SPACE(3),len:1,line:22,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:22,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:22,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:22,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:22,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:22,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:22,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:22,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:2,line:22,offs:41,offe:42
+"ld"
+Lexer::TOK_NEWLINE(1),len:1,line:23,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:2,line:23,offs:0,offe:1
+"NM"
+Lexer::TOK_SPACE(3),len:1,line:23,offs:2,offe:2
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:3,offe:3
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:23,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:23,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:23,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:23,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:23,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:23,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:23,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:2,line:23,offs:41,offe:42
+"nm"
+Lexer::TOK_NEWLINE(1),len:1,line:24,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:24,offs:0,offe:6
+"OBJCOPY"
+Lexer::TOK_SPACE(3),len:1,line:24,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:24,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:24,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:24,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:24,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:24,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:24,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:24,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:7,line:24,offs:41,offe:47
+"objcopy"
+Lexer::TOK_NEWLINE(1),len:1,line:25,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:25,offs:0,offe:6
+"OBJDUMP"
+Lexer::TOK_SPACE(3),len:1,line:25,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:25,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:25,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:25,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:25,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:25,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:25,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:25,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:7,line:25,offs:41,offe:47
+"objdump"
+Lexer::TOK_NEWLINE(1),len:1,line:26,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:6,line:26,offs:0,offe:5
+"RANLIB"
+Lexer::TOK_SPACE(3),len:1,line:26,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:26,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:26,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:26,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:26,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:26,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:26,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:26,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:6,line:26,offs:41,offe:46
+"ranlib"
+Lexer::TOK_NEWLINE(1),len:1,line:27,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:27,offs:0,offe:6
+"READELF"
+Lexer::TOK_SPACE(3),len:1,line:27,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:27,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:27,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:27,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:27,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:27,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:27,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:27,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:7,line:27,offs:41,offe:47
+"readelf"
+Lexer::TOK_NEWLINE(1),len:1,line:28,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:4,line:28,offs:0,offe:3
+"SIZE"
+Lexer::TOK_SPACE(3),len:1,line:28,offs:4,offe:4
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:28,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:28,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:28,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:28,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:28,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:28,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:28,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:4,line:28,offs:41,offe:44
+"size"
+Lexer::TOK_NEWLINE(1),len:1,line:29,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:29,offs:0,offe:6
+"STRINGS"
+Lexer::TOK_SPACE(3),len:1,line:29,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:29,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:29,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:29,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:29,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:29,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:29,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:29,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:7,line:29,offs:41,offe:47
+"strings"
+Lexer::TOK_NEWLINE(1),len:1,line:30,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:5,line:30,offs:0,offe:4
+"STRIP"
+Lexer::TOK_SPACE(3),len:1,line:30,offs:5,offe:5
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:6,offe:6
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:7,offe:7
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:8,offe:8
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:9,offe:9
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:10,offe:10
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:11,offe:11
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:12,offe:12
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:13,offe:13
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:14,offe:14
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:15,offe:15
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:16,offe:16
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:17,offe:17
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:18,offe:18
+" "
+Lexer::TOK_SPACE(3),len:1,line:30,offs:19,offe:19
+" "
+Lexer::TOK_TAB(5),len:1,line:30,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:30,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:30,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:30,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:30,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:13,line:30,offs:27,offe:39
+"CROSS_COMPILE"
+Lexer::TOK_STR(4),len:5,line:30,offs:41,offe:45
+"strip"
+Lexer::TOK_NEWLINE(1),len:1,line:31,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:32,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:14,line:32,offs:0,offe:13
+"# Common flags"
+Lexer::TOK_NEWLINE(1),len:1,line:33,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:8,line:33,offs:0,offe:7
+"CPPFLAGS"
+Lexer::TOK_TAB(5),len:1,line:33,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:33,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:33,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:33,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:33,offs:12,offe:12
+"	"
+Lexer::TOK_COLON(6),len:1,line:33,offs:13,offe:13
+":"
+Lexer::TOK_EQUAL(8),len:1,line:33,offs:14,offe:14
+"="
+Lexer::TOK_TAB(5),len:1,line:33,offs:15,offe:15
+"	"
+Lexer::TOK_STR(4),len:9,line:33,offs:16,offe:24
+"-Iinclude"
+Lexer::TOK_SPACE(3),len:1,line:33,offs:25,offe:25
+" "
+Lexer::TOK_STR(4),len:5,line:33,offs:26,offe:30
+"-Wall"
+Lexer::TOK_SPACE(3),len:1,line:33,offs:31,offe:31
+" "
+Lexer::TOK_STR(4),len:5,line:33,offs:32,offe:36
+"-fPIC"
+Lexer::TOK_SPACE(3),len:1,line:33,offs:37,offe:37
+" "
+Lexer::TOK_STR(4),len:3,line:33,offs:38,offe:40
+"-g3"
+Lexer::TOK_SPACE(3),len:1,line:33,offs:41,offe:41
+" "
+Lexer::TOK_STR(4),len:15,line:33,offs:42,offe:56
+"-DDEBUG_GORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:34,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:8,line:34,offs:0,offe:7
+"CPPFLAGS"
+Lexer::TOK_TAB(5),len:1,line:34,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:34,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:34,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:34,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:34,offs:12,offe:12
+"	"
+Lexer::TOK_PLUS(10),len:1,line:34,offs:13,offe:13
+"+"
+Lexer::TOK_EQUAL(8),len:1,line:34,offs:14,offe:14
+"="
+Lexer::TOK_TAB(5),len:1,line:34,offs:15,offe:15
+"	"
+Lexer::TOK_VAR(14),len:15,line:34,offs:18,offe:32
+"shell $(LLVMCFG"
+Lexer::TOK_SPACE(3),len:1,line:34,offs:34,offe:34
+" "
+Lexer::TOK_STR(4),len:11,line:34,offs:35,offe:45
+"--cxxflags)"
+Lexer::TOK_NEWLINE(1),len:1,line:35,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:35,offs:0,offe:6
+"LDFLAGS"
+Lexer::TOK_TAB(5),len:1,line:35,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:35,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:35,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:35,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:35,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:35,offs:12,offe:12
+"	"
+Lexer::TOK_COLON(6),len:1,line:35,offs:13,offe:13
+":"
+Lexer::TOK_EQUAL(8),len:1,line:35,offs:14,offe:14
+"="
+Lexer::TOK_NEWLINE(1),len:1,line:36,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:36,offs:0,offe:6
+"LDFLAGS"
+Lexer::TOK_TAB(5),len:1,line:36,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:36,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:36,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:36,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:36,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:36,offs:12,offe:12
+"	"
+Lexer::TOK_PLUS(10),len:1,line:36,offs:13,offe:13
+"+"
+Lexer::TOK_EQUAL(8),len:1,line:36,offs:14,offe:14
+"="
+Lexer::TOK_TAB(5),len:1,line:36,offs:15,offe:15
+"	"
+Lexer::TOK_VAR(14),len:15,line:36,offs:18,offe:32
+"shell $(LLVMCFG"
+Lexer::TOK_SPACE(3),len:1,line:36,offs:34,offe:34
+" "
+Lexer::TOK_STR(4),len:9,line:36,offs:35,offe:43
+"--ldflags"
+Lexer::TOK_SPACE(3),len:1,line:36,offs:44,offe:44
+" "
+Lexer::TOK_STR(4),len:6,line:36,offs:45,offe:50
+"--libs"
+Lexer::TOK_SPACE(3),len:1,line:36,offs:51,offe:51
+" "
+Lexer::TOK_STR(4),len:4,line:36,offs:52,offe:55
+"core"
+Lexer::TOK_SPACE(3),len:1,line:36,offs:56,offe:56
+" "
+Lexer::TOK_STR(4),len:3,line:36,offs:57,offe:59
+"jit"
+Lexer::TOK_SPACE(3),len:1,line:36,offs:60,offe:60
+" "
+Lexer::TOK_STR(4),len:7,line:36,offs:61,offe:67
+"native)"
+Lexer::TOK_NEWLINE(1),len:1,line:37,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:38,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:15,line:38,offs:0,offe:14
+"# libgormake.so"
+Lexer::TOK_NEWLINE(1),len:1,line:39,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:39,offs:0,offe:14
+"NAME_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:39,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:39,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:39,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:39,offs:18,offe:18
+"	"
+Lexer::TOK_COLON(6),len:1,line:39,offs:19,offe:19
+":"
+Lexer::TOK_EQUAL(8),len:1,line:39,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:39,offs:21,offe:21
+"	"
+Lexer::TOK_STR(4),len:13,line:39,offs:22,offe:34
+"libgormake.so"
+Lexer::TOK_NEWLINE(1),len:1,line:40,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:40,offs:0,offe:14
+"PATH_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:40,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:40,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:40,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:40,offs:18,offe:18
+"	"
+Lexer::TOK_COLON(6),len:1,line:40,offs:19,offe:19
+":"
+Lexer::TOK_EQUAL(8),len:1,line:40,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:40,offs:21,offe:21
+"	"
+Lexer::TOK_STR(4),len:14,line:40,offs:22,offe:35
+"src_libgormake"
+Lexer::TOK_NEWLINE(1),len:1,line:41,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:41,offs:0,offe:14
+"OBJS_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:41,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:41,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:41,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:41,offs:18,offe:18
+"	"
+Lexer::TOK_COLON(6),len:1,line:41,offs:19,offe:19
+":"
+Lexer::TOK_EQUAL(8),len:1,line:41,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:41,offs:21,offe:21
+"	"
+Lexer::TOK_VAR(14),len:15,line:41,offs:24,offe:38
+"PATH_LIBGORMAKE"
+Lexer::TOK_STR(4),len:8,line:41,offs:40,offe:47
+"/lexer.o"
+Lexer::TOK_NEWLINE(1),len:1,line:42,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:42,offs:0,offe:14
+"OBJS_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:42,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:42,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:42,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:42,offs:18,offe:18
+"	"
+Lexer::TOK_PLUS(10),len:1,line:42,offs:19,offe:19
+"+"
+Lexer::TOK_EQUAL(8),len:1,line:42,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:42,offs:21,offe:21
+"	"
+Lexer::TOK_VAR(14),len:15,line:42,offs:24,offe:38
+"PATH_LIBGORMAKE"
+Lexer::TOK_STR(4),len:9,line:42,offs:40,offe:48
+"/parser.o"
+Lexer::TOK_NEWLINE(1),len:1,line:43,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:43,offs:0,offe:14
+"OBJS_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:43,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:43,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:43,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:43,offs:18,offe:18
+"	"
+Lexer::TOK_PLUS(10),len:1,line:43,offs:19,offe:19
+"+"
+Lexer::TOK_EQUAL(8),len:1,line:43,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:43,offs:21,offe:21
+"	"
+Lexer::TOK_VAR(14),len:15,line:43,offs:24,offe:38
+"PATH_LIBGORMAKE"
+Lexer::TOK_STR(4),len:10,line:43,offs:40,offe:49
+"/codegen.o"
+Lexer::TOK_NEWLINE(1),len:1,line:44,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:19,line:44,offs:0,offe:18
+"CPPFLAGS_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:44,offs:19,offe:19
+"	"
+Lexer::TOK_TAB(5),len:1,line:44,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:44,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:44,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:44,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:44,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:8,line:44,offs:27,offe:34
+"CPPFLAGS"
+Lexer::TOK_NEWLINE(1),len:1,line:45,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:18,line:45,offs:0,offe:17
+"LDFLAGS_LIBGORMAKE"
+Lexer::TOK_TAB(5),len:1,line:45,offs:18,offe:18
+"	"
+Lexer::TOK_TAB(5),len:1,line:45,offs:19,offe:19
+"	"
+Lexer::TOK_TAB(5),len:1,line:45,offs:20,offe:20
+"	"
+Lexer::TOK_COLON(6),len:1,line:45,offs:21,offe:21
+":"
+Lexer::TOK_EQUAL(8),len:1,line:45,offs:22,offe:22
+"="
+Lexer::TOK_TAB(5),len:1,line:45,offs:23,offe:23
+"	"
+Lexer::TOK_VAR(14),len:7,line:45,offs:26,offe:32
+"LDFLAGS"
+Lexer::TOK_SPACE(3),len:1,line:45,offs:34,offe:34
+" "
+Lexer::TOK_STR(4),len:7,line:45,offs:35,offe:41
+"-shared"
+Lexer::TOK_NEWLINE(1),len:1,line:46,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:47,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:9,line:47,offs:0,offe:8
+"# gormake"
+Lexer::TOK_NEWLINE(1),len:1,line:48,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:12,line:48,offs:0,offe:11
+"NAME_GORMAKE"
+Lexer::TOK_TAB(5),len:1,line:48,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:48,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:48,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:48,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:48,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:48,offs:17,offe:17
+"="
+Lexer::TOK_TAB(5),len:1,line:48,offs:18,offe:18
+"	"
+Lexer::TOK_STR(4),len:7,line:48,offs:19,offe:25
+"gormake"
+Lexer::TOK_NEWLINE(1),len:1,line:49,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:12,line:49,offs:0,offe:11
+"PATH_GORMAKE"
+Lexer::TOK_TAB(5),len:1,line:49,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:49,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:49,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:49,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:49,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:49,offs:17,offe:17
+"="
+Lexer::TOK_TAB(5),len:1,line:49,offs:18,offe:18
+"	"
+Lexer::TOK_STR(4),len:4,line:49,offs:19,offe:22
+"src_"
+Lexer::TOK_VAR(14),len:12,line:49,offs:25,offe:36
+"NAME_GORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:50,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:12,line:50,offs:0,offe:11
+"OBJS_GORMAKE"
+Lexer::TOK_TAB(5),len:1,line:50,offs:12,offe:12
+"	"
+Lexer::TOK_TAB(5),len:1,line:50,offs:13,offe:13
+"	"
+Lexer::TOK_TAB(5),len:1,line:50,offs:14,offe:14
+"	"
+Lexer::TOK_TAB(5),len:1,line:50,offs:15,offe:15
+"	"
+Lexer::TOK_COLON(6),len:1,line:50,offs:16,offe:16
+":"
+Lexer::TOK_EQUAL(8),len:1,line:50,offs:17,offe:17
+"="
+Lexer::TOK_TAB(5),len:1,line:50,offs:18,offe:18
+"	"
+Lexer::TOK_VAR(14),len:12,line:50,offs:21,offe:32
+"PATH_GORMAKE"
+Lexer::TOK_STR(4),len:7,line:50,offs:34,offe:40
+"/main.o"
+Lexer::TOK_NEWLINE(1),len:1,line:51,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:16,line:51,offs:0,offe:15
+"CPPFLAGS_GORMAKE"
+Lexer::TOK_TAB(5),len:1,line:51,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:51,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:51,offs:18,offe:18
+"	"
+Lexer::TOK_COLON(6),len:1,line:51,offs:19,offe:19
+":"
+Lexer::TOK_EQUAL(8),len:1,line:51,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:51,offs:21,offe:21
+"	"
+Lexer::TOK_VAR(14),len:8,line:51,offs:24,offe:31
+"CPPFLAGS"
+Lexer::TOK_NEWLINE(1),len:1,line:52,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:15,line:52,offs:0,offe:14
+"LDFLAGS_GORMAKE"
+Lexer::TOK_TAB(5),len:1,line:52,offs:15,offe:15
+"	"
+Lexer::TOK_TAB(5),len:1,line:52,offs:16,offe:16
+"	"
+Lexer::TOK_TAB(5),len:1,line:52,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:52,offs:18,offe:18
+"	"
+Lexer::TOK_COLON(6),len:1,line:52,offs:19,offe:19
+":"
+Lexer::TOK_EQUAL(8),len:1,line:52,offs:20,offe:20
+"="
+Lexer::TOK_TAB(5),len:1,line:52,offs:21,offe:21
+"	"
+Lexer::TOK_VAR(14),len:7,line:52,offs:24,offe:30
+"LDFLAGS"
+Lexer::TOK_SPACE(3),len:1,line:52,offs:32,offe:32
+" "
+Lexer::TOK_STR(4),len:9,line:52,offs:33,offe:41
+"-lgormake"
+Lexer::TOK_SPACE(3),len:1,line:52,offs:42,offe:42
+" "
+Lexer::TOK_STR(4),len:4,line:52,offs:43,offe:46
+"-L./"
+Lexer::TOK_NEWLINE(1),len:1,line:53,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:54,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:14,line:54,offs:0,offe:13
+"# GorgeousMake"
+Lexer::TOK_NEWLINE(1),len:1,line:55,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:17,line:55,offs:0,offe:16
+"NAME_GORGEOUSMAKE"
+Lexer::TOK_TAB(5),len:1,line:55,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:55,offs:18,offe:18
+"	"
+Lexer::TOK_TAB(5),len:1,line:55,offs:19,offe:19
+"	"
+Lexer::TOK_COLON(6),len:1,line:55,offs:20,offe:20
+":"
+Lexer::TOK_EQUAL(8),len:1,line:55,offs:21,offe:21
+"="
+Lexer::TOK_TAB(5),len:1,line:55,offs:22,offe:22
+"	"
+Lexer::TOK_STR(4),len:12,line:55,offs:23,offe:34
+"GorgeousMake"
+Lexer::TOK_NEWLINE(1),len:1,line:56,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:17,line:56,offs:0,offe:16
+"PATH_GORGEOUSMAKE"
+Lexer::TOK_TAB(5),len:1,line:56,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:56,offs:18,offe:18
+"	"
+Lexer::TOK_TAB(5),len:1,line:56,offs:19,offe:19
+"	"
+Lexer::TOK_COLON(6),len:1,line:56,offs:20,offe:20
+":"
+Lexer::TOK_EQUAL(8),len:1,line:56,offs:21,offe:21
+"="
+Lexer::TOK_TAB(5),len:1,line:56,offs:22,offe:22
+"	"
+Lexer::TOK_STR(4),len:4,line:56,offs:23,offe:26
+"src_"
+Lexer::TOK_VAR(14),len:17,line:56,offs:29,offe:45
+"NAME_GORGEOUSMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:57,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:17,line:57,offs:0,offe:16
+"OBJS_GORGEOUSMAKE"
+Lexer::TOK_TAB(5),len:1,line:57,offs:17,offe:17
+"	"
+Lexer::TOK_TAB(5),len:1,line:57,offs:18,offe:18
+"	"
+Lexer::TOK_TAB(5),len:1,line:57,offs:19,offe:19
+"	"
+Lexer::TOK_COLON(6),len:1,line:57,offs:20,offe:20
+":"
+Lexer::TOK_EQUAL(8),len:1,line:57,offs:21,offe:21
+"="
+Lexer::TOK_TAB(5),len:1,line:57,offs:22,offe:22
+"	"
+Lexer::TOK_VAR(14),len:17,line:57,offs:25,offe:41
+"PATH_GORGEOUSMAKE"
+Lexer::TOK_STR(4),len:9,line:57,offs:43,offe:51
+"/main.cpp"
+Lexer::TOK_NEWLINE(1),len:1,line:58,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:21,line:58,offs:0,offe:20
+"CPPFLAGS_GORGEOUSMAKE"
+Lexer::TOK_TAB(5),len:1,line:58,offs:21,offe:21
+"	"
+Lexer::TOK_TAB(5),len:1,line:58,offs:22,offe:22
+"	"
+Lexer::TOK_COLON(6),len:1,line:58,offs:23,offe:23
+":"
+Lexer::TOK_EQUAL(8),len:1,line:58,offs:24,offe:24
+"="
+Lexer::TOK_TAB(5),len:1,line:58,offs:25,offe:25
+"	"
+Lexer::TOK_VAR(14),len:8,line:58,offs:28,offe:35
+"CPPFLAGS"
+Lexer::TOK_NEWLINE(1),len:1,line:59,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:20,line:59,offs:0,offe:19
+"LDFLAGS_GORGEOUSMAKE"
+Lexer::TOK_TAB(5),len:1,line:59,offs:20,offe:20
+"	"
+Lexer::TOK_TAB(5),len:1,line:59,offs:21,offe:21
+"	"
+Lexer::TOK_COLON(6),len:1,line:59,offs:22,offe:22
+":"
+Lexer::TOK_EQUAL(8),len:1,line:59,offs:23,offe:23
+"="
+Lexer::TOK_TAB(5),len:1,line:59,offs:24,offe:24
+"	"
+Lexer::TOK_VAR(14),len:7,line:59,offs:27,offe:33
+"LDFLAGS"
+Lexer::TOK_SPACE(3),len:1,line:59,offs:35,offe:35
+" "
+Lexer::TOK_STR(4),len:9,line:59,offs:36,offe:44
+"-lgormake"
+Lexer::TOK_SPACE(3),len:1,line:59,offs:45,offe:45
+" "
+Lexer::TOK_STR(4),len:4,line:59,offs:46,offe:49
+"-L./"
+Lexer::TOK_NEWLINE(1),len:1,line:60,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:61,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:9,line:61,offs:0,offe:8
+"# Modules"
+Lexer::TOK_NEWLINE(1),len:1,line:62,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:7,line:62,offs:0,offe:6
+"MODULES"
+Lexer::TOK_TAB(5),len:1,line:62,offs:7,offe:7
+"	"
+Lexer::TOK_TAB(5),len:1,line:62,offs:8,offe:8
+"	"
+Lexer::TOK_TAB(5),len:1,line:62,offs:9,offe:9
+"	"
+Lexer::TOK_TAB(5),len:1,line:62,offs:10,offe:10
+"	"
+Lexer::TOK_TAB(5),len:1,line:62,offs:11,offe:11
+"	"
+Lexer::TOK_TAB(5),len:1,line:62,offs:12,offe:12
+"	"
+Lexer::TOK_COLON(6),len:1,line:62,offs:13,offe:13
+":"
+Lexer::TOK_EQUAL(8),len:1,line:62,offs:14,offe:14
+"="
+Lexer::TOK_TAB(5),len:1,line:62,offs:15,offe:15
+"	"
+Lexer::TOK_VAR(14),len:15,line:62,offs:18,offe:32
+"NAME_LIBGORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:62,offs:34,offe:34
+" "
+Lexer::TOK_VAR(14),len:12,line:62,offs:37,offe:48
+"NAME_GORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:62,offs:50,offe:50
+" "
+Lexer::TOK_VAR(14),len:17,line:62,offs:53,offe:69
+"NAME_GORGEOUSMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:63,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:64,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:65,offs:0,offe:0
+"
+"
+Lexer::TOK_COMMENT(2),len:7,line:65,offs:0,offe:6
+"# Rules"
+Lexer::TOK_NEWLINE(1),len:1,line:66,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:3,line:66,offs:0,offe:2
+"all"
+Lexer::TOK_COLON(6),len:1,line:66,offs:3,offe:3
+":"
+Lexer::TOK_SPACE(3),len:1,line:66,offs:4,offe:4
+" "
+Lexer::TOK_VAR(14),len:7,line:66,offs:7,offe:13
+"MODULES"
+Lexer::TOK_NEWLINE(1),len:1,line:67,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:68,offs:0,offe:0
+"
+"
+Lexer::TOK_VAR(14),len:17,line:68,offs:2,offe:18
+"NAME_GORGEOUSMAKE"
+Lexer::TOK_COLON(6),len:1,line:68,offs:20,offe:20
+":"
+Lexer::TOK_SPACE(3),len:1,line:68,offs:21,offe:21
+" "
+Lexer::TOK_VAR(14),len:17,line:68,offs:24,offe:40
+"OBJS_GORGEOUSMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:69,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:69,offs:0,offe:0
+"	"
+Lexer::TOK_AT(11),len:1,line:69,offs:1,offe:1
+"@"
+Lexer::TOK_VAR(14),len:3,line:69,offs:4,offe:6
+"CPP"
+Lexer::TOK_SPACE(3),len:1,line:69,offs:8,offe:8
+" "
+Lexer::TOK_STR(4),len:2,line:69,offs:9,offe:10
+"-o"
+Lexer::TOK_SPACE(3),len:1,line:69,offs:11,offe:11
+" "
+Lexer::TOK_VAR(14),len:1,line:69,offs:13,offe:13
+"@"
+Lexer::TOK_SPACE(3),len:1,line:69,offs:14,offe:14
+" "
+Lexer::TOK_VAR(14),len:17,line:69,offs:17,offe:33
+"OBJS_GORGEOUSMAKE"
+Lexer::TOK_SPACE(3),len:1,line:69,offs:35,offe:35
+" "
+Lexer::TOK_VAR(14),len:21,line:69,offs:38,offe:58
+"CPPFLAGS_GORGEOUSMAKE"
+Lexer::TOK_SPACE(3),len:1,line:69,offs:60,offe:60
+" "
+Lexer::TOK_VAR(14),len:20,line:69,offs:63,offe:82
+"LDFLAGS_GORGEOUSMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:70,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:71,offs:0,offe:0
+"
+"
+Lexer::TOK_VAR(14),len:12,line:71,offs:2,offe:13
+"NAME_GORMAKE"
+Lexer::TOK_COLON(6),len:1,line:71,offs:15,offe:15
+":"
+Lexer::TOK_SPACE(3),len:1,line:71,offs:16,offe:16
+" "
+Lexer::TOK_VAR(14),len:12,line:71,offs:19,offe:30
+"OBJS_GORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:72,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:72,offs:0,offe:0
+"	"
+Lexer::TOK_AT(11),len:1,line:72,offs:1,offe:1
+"@"
+Lexer::TOK_VAR(14),len:3,line:72,offs:4,offe:6
+"CPP"
+Lexer::TOK_SPACE(3),len:1,line:72,offs:8,offe:8
+" "
+Lexer::TOK_STR(4),len:2,line:72,offs:9,offe:10
+"-o"
+Lexer::TOK_SPACE(3),len:1,line:72,offs:11,offe:11
+" "
+Lexer::TOK_VAR(14),len:1,line:72,offs:13,offe:13
+"@"
+Lexer::TOK_SPACE(3),len:1,line:72,offs:14,offe:14
+" "
+Lexer::TOK_VAR(14),len:12,line:72,offs:17,offe:28
+"OBJS_GORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:72,offs:30,offe:30
+" "
+Lexer::TOK_VAR(14),len:16,line:72,offs:33,offe:48
+"CPPFLAGS_GORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:72,offs:50,offe:50
+" "
+Lexer::TOK_VAR(14),len:15,line:72,offs:53,offe:67
+"LDFLAGS_GORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:73,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:74,offs:0,offe:0
+"
+"
+Lexer::TOK_VAR(14),len:15,line:74,offs:2,offe:16
+"NAME_LIBGORMAKE"
+Lexer::TOK_COLON(6),len:1,line:74,offs:18,offe:18
+":"
+Lexer::TOK_SPACE(3),len:1,line:74,offs:19,offe:19
+" "
+Lexer::TOK_VAR(14),len:15,line:74,offs:22,offe:36
+"OBJS_LIBGORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:75,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:75,offs:0,offe:0
+"	"
+Lexer::TOK_AT(11),len:1,line:75,offs:1,offe:1
+"@"
+Lexer::TOK_VAR(14),len:3,line:75,offs:4,offe:6
+"CPP"
+Lexer::TOK_SPACE(3),len:1,line:75,offs:8,offe:8
+" "
+Lexer::TOK_STR(4),len:2,line:75,offs:9,offe:10
+"-o"
+Lexer::TOK_SPACE(3),len:1,line:75,offs:11,offe:11
+" "
+Lexer::TOK_VAR(14),len:1,line:75,offs:13,offe:13
+"@"
+Lexer::TOK_SPACE(3),len:1,line:75,offs:14,offe:14
+" "
+Lexer::TOK_VAR(14),len:15,line:75,offs:17,offe:31
+"OBJS_LIBGORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:75,offs:33,offe:33
+" "
+Lexer::TOK_VAR(14),len:19,line:75,offs:36,offe:54
+"CPPFLAGS_LIBGORMAKE"
+Lexer::TOK_SPACE(3),len:1,line:75,offs:56,offe:56
+" "
+Lexer::TOK_VAR(14),len:18,line:75,offs:59,offe:76
+"LDFLAGS_LIBGORMAKE"
+Lexer::TOK_NEWLINE(1),len:1,line:76,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:77,offs:0,offe:0
+"
+"
+Lexer::TOK_PRECENT(15),len:1,line:77,offs:0,offe:0
+"%"
+Lexer::TOK_STR(4),len:2,line:77,offs:1,offe:2
+".o"
+Lexer::TOK_COLON(6),len:1,line:77,offs:3,offe:3
+":"
+Lexer::TOK_SPACE(3),len:1,line:77,offs:4,offe:4
+" "
+Lexer::TOK_PRECENT(15),len:1,line:77,offs:5,offe:5
+"%"
+Lexer::TOK_STR(4),len:4,line:77,offs:6,offe:9
+".cpp"
+Lexer::TOK_NEWLINE(1),len:1,line:78,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:78,offs:0,offe:0
+"	"
+Lexer::TOK_AT(11),len:1,line:78,offs:1,offe:1
+"@"
+Lexer::TOK_VAR(14),len:3,line:78,offs:4,offe:6
+"CPP"
+Lexer::TOK_SPACE(3),len:1,line:78,offs:8,offe:8
+" "
+Lexer::TOK_STR(4),len:2,line:78,offs:9,offe:10
+"-o"
+Lexer::TOK_SPACE(3),len:1,line:78,offs:11,offe:11
+" "
+Lexer::TOK_VAR(14),len:1,line:78,offs:13,offe:13
+"@"
+Lexer::TOK_SPACE(3),len:1,line:78,offs:14,offe:14
+" "
+Lexer::TOK_VAR(14),len:1,line:78,offs:16,offe:16
+"<"
+Lexer::TOK_SPACE(3),len:1,line:78,offs:17,offe:17
+" "
+Lexer::TOK_VAR(14),len:8,line:78,offs:20,offe:27
+"CPPFLAGS"
+Lexer::TOK_SPACE(3),len:1,line:78,offs:29,offe:29
+" "
+Lexer::TOK_STR(4),len:2,line:78,offs:30,offe:31
+"-c"
+Lexer::TOK_NEWLINE(1),len:1,line:79,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:80,offs:0,offe:0
+"
+"
+Lexer::TOK_STR(4),len:5,line:80,offs:0,offe:4
+"clean"
+Lexer::TOK_COLON(6),len:1,line:80,offs:5,offe:5
+":"
+Lexer::TOK_NEWLINE(1),len:1,line:81,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:81,offs:0,offe:0
+"	"
+Lexer::TOK_AT(11),len:1,line:81,offs:1,offe:1
+"@"
+Lexer::TOK_VAR(14),len:2,line:81,offs:4,offe:5
+"RM"
+Lexer::TOK_SPACE(3),len:1,line:81,offs:7,offe:7
+" "
+Lexer::TOK_STR(4),len:3,line:81,offs:8,offe:10
+"-rf"
+Lexer::TOK_SPACE(3),len:1,line:81,offs:11,offe:11
+" "
+Lexer::TOK_VAR(14),len:7,line:81,offs:14,offe:20
+"MODULES"
+Lexer::TOK_SPACE(3),len:1,line:81,offs:22,offe:22
+" "
+Lexer::TOK_STAR(17),len:1,line:81,offs:23,offe:23
+"*"
+Lexer::TOK_STR(4),len:5,line:81,offs:24,offe:28
+".dSYM"
+Lexer::TOK_NEWLINE(1),len:1,line:82,offs:0,offe:0
+"
+"
+Lexer::TOK_TAB(5),len:1,line:82,offs:0,offe:0
+"	"
+Lexer::TOK_VAR(14),len:43,line:82,offs:3,offe:45
+"shell find ./ -name "*.o" -exec rm -f {} \;"
+Lexer::TOK_NEWLINE(1),len:1,line:83,offs:0,offe:0
+"
+"
+Lexer::TOK_NEWLINE(1),len:1,line:84,offs:0,offe:0
+"
+"
+LINE 1 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 2 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 3 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 4 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 5 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 6 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 7 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 8 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 9 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 10 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 11 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 12 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 13 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 14 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 15 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 16 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 17 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 18 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 19 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 20 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 21 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 22 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 23 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 24 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 25 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 26 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 27 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 28 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 29 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 30 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 31 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 32 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 33 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 34 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 35 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 36 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 37 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 38 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 39 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 40 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 41 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 42 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 43 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 44 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 45 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 46 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 47 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 48 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 49 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 50 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 51 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 52 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 53 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 54 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 55 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 56 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 57 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 58 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 59 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 60 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 61 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 62 is predicted as type: Lexer::LP_VARIABLE(3)
+LINE 63 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 64 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 65 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 66 is predicted as type: Lexer::LP_TARGET(1)
+LINE 67 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 68 is predicted as type: Lexer::LP_TARGET(1)
+LINE 69 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 70 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 71 is predicted as type: Lexer::LP_TARGET(1)
+LINE 72 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 73 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 74 is predicted as type: Lexer::LP_TARGET(1)
+LINE 75 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 76 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 77 is predicted as type: Lexer::LP_TARGET(1)
+LINE 78 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 79 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 80 is predicted as type: Lexer::LP_TARGET(1)
+LINE 81 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 82 is predicted as type: Lexer::LP_RECEIPT(2)
+LINE 83 is predicted as type: Lexer::LP_NORMAL(0)
+LINE 84 is predicted as type: Lexer::LP_NORMAL(0)
