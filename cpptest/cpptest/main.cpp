@@ -16,6 +16,27 @@
 using namespace std;
 
 
+class abc {
+ public:
+  explicit abc(const std::string* name)
+    : name_(NULL) {
+    name_ = name;
+    std::cout << "abc() is called\n";
+  }
+  virtual ~abc() {}
+
+ private:
+  const std::string* name_;
+};
+
+class ddd : public abc {
+ public:
+  explicit ddd(const std::string* name) : abc(name) {
+    std::cout << "ddd() is called\n";
+  }
+};
+
+
 typedef string* pstring;
 
 
@@ -129,7 +150,10 @@ int main() {
  const pstring cstr = &check;
  //cstr = &str;
  cout << *cstr << "\n";
- 
+
+
+  std::string mystr = "MyStr";
+  ddd *var = new ddd(&mystr);
  
  return 0;
 }
