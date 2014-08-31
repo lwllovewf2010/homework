@@ -12,8 +12,47 @@
 
 #include "DerivedClass.h"
 #include "functor.h"
+#include "UniquePtr.h"
 
 using namespace std;
+
+
+
+
+class BaseAst {
+ public:
+  virtual ~BaseAst() {}
+};
+
+class MyAst {
+ public:
+  MyAst(const std::vector<std::unique_ptr<BaseAst>*>* names,
+                    const std::vector<std::unique_ptr<BaseAst>*>* signs,
+                    const std::vector<std::unique_ptr<std::vector<std::unique_ptr<BaseAst>*>>*>* stats) {
+    names_.reset(names);
+    signs_.reset(signs);
+    stats_.reset(stats);
+  }
+
+  const std::vector<std::unique_ptr<BaseAst>*>* GetNames() const {
+    return names_.get();
+  }
+  const std::vector<std::unique_ptr<BaseAst>*>* GetPrereqs() const {
+    return signs_.get();
+  }
+  const std::vector<std::unique_ptr<std::vector<std::unique_ptr<BaseAst>*>>*>* GetRules() const {
+    return stats_.get();
+  }
+
+ private:
+  std::unique_ptr<const std::vector<std::unique_ptr<BaseAst>*>> names_;
+  std::unique_ptr<const std::vector<std::unique_ptr<BaseAst>*>> signs_;
+  std::unique_ptr<const std::vector<std::unique_ptr<std::vector<std::unique_ptr<BaseAst>*>>*>> stats_;
+};
+
+
+
+
 
 
 class abc {
@@ -24,6 +63,10 @@ class abc {
     std::cout << "abc() is called\n";
   }
   virtual ~abc() {}
+
+  void test() {
+    std::cout << "abc::test()\n";
+  }
 
  private:
   const std::string* name_;
@@ -58,15 +101,75 @@ int use_functor( add_x& fctor ) {
 }
 
 
+static int UniquePtrCnt = 0;
+class TestUniquePtr {
+ public:
+  TestUniquePtr() {
+    UniquePtrCnt = 1;
+  }
+  virtual ~TestUniquePtr() {
+    UniquePtrCnt = 0;
+  }
+
+
+  void setup(int* i) {
+    uptr2.reset(i);
+  }
+  UniquePtr<int> uptr2;
+
+  void setup1(int* i) {
+    uptr3 = i;
+  }
+  int* uptr3;
+
+  void setup2(abc* ooo) {
+    myobj.reset(ooo);
+  }
+  UniquePtr<abc> myobj;
+};
+
+
 int main() {
     
  int cc = 1234;
- int &abc = cc;
+ int &uiop = cc;
  bitset<32> val(0xFFFFFFFF);
  string str( "00100000" );
  bitset<32> mytest( str );
- 
- 
+ int *fe = new int(1);
+ int *ty = new int(1);
+ std::string tmp = "Test";
+ abc *m = new abc(&tmp);
+
+  *fe = 987654;
+  *ty = 345667;
+
+  {
+    UniquePtr<TestUniquePtr> uptr1(new TestUniquePtr());
+    std::cout << "UniquePtrCnt = " << UniquePtrCnt << "\n";
+    uptr1->setup(fe);
+    uptr1->setup1(ty);
+    uptr1->setup2(m);
+    std::cout << "*fe = " << *fe << "\n";
+    std::cout << "*ty = " << *ty << "\n";
+    m->test();
+  }
+  std::cout << "UniquePtrCnt = " << UniquePtrCnt << "\n";
+  std::cout << "*fe = " << *fe << "\n";
+  std::cout << "*ty = " << *ty << "\n";
+  m->test();
+
+  TestUniquePtr* uptr10 = new TestUniquePtr();
+  std::cout << "UniquePtrCnt = " << UniquePtrCnt << "\n";
+  //uptr10->setup(fe);
+  uptr10->setup1(ty);
+  //uptr10->setup2(m);
+  std::cout << "*fe = " << *fe << "\n";
+  std::cout << "*ty = " << *ty << "\n";
+  delete uptr10;
+  std::cout << "*fe = " << *fe << "\n";
+  std::cout << "*ty = " << *ty << "\n";
+  std::cout << "UniquePtrCnt = " << UniquePtrCnt << "\n";
  
  // Test Functor Start
  add_x add_48( 48 );
@@ -117,7 +220,7 @@ int main() {
     
  cout << "Size = " << ivec.size() << "\n";
     
- cout << abc << endl;
+ cout << uiop << endl;
  cout << "v1.size = " << v1.size() << endl;
     
  for( vector<string>::size_type ix = 0 ; ix != v1.size() ; ++ix ) {
