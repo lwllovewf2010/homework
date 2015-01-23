@@ -1,0 +1,10 @@
+# ninja log v5
+1	22	0	WKdmCompress.o	b9385aa104d67d8f
+1	23	0	main.o	194301d381271d16
+1	30	0	WKdmDecompress.o	fec9c334b5252403
+30	93	0	wkcp	2c2cdd24c3f55a23
+0	16	0	WKdmCompress.o	b9385aa104d67d8f
+0	16	0	WKdmDecompress.o	fec9c334b5252403
+0	18	0	main.o	194301d381271d16
+18	34	0	wkcp	2c2cdd24c3f55a23
+0	45	0	wkcp	2c2cdd24c3f55a23
