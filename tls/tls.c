@@ -2,14 +2,18 @@
 #include <pthread.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <signal.h>
 
 typedef struct {
   int i;
   int idx;
 } test_struct_t;
 
+volatile int terminated_ = 0;
+
 void destructor(void* arg) {
   printf("%s: arg = %p\n", __func__, arg);
+  free(arg);
 }
 
 static pthread_key_t pthread_key_self_;
@@ -37,7 +41,7 @@ void *child(void *arg) {
   	printf("%s: old mytest = %p\n", __func__, mytest);
   }
 
-  for (i = 0; ;++i) {
+  for (i = 0; terminated_ != 1 ;++i) {
   	mytest = pthread_getspecific(pthread_key_self_);
   	printf("%s: loop pthread_getspecific[%d] = %p, %d\n", __func__, mytest->idx, mytest, mytest->i);
   	tmp = (int)random();
@@ -47,11 +51,19 @@ void *child(void *arg) {
   }
 }
 
+void handleTermSignal(int v) {
+  terminated_ = 1;
+}
+
 int main(int argc, char** argv) {
   int ret;
   void* p;
   pthread_t tid1;
   pthread_t tid2;
+
+  signal(SIGKILL, handleTermSignal);
+  signal(SIGTERM, handleTermSignal);
+  signal(SIGINT, handleTermSignal);
 
   ret = pthread_key_create(&pthread_key_self_, destructor);
   printf("%s: pthread_key_create = %d\n", __func__, ret);
