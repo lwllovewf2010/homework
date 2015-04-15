@@ -1,3 +1,5 @@
+#include "utils.h"
+
 #include <stdio.h>
 #include <stdint.h>
 #include <sys/types.h>
@@ -5,28 +7,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <string.h>
-
-#define __STDC_FORMAT_MACROS
-#include <inttypes.h>
-
-#define PATH_MAPS   "/proc/self/maps"
-#define LBUS_SIZE   512
-#define MFILE_LEN   128
-#define NR_SLOTS    100
-
-typedef enum {
-  PERM_RD = 0x01,
-  PERM_WR = 0x02,
-  PERM_EX = 0x04,
-  PERM_PR = 0x08,
-} DbgrMemPerm_t;
-
-typedef struct {
-  uint64_t start_addr;
-  uint64_t end_addr;
-  uint8_t  perm;
-  uint8_t  filename[MFILE_LEN];
-} DbgrMemMap_t;
+#include <stdbool.h>
 
 int32_t CbPower(int32_t x, int32_t y) {
   int32_t sum = 0;
@@ -65,8 +46,13 @@ uint32_t CbStrNCpy(uint8_t* dst, const uint8_t* src, uint32_t len) {
   uint32_t i;
   for (i = 0; i < len; ++i) {
     dst[i] = src[i];
+    if (src[i] == '\0') {
+      break;
+    }
   }
-  dst[len] = '\0';
+  if (i == len) {
+    dst[len] = '\0';
+  }
   return i;
 }
 
@@ -203,25 +189,4 @@ uint32_t ReadMemMap(DbgrMemMap_t* pDbgrMemMapped, uint32_t max) {
   // Close the file and return
   close(fd);
   return sidx;
-}
-
-int main(int argc, char** argv) {
-  DbgrMemMap_t bufDbgrMemMapped[NR_SLOTS];
-  uint32_t cnt;
-  uint32_t i;
-
-  // Read memory map
-  cnt = ReadMemMap(bufDbgrMemMapped, NR_SLOTS);
-
-  // Dump data
-  printf("Number of mapped file: %d\n", cnt);
-  for (i = 0; i < cnt; ++i) {
-    printf("start_addr = 0x%" PRIx64 "\n", bufDbgrMemMapped[i].start_addr);
-    printf("end_addr   = 0x%" PRIx64 "\n", bufDbgrMemMapped[i].end_addr);
-    printf("perm       = 0x%2.2X\n", bufDbgrMemMapped[i].perm);
-    printf("file       = \"%s\"\n", bufDbgrMemMapped[i].filename);
-    printf("========================================\n");
-  }
-
-  return 0;
 }

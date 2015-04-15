@@ -1,5 +1,5 @@
 all:
-	g++ -Wall -O2 -o main main.cc
+	gcc -Wall -O2 -o main main.c utils.c
 
 clean:
 	rm -f main
