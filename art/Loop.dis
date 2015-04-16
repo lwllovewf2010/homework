@@ -1,0 +1,97 @@
+MAGIC:
+oat
+007
+
+CHECKSUM:
+0x7ab15284
+
+INSTRUCTION SET:
+X86
+
+DEX FILE COUNT:
+1
+
+EXECUTABLE OFFSET:
+0x00001000
+
+IMAGE FILE LOCATION OAT CHECKSUM:
+0x35d62b0a
+
+IMAGE FILE LOCATION OAT BEGIN:
+0x6028a000
+
+IMAGE FILE LOCATION:
+/home/merck/Projects/mydroid/out/host/linux-x86/framework/core.art (/home/merck/Projects/mydroid/out/target/product/generic_x86/home/merck/Projects/mydroid/out/host/linux-x86/framework/core.art)
+
+BEGIN:
+0xf73cd000
+
+END:
+0xf73ce0a2
+
+OAT DEX FILE:
+location: /home/merck/Loop.jar
+checksum: 0x21a49eff
+0: LLoop; (type_idx=0) (StatusInitialized)
+  0: void Loop.<init>() (dex_method_idx=0)
+    DEX CODE:
+      0x0000: invoke-direct {v0}, void java.lang.Object.<init>() // method@2
+      0x0003: return-void
+    OAT DATA:
+      frame_size_in_bytes: 32
+      core_spill_mask: 0x00000120 (r5, r8)
+      fp_spill_mask: 0x00000000 
+      vmap_table: 0xf73ce058 (offset=0x00001058)
+      v0/r5, v65535/r8
+      mapping_table: 0xf73ce050 (offset=0x00001050)
+      gc_map: 0xf73ce05d (offset=0x0000105d)
+    CODE: 0xf73ce004 (offset=0x00001004 size=76)...
+      0xf73ce004:                 83EC1C    	sub     esp, 28
+      0xf73ce007:               896C2418    	mov     [esp + 24], ebp
+      0xf73ce00b:         643B2510000000    	cmp     esp, fs:[0x10]  ; stack_end_
+      0xf73ce012:                   722F    	jb/nae/c +47 (0xf73ce043)
+      0xf73ce014:                 890424    	mov     [esp], eax
+      0xf73ce017:                   8BE9    	mov     ebp, ecx
+      0xf73ce019:                 8B0424    	mov     eax, [esp]
+      0xf73ce01c:                   8BCD    	mov     ecx, ebp
+      0xf73ce01e:                 8B4010    	mov     eax, [eax + 16]
+      0xf73ce021:                 8B4014    	mov     eax, [eax + 20]
+      0xf73ce024:                 FF5028    	call    [eax + 40]
+      suspend point dex PC: 0x0000
+      GC map objects:  v0 (r5)
+      0xf73ce027:     6466833D0000000000    	cmp     fs:[0x0], 0  ; state_and_flags_
+      0xf73ce030:                   7508    	jnz/ne  +8 (0xf73ce03a)
+      0xf73ce032:               8B6C2418    	mov     ebp, [esp + 24]
+      0xf73ce036:                 83C41C    	add     esp, 28
+      0xf73ce039:                     C3    	ret     
+      0xf73ce03a:         64FF155C020000    	call    fs:[0x25c]  ; pTestSuspend
+      suspend point dex PC: 0x0003
+      0xf73ce041:                   EBEF    	jmp     -17 (0xf73ce032)
+      0xf73ce043:                 83C420    	add     esp, 32
+      0xf73ce046:         64FF1574020000    	call    fs:[0x274]  ; pThrowStackOverflow
+      suspend point dex PC: 0x0000
+      GC map objects:  v0 (r5)
+      0xf73ce04d:                   0000    	add     [eax], al
+      0xf73ce04f:                   0003    	add     [ebx], al
+  1: void Loop.main(java.lang.String[]) (dex_method_idx=1)
+    DEX CODE:
+      0x0000: goto/32 +0
+    OAT DATA:
+      frame_size_in_bytes: 16
+      core_spill_mask: 0x00000100 (r8)
+      fp_spill_mask: 0x00000000 
+      vmap_table: 0xf73ce098 (offset=0x00001098)
+      v65535/r8
+      mapping_table: 0xf73ce094 (offset=0x00001094)
+      gc_map: 0xf73ce09c (offset=0x0000109c)
+    CODE: 0xf73ce074 (offset=0x00001074 size=32)...
+      0xf73ce074:                 83EC0C    	sub     esp, 12
+      0xf73ce077:                 890424    	mov     [esp], eax
+      0xf73ce07a:               894C2414    	mov     [esp + 20], ecx
+      0xf73ce07e:     6466833D0000000000    	cmp     fs:[0x0], 0  ; state_and_flags_
+      0xf73ce087:                   74F5    	jz/eq   -11 (0xf73ce07e)
+      0xf73ce089:         64FF155C020000    	call    fs:[0x25c]  ; pTestSuspend
+      suspend point dex PC: 0x0000
+      GC map objects:  v0 ([sp + #20])
+      0xf73ce090:                   EBEC    	jmp     -20 (0xf73ce07e)
+      0xf73ce092:                   0000    	add     [eax], al
